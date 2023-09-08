@@ -69,6 +69,8 @@ module.exports = class SmartThingsDriverTV extends SmartThingsDriver {
   }
 
   onPairFilterDevice(device) {
+    this.log('onPairFilterDevice', device.deviceTypeName);
+
     if (device.deviceTypeName === 'Samsung OCF TV') return true;
     return false;
   }
