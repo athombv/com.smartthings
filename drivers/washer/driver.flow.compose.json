@@ -1,0 +1,28 @@
+{
+  "triggers": [
+    {
+      "id": "samsung_washer_job_finished",
+      "title": {
+        "en": "A washing job has finished"
+      }
+    },
+    {
+      "id": "alarm_samsung_washer_addwash_door_open_true",
+      "title": {
+        "en": "Samsung AddWash door opened"
+      },
+      "$filter": {
+        "capabilities": "alarm_samsung_washer_addwash_door_open"
+      }
+    },
+    {
+      "id": "alarm_samsung_washer_addwash_door_open_false",
+      "title": {
+        "en": "Samsung AddWash door closed"
+      },
+      "$filter": {
+        "capabilities": "alarm_samsung_washer_addwash_door_open"
+      }
+    }
+  ]
+}

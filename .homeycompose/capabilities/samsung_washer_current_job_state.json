@@ -1,0 +1,48 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Status"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/samsung_washer_current_job_state.svg",
+  "values": [
+    {
+      "id": "none",
+      "title": {
+        "en": "None"
+      }
+    },
+    {
+      "id": "idle",
+      "title": {
+        "en": "Idle"
+      }
+    },
+    {
+      "id": "wash",
+      "title": {
+        "en": "Washing"
+      }
+    },
+    {
+      "id": "rinse",
+      "title": {
+        "en": "Rinsing"
+      }
+    },
+    {
+      "id": "spin",
+      "title": {
+        "en": "Spinning"
+      }
+    },
+    {
+      "id": "finished",
+      "title": {
+        "en": "Finished"
+      }
+    }
+  ]
+}

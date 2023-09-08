@@ -1,0 +1,358 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "com.smartthings",
+  "version": "2.0.3",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "name": {
+    "en": "Samsung SmartThings"
+  },
+  "description": {
+    "en": "Connected Life with SmartThings"
+  },
+  "category": [
+    "appliances"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Emile Nijssen",
+    "email": "emile@athom.nl"
+  },
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "brandColor": "#15bfff",
+  "support": "https://homey.app/support",
+  "drivers": [
+    {
+      "images": {
+        "small": "/drivers/refrigerator/assets/images/small.png",
+        "large": "/drivers/refrigerator/assets/images/large.png",
+        "xlarge": "/drivers/refrigerator/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "apikey"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "apikey"
+        }
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "cloud",
+        "local"
+      ],
+      "name": {
+        "en": "Samsung Fridge"
+      },
+      "class": "other",
+      "capabilities": [],
+      "capabilitiesOptions": {
+        "measure_temperature.cooler": {
+          "title": "Cooler Temperature"
+        },
+        "measure_temperature.freezer": {
+          "title": "Freezer Temperature"
+        },
+        "alarm_contact": {
+          "title": "Door Open"
+        }
+      },
+      "id": "refrigerator"
+    },
+    {
+      "images": {
+        "small": "/drivers/tv/assets/images/small.png",
+        "large": "/drivers/tv/assets/images/large.png",
+        "xlarge": "/drivers/tv/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "apikey"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "apikey"
+        }
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "cloud",
+        "local"
+      ],
+      "name": {
+        "en": "Samsung TV"
+      },
+      "class": "tv",
+      "capabilities": [
+        "onoff",
+        "volume_up",
+        "volume_down",
+        "channel_up",
+        "channel_down"
+      ],
+      "id": "tv"
+    },
+    {
+      "images": {
+        "small": "/drivers/washer/assets/images/small.png",
+        "large": "/drivers/washer/assets/images/large.png",
+        "xlarge": "/drivers/washer/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "apikey"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "apikey"
+        }
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "cloud",
+        "local"
+      ],
+      "name": {
+        "en": "Samsung Washer/Dryer"
+      },
+      "class": "other",
+      "capabilities": [],
+      "id": "washer"
+    }
+  ],
+  "flow": {
+    "actions": [
+      {
+        "id": "set_volume",
+        "title": {
+          "en": "Set the volume"
+        },
+        "titleFormatted": {
+          "en": "Set the volume to [[volume]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=tv"
+          },
+          {
+            "name": "volume",
+            "type": "range",
+            "title": {
+              "en": "Volume"
+            },
+            "min": 0,
+            "max": 1,
+            "step": 0.01,
+            "value": 50,
+            "label": "%",
+            "labelMultiplier": 100,
+            "labelDecimals": 0
+          }
+        ]
+      },
+      {
+        "id": "set_volume_mute",
+        "title": {
+          "en": "Mute the volume"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=tv"
+          }
+        ]
+      },
+      {
+        "id": "set_volume_unmute",
+        "title": {
+          "en": "Unmute the volume"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=tv"
+          }
+        ]
+      }
+    ],
+    "triggers": [
+      {
+        "id": "samsung_washer_job_finished",
+        "title": {
+          "en": "A washing job has finished"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=washer"
+          }
+        ]
+      },
+      {
+        "id": "alarm_samsung_washer_addwash_door_open_true",
+        "title": {
+          "en": "Samsung AddWash door opened"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=washer&capabilities=alarm_samsung_washer_addwash_door_open"
+          }
+        ]
+      },
+      {
+        "id": "alarm_samsung_washer_addwash_door_open_false",
+        "title": {
+          "en": "Samsung AddWash door closed"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=washer&capabilities=alarm_samsung_washer_addwash_door_open"
+          }
+        ]
+      }
+    ]
+  },
+  "capabilities": {
+    "alarm_samsung_washer_addwash_door_open": {
+      "type": "boolean",
+      "title": {
+        "en": "AddWash Door Open"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/alarm_samsung_washer_addwash_door_open.svg"
+    },
+    "samsung_washer_current_job_state": {
+      "type": "enum",
+      "title": {
+        "en": "Status"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/samsung_washer_current_job_state.svg",
+      "values": [
+        {
+          "id": "none",
+          "title": {
+            "en": "None"
+          }
+        },
+        {
+          "id": "idle",
+          "title": {
+            "en": "Idle"
+          }
+        },
+        {
+          "id": "wash",
+          "title": {
+            "en": "Washing"
+          }
+        },
+        {
+          "id": "rinse",
+          "title": {
+            "en": "Rinsing"
+          }
+        },
+        {
+          "id": "spin",
+          "title": {
+            "en": "Spinning"
+          }
+        },
+        {
+          "id": "finished",
+          "title": {
+            "en": "Finished"
+          }
+        }
+      ]
+    },
+    "samsung_washer_progress_percentage": {
+      "type": "number",
+      "title": {
+        "en": "Progress"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "units": {
+        "en": "%"
+      },
+      "icon": "/assets/capabilities/samsung_washer_progress_percentage.svg"
+    },
+    "samsung_washer_progress_remaining_time": {
+      "type": "string",
+      "title": {
+        "en": "Time Remaining"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/samsung_washer_progress_remaining_time.svg"
+    }
+  }
+}

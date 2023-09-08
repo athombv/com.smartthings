@@ -1,0 +1,10 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "AddWash Door Open"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/alarm_samsung_washer_addwash_door_open.svg"
+}

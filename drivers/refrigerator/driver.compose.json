@@ -1,0 +1,19 @@
+{
+  "$extends": "apikey",
+  "name": {
+    "en": "Samsung Fridge"
+  },
+  "class": "other",
+  "capabilities": [],
+  "capabilitiesOptions": {
+    "measure_temperature.cooler": {
+      "title": "Cooler Temperature"
+    },
+    "measure_temperature.freezer": {
+      "title": "Freezer Temperature"
+    },
+    "alarm_contact": {
+      "title": "Door Open"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="600px" viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>drivers/refrigerator/assets/icon</title>
+    <g id="/drivers/refrigerator/assets/icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="com.athom.screenshot/drivers/tv/assets/icon" transform="translate(199.1532, 32.1393)" stroke="#000000">
+            <polygon id="Path-234" stroke-width="40" points="-2.84217094e-14 21.1665998 -2.84217094e-14 507.830983 41.4949104 534.916667 202.244745 526.807578 202.244745 8.14702063 41.4949104 2.74937769e-14"></polygon>
+            <line x1="41.4949104" y1="0" x2="41.4949104" y2="534.916667" id="Path-243" stroke-width="20"></line>
+            <line x1="41.4949104" y1="311.122543" x2="202.244745" y2="306.279036" id="Path-257" stroke-width="20"></line>
+            <polyline id="Path-260" stroke-width="20" points="41.4949104 186.813862 55.8734811 189.183929 55.8734811 429.811323 41.4949104 428.220191"></polyline>
+        </g>
+    </g>
+</svg>

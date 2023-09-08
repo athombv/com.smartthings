@@ -1,0 +1,31 @@
+{
+  "id": "com.smartthings",
+  "version": "2.0.3",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "name": {
+    "en": "Samsung SmartThings"
+  },
+  "description": {
+    "en": "Connected Life with SmartThings"
+  },
+  "category": [
+    "appliances"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Emile Nijssen",
+    "email": "emile@athom.nl"
+  },
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "brandColor": "#15bfff",
+  "support": "https://homey.app/support"
+}

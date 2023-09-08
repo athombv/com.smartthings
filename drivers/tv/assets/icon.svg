@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="600px" viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>drivers/tv/assets/icon</title>
+    <g id="/drivers/tv/assets/icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="com.athom.screenshot/drivers/tv/assets/icon" transform="translate(20.000000, 20.000000)" stroke="#000000">
+            <polygon id="Path-178" stroke-width="20" stroke-linecap="round" points="137.324621 489.366294 210.841312 506.09558 485.855407 474.686923 377.136845 465.733119"></polygon>
+            <path d="M273.041545,443.243439 L273.041545,469.978091 L356.448718,460.59558 L485.855407,476.532929 L485.855407,493.449596 L213.363425,528.972877 L118.835776,504.241434 L123.686776,503.694439 L118.835776,503.242562 L118.835776,487.324768 L237.8478,473.937051 L237.8478,446.872049 L273.041545,443.243439 Z" id="Combined-Shape" stroke-width="40" stroke-linecap="round"></path>
+            <path d="M44.3373497,32.376807 L546.286955,88.2741866 L553.543299,424.185595 L44.8426326,474.092431 L14.3541335,456.019735 L14.3541335,41.0311742 L44.3373497,32.376807 Z" id="Path-179" stroke-width="40"></path>
+            <polygon id="Path-179" stroke-width="20" stroke-linecap="round" points="46.3624612 46.7950844 49.7627035 460.47019 542.520731 411.49436 535.922035 102.026636"></polygon>
+            <polygon id="Path-179" stroke-width="20" stroke-linecap="round" points="68.6404962 71.6659621 71.7353895 438.117882 520.242696 394.732901 514.236577 120.592542"></polygon>
+        </g>
+    </g>
+</svg>

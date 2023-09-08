@@ -1,0 +1,14 @@
+{
+  "$extends": "apikey",
+  "name": {
+    "en": "Samsung TV"
+  },
+  "class": "tv",
+  "capabilities": [
+    "onoff",
+    "volume_up",
+    "volume_down",
+    "channel_up",
+    "channel_down"
+  ]
+}

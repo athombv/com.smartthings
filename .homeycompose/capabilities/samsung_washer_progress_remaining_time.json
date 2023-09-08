@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "title": {
+    "en": "Time Remaining"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/samsung_washer_progress_remaining_time.svg"
+}

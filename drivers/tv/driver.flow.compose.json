@@ -1,0 +1,41 @@
+{
+  "actions": [
+    {
+      "id": "set_volume",
+      "title": {
+        "en": "Set the volume"
+      },
+      "titleFormatted": {
+        "en": "Set the volume to [[volume]]"
+      },
+      "args": [
+        {
+          "name": "volume",
+          "type": "range",
+          "title": {
+            "en": "Volume"
+          },
+          "min": 0,
+          "max": 1,
+          "step": 0.01,
+          "value": 50,
+          "label": "%",
+          "labelMultiplier": 100,
+          "labelDecimals": 0
+        }
+      ]
+    },
+    {
+      "id": "set_volume_mute",
+      "title": {
+        "en": "Mute the volume"
+      }
+    },
+    {
+      "id": "set_volume_unmute",
+      "title": {
+        "en": "Unmute the volume"
+      }
+    }
+  ]
+}
