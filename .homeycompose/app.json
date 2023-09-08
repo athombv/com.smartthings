@@ -27,5 +27,6 @@
     "cloud"
   ],
   "brandColor": "#15bfff",
-  "support": "https://homey.app/support"
+  "support": "https://homey.app/support",
+  "source": "https://github.com/athombv/com.smartthings"
 }
