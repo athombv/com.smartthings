@@ -29,7 +29,163 @@
   ],
   "brandColor": "#15bfff",
   "support": "https://homey.app/support",
+  "source": "https://github.com/athombv/com.smartthings",
+  "flow": {
+    "triggers": [
+      {
+        "id": "samsung_dryer_job_finished",
+        "title": {
+          "en": "A drying job has finished"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dryer"
+          }
+        ]
+      },
+      {
+        "id": "samsung_washer_job_finished",
+        "title": {
+          "en": "A washing job has finished"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=washer"
+          }
+        ]
+      },
+      {
+        "id": "alarm_samsung_washer_addwash_door_open_true",
+        "title": {
+          "en": "Samsung AddWash door opened"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=washer&capabilities=alarm_samsung_washer_addwash_door_open"
+          }
+        ]
+      },
+      {
+        "id": "alarm_samsung_washer_addwash_door_open_false",
+        "title": {
+          "en": "Samsung AddWash door closed"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=washer&capabilities=alarm_samsung_washer_addwash_door_open"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "id": "set_volume",
+        "title": {
+          "en": "Set the volume"
+        },
+        "titleFormatted": {
+          "en": "Set the volume to [[volume]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=tv"
+          },
+          {
+            "name": "volume",
+            "type": "range",
+            "title": {
+              "en": "Volume"
+            },
+            "min": 0,
+            "max": 1,
+            "step": 0.01,
+            "value": 50,
+            "label": "%",
+            "labelMultiplier": 100,
+            "labelDecimals": 0
+          }
+        ]
+      },
+      {
+        "id": "set_volume_mute",
+        "title": {
+          "en": "Mute the volume"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=tv"
+          }
+        ]
+      },
+      {
+        "id": "set_volume_unmute",
+        "title": {
+          "en": "Unmute the volume"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=tv"
+          }
+        ]
+      }
+    ]
+  },
   "drivers": [
+    {
+      "images": {
+        "small": "/drivers/dryer/assets/images/small.png",
+        "large": "/drivers/dryer/assets/images/large.png",
+        "xlarge": "/drivers/dryer/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "apikey"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "apikey"
+        }
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "cloud",
+        "local"
+      ],
+      "name": {
+        "en": "Samsung Dryer"
+      },
+      "class": "other",
+      "capabilities": [],
+      "id": "dryer"
+    },
     {
       "images": {
         "small": "/drivers/refrigerator/assets/images/small.png",
@@ -164,114 +320,13 @@
         "local"
       ],
       "name": {
-        "en": "Samsung Washer/Dryer"
+        "en": "Samsung Washer"
       },
       "class": "other",
       "capabilities": [],
       "id": "washer"
     }
   ],
-  "flow": {
-    "actions": [
-      {
-        "id": "set_volume",
-        "title": {
-          "en": "Set the volume"
-        },
-        "titleFormatted": {
-          "en": "Set the volume to [[volume]]"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=tv"
-          },
-          {
-            "name": "volume",
-            "type": "range",
-            "title": {
-              "en": "Volume"
-            },
-            "min": 0,
-            "max": 1,
-            "step": 0.01,
-            "value": 50,
-            "label": "%",
-            "labelMultiplier": 100,
-            "labelDecimals": 0
-          }
-        ]
-      },
-      {
-        "id": "set_volume_mute",
-        "title": {
-          "en": "Mute the volume"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=tv"
-          }
-        ]
-      },
-      {
-        "id": "set_volume_unmute",
-        "title": {
-          "en": "Unmute the volume"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=tv"
-          }
-        ]
-      }
-    ],
-    "triggers": [
-      {
-        "id": "samsung_washer_job_finished",
-        "title": {
-          "en": "A washing job has finished"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=washer"
-          }
-        ]
-      },
-      {
-        "id": "alarm_samsung_washer_addwash_door_open_true",
-        "title": {
-          "en": "Samsung AddWash door opened"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=washer&capabilities=alarm_samsung_washer_addwash_door_open"
-          }
-        ]
-      },
-      {
-        "id": "alarm_samsung_washer_addwash_door_open_false",
-        "title": {
-          "en": "Samsung AddWash door closed"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=washer&capabilities=alarm_samsung_washer_addwash_door_open"
-          }
-        ]
-      }
-    ]
-  },
   "capabilities": {
     "alarm_samsung_washer_addwash_door_open": {
       "type": "boolean",
@@ -282,6 +337,77 @@
       "setable": false,
       "uiComponent": "sensor",
       "icon": "/assets/capabilities/alarm_samsung_washer_addwash_door_open.svg"
+    },
+    "samsung_dryer_current_job_state": {
+      "type": "enum",
+      "title": {
+        "en": "Status"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/samsung_dryer_current_job_state.svg",
+      "values": [
+        {
+          "id": "none",
+          "title": {
+            "en": "None"
+          }
+        },
+        {
+          "id": "idle",
+          "title": {
+            "en": "Idle"
+          }
+        },
+        {
+          "id": "dry",
+          "title": {
+            "en": "Drying"
+          }
+        },
+        {
+          "id": "rinse",
+          "title": {
+            "en": "Rinsing"
+          }
+        },
+        {
+          "id": "spin",
+          "title": {
+            "en": "Spinning"
+          }
+        },
+        {
+          "id": "finished",
+          "title": {
+            "en": "Finished"
+          }
+        }
+      ]
+    },
+    "samsung_dryer_progress_percentage": {
+      "type": "number",
+      "title": {
+        "en": "Progress"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "units": {
+        "en": "%"
+      },
+      "icon": "/assets/capabilities/samsung_dryer_progress_percentage.svg"
+    },
+    "samsung_dryer_progress_remaining_time": {
+      "type": "string",
+      "title": {
+        "en": "Time Remaining"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/samsung_dryer_progress_remaining_time.svg"
     },
     "samsung_washer_current_job_state": {
       "type": "enum",

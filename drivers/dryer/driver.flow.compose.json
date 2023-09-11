@@ -1,0 +1,10 @@
+{
+  "triggers": [
+    {
+      "id": "samsung_dryer_job_finished",
+      "title": {
+        "en": "A drying job has finished"
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Progress"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "units": {
+    "en": "%"
+  },
+  "icon": "/assets/capabilities/samsung_dryer_progress_percentage.svg"
+}

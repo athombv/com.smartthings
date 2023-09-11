@@ -1,7 +1,7 @@
 {
   "$extends": "apikey",
   "name": {
-    "en": "Samsung Washer"
+    "en": "Samsung Dryer"
   },
   "class": "other",
   "capabilities": []
