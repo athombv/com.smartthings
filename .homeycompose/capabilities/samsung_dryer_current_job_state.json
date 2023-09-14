@@ -9,15 +9,15 @@
   "icon": "/assets/capabilities/samsung_dryer_current_job_state.svg",
   "values": [
     {
-      "id": "none",
+      "id": "cooling",
       "title": {
-        "en": "None"
+        "en": "Cooling"
       }
     },
     {
-      "id": "idle",
+      "id": "delayWash",
       "title": {
-        "en": "Idle"
+        "en": "Delayed start"
       }
     },
     {
@@ -27,21 +27,75 @@
       }
     },
     {
-      "id": "cooling",
-      "title": {
-        "en": "Cooling"
-      }
-    },
-    {
-      "id": "spin",
-      "title": {
-        "en": "Spinning"
-      }
-    },
-    {
       "id": "finished",
       "title": {
         "en": "Finished"
+      }
+    },
+    {
+      "id": "none",
+      "title": {
+        "en": "None"
+      }
+    },
+    {
+      "id": "refreshing",
+      "title": {
+        "en": "Refreshing"
+      }
+    },
+    {
+      "id": "weightSensing",
+      "title": {
+        "en": "Weight sensing"
+      }
+    },
+    {
+      "id": "wrinklePrevent",
+      "title": {
+        "en": "Wrinkle prevention"
+      }
+    },
+    {
+      "id": "dehumidifying",
+      "title": {
+        "en": "Dehumidifying"
+      }
+    },
+    {
+      "id": "aiDrying",
+      "title": {
+        "en": "AI drying"
+      }
+    },
+    {
+      "id": "sanitizing",
+      "title": {
+        "en": "Sanitizing"
+      }
+    },
+    {
+      "id": "internalCare",
+      "title": {
+        "en": "Cleaning"
+      }
+    },
+    {
+      "id": "freezeProtection",
+      "title": {
+        "en": "Freeze protection"
+      }
+    },
+    {
+      "id": "continousDehumidifying",
+      "title": {
+        "en": "Continous Dehumidifying"
+      }
+    },
+    {
+      "id": "thawingFrozenInside",
+      "title": {
+        "en": "Thawing frozen inside"
       }
     }
   ]
