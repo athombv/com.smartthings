@@ -6,11 +6,18 @@ module.exports = class SmartThingsDeviceOven extends SmartThingsDevice {
 
   static CAPABILITIES = [
     {
-      homeyCapabilityId: 'samsung_oven_current_job_state',
+      homeyCapabilityId: 'samsung_oven_status_job',
       smartThingsComponentId: 'main',
-      smartThingsCapabilityId: 'samsungce.OvenOperatingState',
-      smartThingsAttributeId: 'MachineState',
+      smartThingsCapabilityId: 'samsungce.ovenOperatingState',
+      smartThingsAttributeId: 'ovenJobState',
       async onReport({ value }) {
+        if (value === 'finished') {
+          this.homey.flow
+            .getDeviceTriggerCard('samsung_oven_job_finished')
+            .trigger(this)
+            .catch(this.error);
+        }
+
         return value;
       },
     },
