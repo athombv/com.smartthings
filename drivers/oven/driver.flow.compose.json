@@ -1,3 +1,10 @@
 {
-  "triggers": []
+  "triggers": [
+    {
+      "id": "samsung_oven_job_finished",
+      "title": {
+        "en": "A cooking job has finished"
+      }
+    }
+  ]
 }
