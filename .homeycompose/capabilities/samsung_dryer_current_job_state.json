@@ -21,15 +21,15 @@
       }
     },
     {
-      "id": "dry",
+      "id": "drying",
       "title": {
         "en": "Drying"
       }
     },
     {
-      "id": "rinse",
+      "id": "cooling",
       "title": {
-        "en": "Rinsing"
+        "en": "Cooling"
       }
     },
     {
