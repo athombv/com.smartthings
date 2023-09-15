@@ -51,9 +51,9 @@
       }
     },
     {
-      "id": "finish",
+      "id": "finished",
       "title": {
-        "en": "Finish"
+        "en": "Finished"
       }
     },
     {
@@ -84,6 +84,30 @@
       "id": "freezeProtection",
       "title": {
         "en": "Freeze protection"
+      }
+    },
+    {
+      "id": "wash",
+      "title": {
+        "en": "Washing"
+      }
+    },
+    {
+      "id": "rinse",
+      "title": {
+        "en": "Rinsing"
+      }
+    },
+    {
+      "id": "spin",
+      "title": {
+        "en": "Spinning"
+      }
+    },
+    {
+      "id": "idle",
+      "title": {
+        "en": "Idle"
       }
     }
   ]
