@@ -19,6 +19,9 @@ module.exports = class SmartThingsDeviceTV extends SmartThingsDevice {
             : 'off',
         });
       },
+      async onReport({ value }) {
+        return value === 'on';
+      },
     },
     {
       homeyCapabilityId: 'volume_up',
