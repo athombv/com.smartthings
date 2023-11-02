@@ -4,5 +4,8 @@
   },
   "2.1.0": {
     "en": "Added support for Samsung Dryer."
+  },
+  "2.1.1": {
+    "en": "Fixed an issue where Homey would not respond to the tv turning on/off"
   }
 }
