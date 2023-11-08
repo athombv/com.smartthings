@@ -1,0 +1,111 @@
+<style type="text/css">
+  #st-wrap {
+    height: 100%;
+  }
+
+  .st-flex-grow {
+    flex-grow: 1;
+  }
+
+  #st-screenshot {
+    display: block;
+    width: 250px;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 2em;
+  }
+
+  #st-apikey {
+    margin-bottom: 1em;
+  }
+
+  ol strong {
+    font-weight: bold;
+  }
+</style>
+
+<div id="st-wrap">
+
+  <img
+    id="st-screenshot"
+    src="apikey.assets/example.png"
+  />
+
+  <p>To connect SmartThings, you need to create an Access Token.</p>
+  <ol>
+    <li><a
+        id="st-link"
+        href="javascript:void(0);"
+        target="_blank"
+        style="color: rgb(0, 130, 250);"
+      >Sign in to SmartThings</a>.</li>
+    <li>Type <strong>Homey</strong> as name. Select the <strong>Devices</strong> checkbox.</li>
+    <li>Tap <strong>Generate Token</strong>, and then copy & paste the key here.</li>
+  </ol>
+
+  <!-- <p><em>Yes, we also prefer it easier, but Samsung is a bit scared of Homey.</em></p> -->
+
+  <input
+    id="st-apikey"
+    class="homey-form-input"
+    type="text"
+    minlength="36"
+    maxlength="36"
+    placeholder="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+    style="font-family: monospace; text-align: center; font-size: 14px;"
+  />
+
+  <button
+    id="st-validate"
+    class="homey-button-primary-shadow-full"
+    disabled="disabled"
+  >Continue</button>
+</div>
+
+<script type="text/javascript">
+  Homey.showLoadingOverlay();
+  Homey.emit('hasClient')
+    .then(hasClient => {
+      Homey.hideLoadingOverlay();
+
+      if (hasClient) {
+        return Homey.nextView();
+      }
+
+      const $link = document.getElementById('st-link');
+      const $apikey = document.getElementById('st-apikey');
+      const $validate = document.getElementById('st-validate');
+
+      $link.addEventListener('click', () => {
+        Homey.popup('https://account.smartthings.com/tokens/new');
+      });
+
+      ['keyup', 'change', 'blur', 'paste'].forEach(event => {
+        $apikey.addEventListener(event, () => {
+          if ($apikey.value.length === 36) {
+            $validate.removeAttribute('disabled');
+          } else {
+            $validate.setAttribute('disabled', 'disabled');
+          }
+        });
+      });
+
+      $validate.addEventListener('click', () => {
+        if ($validate.classList.contains('is-loading')) return;
+        $validate.classList.add('is-loading');
+
+        Homey.emit('validateKey', $apikey.value)
+          .then(valid => {
+            if (valid) return Homey.nextView();
+            Homey.alert('That Access Token did not work. Please try again.');
+          })
+          .catch(err => {
+            Homey.alert(err);
+          })
+          .finally(() => {
+            $validate.classList.remove('is-loading');
+          });
+      });
+    })
+    .catch(err => Homey.alert(err));
+</script>

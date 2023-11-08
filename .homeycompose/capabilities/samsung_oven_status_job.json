@@ -1,0 +1,114 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Status"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/samsung_oven_current_job_state.svg",
+  "values": [
+    {
+      "id": "cleaning",
+      "title": {
+        "en": "Cleaning"
+      }
+    },
+    {
+      "id": "cooking",
+      "title": {
+        "en": "Cooking"
+      }
+    },
+    {
+      "id": "cooling",
+      "title": {
+        "en": "Cooling"
+      }
+    },
+    {
+      "id": "draining",
+      "title": {
+        "en": "Draining"
+      }
+    },
+    {
+      "id": "preheat",
+      "title": {
+        "en": "Preheating"
+      }
+    },
+    {
+      "id": "ready",
+      "title": {
+        "en": "Ready"
+      }
+    },
+    {
+      "id": "rinsing",
+      "title": {
+        "en": "Rinsing"
+      }
+    },
+    {
+      "id": "finished",
+      "title": {
+        "en": "Finished"
+      }
+    },
+    {
+      "id": "scheduledStart",
+      "title": {
+        "en": "Scheduled Start"
+      }
+    },
+    {
+      "id": "warming",
+      "title": {
+        "en": "Warming"
+      }
+    },
+    {
+      "id": "defrosting",
+      "title": {
+        "en": "Defrosting"
+      }
+    },
+    {
+      "id": "sensing",
+      "title": {
+        "en": "Sensing"
+      }
+    },
+    {
+      "id": "searing",
+      "title": {
+        "en": "Searing"
+      }
+    },
+    {
+      "id": "fastPrehat",
+      "title": {
+        "en": "Fast preheat"
+      }
+    },
+    {
+      "id": "scheduledEnd",
+      "title": {
+        "en": "Scheduled ending"
+      }
+    },
+    {
+      "id": "stoneHeating",
+      "title": {
+        "en": "Stone heating"
+      }
+    },
+    {
+      "id": "timeHoldPreheat",
+      "title": {
+        "en": "Hold Preheat"
+      }
+    }
+  ]
+}
