@@ -46,6 +46,19 @@
         ]
       },
       {
+        "id": "samsung_oven_job_finished",
+        "title": {
+          "en": "A cooking job has finished"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=oven"
+          }
+        ]
+      },
+      {
         "id": "samsung_washer_job_finished",
         "title": {
           "en": "A washing job has finished"
@@ -185,6 +198,47 @@
       "class": "other",
       "capabilities": [],
       "id": "dryer"
+    },
+    {
+      "images": {
+        "small": "/drivers/oven/assets/images/small.png",
+        "large": "/drivers/oven/assets/images/large.png",
+        "xlarge": "/drivers/oven/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "apikey"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "apikey"
+        }
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "cloud",
+        "local"
+      ],
+      "name": {
+        "en": "Samsung Oven"
+      },
+      "class": "other",
+      "capabilities": [],
+      "id": "oven"
     },
     {
       "images": {
@@ -408,6 +462,120 @@
       "setable": false,
       "uiComponent": "sensor",
       "icon": "/assets/capabilities/samsung_dryer_progress_remaining_time.svg"
+    },
+    "samsung_oven_status_job": {
+      "type": "enum",
+      "title": {
+        "en": "Status"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/samsung_oven_current_job_state.svg",
+      "values": [
+        {
+          "id": "cleaning",
+          "title": {
+            "en": "Cleaning"
+          }
+        },
+        {
+          "id": "cooking",
+          "title": {
+            "en": "Cooking"
+          }
+        },
+        {
+          "id": "cooling",
+          "title": {
+            "en": "Cooling"
+          }
+        },
+        {
+          "id": "draining",
+          "title": {
+            "en": "Draining"
+          }
+        },
+        {
+          "id": "preheat",
+          "title": {
+            "en": "Preheating"
+          }
+        },
+        {
+          "id": "ready",
+          "title": {
+            "en": "Ready"
+          }
+        },
+        {
+          "id": "rinsing",
+          "title": {
+            "en": "Rinsing"
+          }
+        },
+        {
+          "id": "finished",
+          "title": {
+            "en": "Finished"
+          }
+        },
+        {
+          "id": "scheduledStart",
+          "title": {
+            "en": "Scheduled Start"
+          }
+        },
+        {
+          "id": "warming",
+          "title": {
+            "en": "Warming"
+          }
+        },
+        {
+          "id": "defrosting",
+          "title": {
+            "en": "Defrosting"
+          }
+        },
+        {
+          "id": "sensing",
+          "title": {
+            "en": "Sensing"
+          }
+        },
+        {
+          "id": "searing",
+          "title": {
+            "en": "Searing"
+          }
+        },
+        {
+          "id": "fastPrehat",
+          "title": {
+            "en": "Fast preheat"
+          }
+        },
+        {
+          "id": "scheduledEnd",
+          "title": {
+            "en": "Scheduled ending"
+          }
+        },
+        {
+          "id": "stoneHeating",
+          "title": {
+            "en": "Stone heating"
+          }
+        },
+        {
+          "id": "timeHoldPreheat",
+          "title": {
+            "en": "Hold Preheat"
+          }
+        }
+      ]
     },
     "samsung_washer_current_job_state": {
       "type": "enum",
