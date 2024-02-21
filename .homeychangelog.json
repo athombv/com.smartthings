@@ -7,5 +7,8 @@
   },
   "2.1.1": {
     "en": "Fixed an issue where Homey would not respond to the tv turning on/off"
+  },
+  "2.2.0": {
+    "en": "Add support for ovens"
   }
 }
