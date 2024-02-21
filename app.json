@@ -588,15 +588,81 @@
       "icon": "/assets/capabilities/samsung_washer_current_job_state.svg",
       "values": [
         {
+          "id": "airWash",
+          "title": {
+            "en": "Air Wash"
+          }
+        },
+        {
+          "id": "aiRinse",
+          "title": {
+            "en": "AI Rinse"
+          }
+        },
+        {
+          "id": "aiSpin",
+          "title": {
+            "en": "AI Spin"
+          }
+        },
+        {
+          "id": "aiWash",
+          "title": {
+            "en": "AI Wash"
+          }
+        },
+        {
+          "id": "cooling",
+          "title": {
+            "en": "Cooling"
+          }
+        },
+        {
+          "id": "delayWash",
+          "title": {
+            "en": "Delay washing"
+          }
+        },
+        {
+          "id": "drying",
+          "title": {
+            "en": "Drying"
+          }
+        },
+        {
+          "id": "finished",
+          "title": {
+            "en": "Finished"
+          }
+        },
+        {
           "id": "none",
           "title": {
             "en": "None"
           }
         },
         {
-          "id": "idle",
+          "id": "preWash",
           "title": {
-            "en": "Idle"
+            "en": "PreWash"
+          }
+        },
+        {
+          "id": "weightSensing",
+          "title": {
+            "en": "Weight sensing"
+          }
+        },
+        {
+          "id": "wrinklePrevent",
+          "title": {
+            "en": "Wrinkle prevention"
+          }
+        },
+        {
+          "id": "freezeProtection",
+          "title": {
+            "en": "Freeze protection"
           }
         },
         {
@@ -618,9 +684,9 @@
           }
         },
         {
-          "id": "finished",
+          "id": "idle",
           "title": {
-            "en": "Finished"
+            "en": "Idle"
           }
         }
       ]
