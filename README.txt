@@ -9,8 +9,5 @@ Control your Samsung TV right from the Homey Mobile App or the Homey Web App. Tu
 AUTOMATE
 Start a Flow when your Samsung Washer or Dryer is finished, or when the Samsung AddWash door is opened or closed. Automatically dim the lights when your Samsung TV is turned on or off.
 
-ENERGY
-Get insight in your Samsung Washer or Dryer's energy usage. The power usage can be seen in real-time, and is also stored in Homey Insights.
-
 COMING SOON
 Which Samsung SmartThings devices would you like to monitor and control? Let us know!
