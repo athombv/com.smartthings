@@ -10,5 +10,8 @@
   },
   "2.2.0": {
     "en": "Add support for ovens"
+  },
+  "2.2.1": {
+    "en": "Updated readme"
   }
 }
