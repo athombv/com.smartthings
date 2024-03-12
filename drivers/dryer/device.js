@@ -17,7 +17,7 @@ module.exports = class SmartThingsDeviceDryer extends SmartThingsDevice {
     {
       homeyCapabilityId: 'samsung_dryer_progress_remaining_time',
       smartThingsComponentId: 'main',
-      smartThingsCapabilityId: 'samsungce.washerOperatingState',
+      smartThingsCapabilityId: 'samsungce.dryerOperatingState',
       smartThingsAttributeId: 'remainingTimeStr',
       async onReport({ value }) {
         return value;
@@ -27,7 +27,7 @@ module.exports = class SmartThingsDeviceDryer extends SmartThingsDevice {
       homeyCapabilityId: 'samsung_dryer_current_job_state',
       smartThingsComponentId: 'main',
       smartThingsCapabilityId: 'samsungce.dryerOperatingState',
-      smartThingsAttributeId: 'washerJobState',
+      smartThingsAttributeId: 'dryerJobState',
       async onReport({ value }) {
         if (value === 'finished') {
           this.homey.flow
