@@ -1,0 +1,13 @@
+{
+  "$extends": "apikey",
+  "name": {
+    "en": "Air Conditioning"
+  },
+  "class": "thermostat",
+  "capabilities": [
+    "onoff",
+    "target_temperature",
+    "measure_temperature",
+    "measure_humidity"
+  ]
+}

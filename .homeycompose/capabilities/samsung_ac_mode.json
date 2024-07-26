@@ -1,0 +1,14 @@
+{
+  "type": "enum",
+  "title": {"en":  "Mode", "nl":  "Modus", "da": "Tilstand"},
+  "getable": true,
+  "setable": true,
+  "uiComponent": "picker",
+  "values": [
+    { "id": "cool", "title": { "en": "Cool", "nl": "Koelen", "da": "Kold" }},
+    { "id": "dry", "title": { "en": "Dry", "nl": "Drogen", "da": "Tør" }},
+    { "id": "wind", "title": { "en": "Wind", "nl": "Wind", "da": "Vind" }},
+    { "id": "auto", "title": { "en": "Auto", "nl": "Automatisch", "da": "Automatisk" }},
+    { "id": "heat", "title": { "en": "Heat", "nl": "Verwarmen", "da": "Varm" }}
+  ]
+}

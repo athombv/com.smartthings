@@ -1,0 +1,14 @@
+{
+  "type": "enum",
+  "title": {"en":  "Fan mode", "nl":  "Ventilator modus", "da": "Ventilator tilstand"},
+  "getable": true,
+  "setable": true,
+  "uiComponent": "picker",
+  "values": [
+    { "id": "auto", "title": { "en": "Auto", "nl": "Automatisch", "da": "Automatisk" }},
+    { "id": "low", "title": { "en": "Low", "nl": "Laag", "da": "Lav" }},
+    { "id": "medium", "title": { "en": "Medium", "nl": "Gemiddeld", "da": "Mellem" }},
+    { "id": "high", "title": { "en": "High", "nl": "Hoog", "da": "Høj" }},
+    { "id": "turbo", "title": { "en": "Turbo", "nl": "Turbo", "da": "Turbo" }}
+  ]
+}
