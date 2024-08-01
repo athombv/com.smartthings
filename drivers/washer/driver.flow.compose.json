@@ -3,13 +3,35 @@
     {
       "id": "samsung_washer_job_finished",
       "title": {
-        "en": "A washing job has finished"
+        "en": "A washing job has finished",
+        "nl": "Een wasbeurt is klaar",
+        "da": "En vaskeopgave er færdig",
+        "de": "Ein Waschgang ist beendet",
+        "es": "Un trabajo de lavado ha terminado",
+        "fr": "Un cycle de lavage est terminé",
+        "it": "Un lavaggio è terminato",
+        "no": "En vask er ferdig",
+        "sv": "En tvätt är klar",
+        "pl": "Zakończono pranie",
+        "ru": "Стирка завершена",
+        "ko": "세탁 작업이 완료되었습니다"
       }
     },
     {
       "id": "alarm_samsung_washer_addwash_door_open_true",
       "title": {
-        "en": "Samsung AddWash door opened"
+        "en": "Samsung AddWash door opened",
+        "nl": "Samsung AddWash-deur geopend",
+        "da": "Samsung AddWash-dør åben",
+        "de": "Samsung AddWash-Tür geöffnet",
+        "es": "Puerta de Samsung AddWash abierta",
+        "fr": "Porte Samsung AddWash ouverte",
+        "it": "Porta Samsung AddWash aperta",
+        "no": "Samsung AddWash-dør åpen",
+        "sv": "Samsung AddWash-dörr öppnad",
+        "pl": "Drzwi Samsung AddWash otwarte",
+        "ru": "Дверца Samsung AddWash открыта",
+        "ko": "삼성 AddWash 도어가 열렸습니다"
       },
       "$filter": {
         "capabilities": "alarm_samsung_washer_addwash_door_open"
@@ -18,7 +40,18 @@
     {
       "id": "alarm_samsung_washer_addwash_door_open_false",
       "title": {
-        "en": "Samsung AddWash door closed"
+        "en": "Samsung AddWash door closed",
+        "nl": "Samsung AddWash-deur gesloten",
+        "da": "Samsung AddWash-dør lukket",
+        "de": "Samsung AddWash-Tür geschlossen",
+        "es": "Puerta de Samsung AddWash cerrada",
+        "fr": "Porte Samsung AddWash fermée",
+        "it": "Porta Samsung AddWash chiusa",
+        "no": "Samsung AddWash-dør lukket",
+        "sv": "Samsung AddWash-dörr stängd",
+        "pl": "Drzwi Samsung AddWash zamknięte",
+        "ru": "Дверца Samsung AddWash закрыта",
+        "ko": "삼성 AddWash 도어가 닫혔습니다"
       },
       "$filter": {
         "capabilities": "alarm_samsung_washer_addwash_door_open"

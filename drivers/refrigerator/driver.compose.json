@@ -1,7 +1,18 @@
 {
   "$extends": "apikey",
   "name": {
-    "en": "Samsung Fridge"
+    "en": "Samsung Fridge",
+    "nl": "Samsung Koelkast",
+    "da": "Samsung Køleskab",
+    "de": "Samsung Kühlschrank",
+    "es": "Samsung Frigorífico",
+    "fr": "Samsung Réfrigérateur",
+    "it": "Frigorifero Samsung",
+    "no": "Samsung Kjøleskap",
+    "sv": "Samsung Kylskåp",
+    "pl": "Lodówka Samsung",
+    "ru": "Холодильник Samsung",
+    "ko": "삼성 냉장고"
   },
   "class": "other",
   "capabilities": [],

@@ -5,10 +5,32 @@
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "name": {
-    "en": "Samsung SmartThings"
+    "en": "Samsung SmartThings",
+    "nl": "Samsung SmartThings",
+    "da": "Samsung SmartThings",
+    "de": "Samsung SmartThings",
+    "es": "Samsung SmartThings",
+    "fr": "Samsung SmartThings",
+    "it": "Samsung SmartThings",
+    "no": "Samsung SmartThings",
+    "sv": "Samsung SmartThings",
+    "pl": "Samsung SmartThings",
+    "ru": "Samsung SmartThings",
+    "ko": "Samsung SmartThings"
   },
   "description": {
-    "en": "Connected Life with SmartThings"
+    "en": "Connected Life with SmartThings",
+    "nl": "Verbonden leven met SmartThings",
+    "da": "Forbundet liv med SmartThings",
+    "de": "Vernetztes Leben mit SmartThings",
+    "es": "Vida conectada con SmartThings",
+    "fr": "Vie connectée avec SmartThings",
+    "it": "Vita connessa con SmartThings",
+    "no": "Tilkoblet liv med SmartThings",
+    "sv": "Anslutet liv med SmartThings",
+    "pl": "Życie w połączeniu ze SmartThings",
+    "ru": "Связанная жизнь с SmartThings",
+    "ko": "스마트싱스와 연결된 생활"
   },
   "category": [
     "appliances"
@@ -35,7 +57,18 @@
       {
         "id": "samsung_dryer_job_finished",
         "title": {
-          "en": "A drying job has finished"
+          "en": "A drying job has finished",
+          "nl": "Een droogklus is klaar",
+          "da": "En tørreopgave er færdig",
+          "de": "Ein Trocknungsvorgang ist abgeschlossen",
+          "es": "Un trabajo de secado ha terminado",
+          "fr": "Un travail de séchage est terminé",
+          "it": "Un lavoro di asciugatura è terminato",
+          "no": "En tørkejobb er ferdig",
+          "sv": "Ett torkjobb är klart",
+          "pl": "Suszenie zakończone",
+          "ru": "Сушка завершена",
+          "ko": "건조 작업이 완료되었습니다"
         },
         "args": [
           {
@@ -48,7 +81,18 @@
       {
         "id": "samsung_oven_job_finished",
         "title": {
-          "en": "A cooking job has finished"
+          "en": "A cooking job has finished",
+          "nl": "Een kookklus is voltooid",
+          "da": "En madlavningsopgave er afsluttet",
+          "de": "Ein Kochvorgang ist abgeschlossen",
+          "es": "Un trabajo de cocina ha terminado",
+          "fr": "Une tâche de cuisson est terminée",
+          "it": "Un lavoro di cucina è terminato",
+          "no": "En matlagingsoppgave er ferdig",
+          "sv": "Ett matlagningsjobb är avslutat",
+          "pl": "Gotowanie zostało zakończone",
+          "ru": "Готовка завершена",
+          "ko": "요리가 완료되었습니다"
         },
         "args": [
           {
@@ -61,7 +105,18 @@
       {
         "id": "samsung_washer_job_finished",
         "title": {
-          "en": "A washing job has finished"
+          "en": "A washing job has finished",
+          "nl": "Een wasbeurt is klaar",
+          "da": "En vaskeopgave er færdig",
+          "de": "Ein Waschgang ist beendet",
+          "es": "Un trabajo de lavado ha terminado",
+          "fr": "Un cycle de lavage est terminé",
+          "it": "Un lavaggio è terminato",
+          "no": "En vask er ferdig",
+          "sv": "En tvätt är klar",
+          "pl": "Zakończono pranie",
+          "ru": "Стирка завершена",
+          "ko": "세탁 작업이 완료되었습니다"
         },
         "args": [
           {
@@ -74,7 +129,18 @@
       {
         "id": "alarm_samsung_washer_addwash_door_open_true",
         "title": {
-          "en": "Samsung AddWash door opened"
+          "en": "Samsung AddWash door opened",
+          "nl": "Samsung AddWash-deur geopend",
+          "da": "Samsung AddWash-dør åben",
+          "de": "Samsung AddWash-Tür geöffnet",
+          "es": "Puerta de Samsung AddWash abierta",
+          "fr": "Porte Samsung AddWash ouverte",
+          "it": "Porta Samsung AddWash aperta",
+          "no": "Samsung AddWash-dør åpen",
+          "sv": "Samsung AddWash-dörr öppnad",
+          "pl": "Drzwi Samsung AddWash otwarte",
+          "ru": "Дверца Samsung AddWash открыта",
+          "ko": "삼성 AddWash 도어가 열렸습니다"
         },
         "args": [
           {
@@ -87,7 +153,18 @@
       {
         "id": "alarm_samsung_washer_addwash_door_open_false",
         "title": {
-          "en": "Samsung AddWash door closed"
+          "en": "Samsung AddWash door closed",
+          "nl": "Samsung AddWash-deur gesloten",
+          "da": "Samsung AddWash-dør lukket",
+          "de": "Samsung AddWash-Tür geschlossen",
+          "es": "Puerta de Samsung AddWash cerrada",
+          "fr": "Porte Samsung AddWash fermée",
+          "it": "Porta Samsung AddWash chiusa",
+          "no": "Samsung AddWash-dør lukket",
+          "sv": "Samsung AddWash-dörr stängd",
+          "pl": "Drzwi Samsung AddWash zamknięte",
+          "ru": "Дверца Samsung AddWash закрыта",
+          "ko": "삼성 AddWash 도어가 닫혔습니다"
         },
         "args": [
           {
@@ -102,10 +179,32 @@
       {
         "id": "set_volume",
         "title": {
-          "en": "Set the volume"
+          "en": "Set the volume",
+          "nl": "Zet het volume",
+          "da": "Indstil lydstyrken",
+          "de": "Stellen Sie die Lautstärke ein",
+          "es": "Ajusta el volumen",
+          "fr": "Régler le volume",
+          "it": "Imposta il volume",
+          "no": "Sett volumet",
+          "sv": "Ställ in volymen",
+          "pl": "Ustaw głośność",
+          "ru": "Установите громкость",
+          "ko": "볼륨 설정"
         },
         "titleFormatted": {
-          "en": "Set the volume to [[volume]]"
+          "en": "Set the volume to [[volume]]",
+          "nl": "Zet het volume op [[volume]]",
+          "da": "Indstil lydstyrken til [[volume]]",
+          "de": "Stellen Sie die Lautstärke auf [[volume]] ein",
+          "es": "Ajusta el volumen a [[volume]]",
+          "fr": "Régler le volume à [[volume]]",
+          "it": "Imposta il volume su [[volume]]",
+          "no": "Sett volumet til [[volume]]",
+          "sv": "Ställ in volymen till [[volume]]",
+          "pl": "Ustaw głośność na [[volume]]",
+          "ru": "Установите громкость на [[volume]]",
+          "ko": "[[volume]]으로 볼륨 설정"
         },
         "args": [
           {
@@ -117,7 +216,18 @@
             "name": "volume",
             "type": "range",
             "title": {
-              "en": "Volume"
+              "en": "Volume",
+              "nl": "Volume",
+              "da": "Lydstyrke",
+              "de": "Lautstärke",
+              "es": "Volumen",
+              "fr": "Volume",
+              "it": "Volume",
+              "no": "Volum",
+              "sv": "Volym",
+              "pl": "Głośność",
+              "ru": "Громкость",
+              "ko": "볼륨"
             },
             "min": 0,
             "max": 1,
@@ -132,7 +242,18 @@
       {
         "id": "set_volume_mute",
         "title": {
-          "en": "Mute the volume"
+          "en": "Mute the volume",
+          "nl": "Zet het volume op stil",
+          "da": "Slå lyden fra",
+          "de": "Stummschalten",
+          "es": "Silenciar el volumen",
+          "fr": "Couper le son",
+          "it": "Disattiva l'audio",
+          "no": "Dempe volumet",
+          "sv": "Stäng av volymen",
+          "pl": "Wycisz głośność",
+          "ru": "Отключить звук",
+          "ko": "볼륨 음소거"
         },
         "args": [
           {
@@ -145,7 +266,18 @@
       {
         "id": "set_volume_unmute",
         "title": {
-          "en": "Unmute the volume"
+          "en": "Unmute the volume",
+          "nl": "Zet het volume weer aan",
+          "da": "Slå lyden til",
+          "de": "Ton einschalten",
+          "es": "Reactivar el volumen",
+          "fr": "Rétablir le son",
+          "it": "Riattiva l'audio",
+          "no": "Skru på volumet",
+          "sv": "Slå på volymen",
+          "pl": "Włącz głośność",
+          "ru": "Включить звук",
+          "ko": "볼륨 음소거 해제"
         },
         "args": [
           {
@@ -193,7 +325,18 @@
         "local"
       ],
       "name": {
-        "en": "Samsung Dryer"
+        "en": "Samsung Dryer",
+        "nl": "Samsung Droger",
+        "da": "Samsung Tørretumbler",
+        "de": "Samsung Trockner",
+        "es": "Secadora Samsung",
+        "fr": "Sèche-linge Samsung",
+        "it": "Asciugatrice Samsung",
+        "no": "Samsung Tørketrommel",
+        "sv": "Samsung Torktumlare",
+        "pl": "Suszarka Samsung",
+        "ru": "Сушилка Samsung",
+        "ko": "삼성 건조기"
       },
       "class": "other",
       "capabilities": [],
@@ -234,7 +377,18 @@
         "local"
       ],
       "name": {
-        "en": "Samsung Oven"
+        "en": "Samsung Oven",
+        "nl": "Samsung Oven",
+        "da": "Samsung Ovn",
+        "de": "Samsung Ofen",
+        "es": "Horno Samsung",
+        "fr": "Four Samsung",
+        "it": "Forno Samsung",
+        "no": "Samsung Ovn",
+        "sv": "Samsung Ugn",
+        "pl": "Piekarnik Samsung",
+        "ru": "Духовка Samsung",
+        "ko": "삼성 오븐"
       },
       "class": "other",
       "capabilities": [],
@@ -275,7 +429,18 @@
         "local"
       ],
       "name": {
-        "en": "Samsung Fridge"
+        "en": "Samsung Fridge",
+        "nl": "Samsung Koelkast",
+        "da": "Samsung Køleskab",
+        "de": "Samsung Kühlschrank",
+        "es": "Samsung Frigorífico",
+        "fr": "Samsung Réfrigérateur",
+        "it": "Frigorifero Samsung",
+        "no": "Samsung Kjøleskap",
+        "sv": "Samsung Kylskåp",
+        "pl": "Lodówka Samsung",
+        "ru": "Холодильник Samsung",
+        "ko": "삼성 냉장고"
       },
       "class": "other",
       "capabilities": [],
@@ -327,7 +492,18 @@
         "local"
       ],
       "name": {
-        "en": "Samsung TV"
+        "en": "Samsung TV",
+        "nl": "Samsung TV",
+        "da": "Samsung TV",
+        "de": "Samsung TV",
+        "es": "Samsung TV",
+        "fr": "Samsung TV",
+        "it": "Samsung TV",
+        "no": "Samsung TV",
+        "sv": "Samsung TV",
+        "pl": "Samsung TV",
+        "ru": "Samsung TV",
+        "ko": "Samsung TV"
       },
       "class": "tv",
       "capabilities": [
@@ -374,7 +550,18 @@
         "local"
       ],
       "name": {
-        "en": "Samsung Washer"
+        "en": "Samsung Washer",
+        "nl": "Samsung Wasmachine",
+        "da": "Samsung Vaskemaskine",
+        "de": "Samsung Waschmaschine",
+        "es": "Lavadora Samsung",
+        "fr": "Lave-linge Samsung",
+        "it": "Lavatrice Samsung",
+        "no": "Samsung Vaskemaskin",
+        "sv": "Samsung Tvättmaskin",
+        "pl": "Pralka Samsung",
+        "ru": "Стиральная машина Samsung",
+        "ko": "삼성 세탁기"
       },
       "class": "other",
       "capabilities": [],
@@ -385,7 +572,18 @@
     "alarm_samsung_washer_addwash_door_open": {
       "type": "boolean",
       "title": {
-        "en": "AddWash Door Open"
+        "en": "AddWash Door Open",
+        "nl": "AddWash Deur Open",
+        "da": "AddWash Dør Åben",
+        "de": "AddWash Tür Offen",
+        "es": "Puerta AddWash Abierta",
+        "fr": "Porte AddWash Ouverte",
+        "it": "Porta AddWash Aperta",
+        "no": "AddWash Dør Åpen",
+        "sv": "AddWash Dörr Öppen",
+        "pl": "Drzwi AddWash Otwórz",
+        "ru": "Дверца AddWash Открыта",
+        "ko": "AddWash 문 열림"
       },
       "getable": true,
       "setable": false,
@@ -395,7 +593,18 @@
     "samsung_dryer_current_job_state": {
       "type": "enum",
       "title": {
-        "en": "Status"
+        "en": "Status",
+        "nl": "Status",
+        "da": "Status",
+        "de": "Status",
+        "es": "Estado",
+        "fr": "Statut",
+        "it": "Stato",
+        "no": "Status",
+        "sv": "Status",
+        "pl": "Status",
+        "ru": "Статус",
+        "ko": "상태"
       },
       "getable": true,
       "setable": false,
@@ -405,37 +614,103 @@
         {
           "id": "none",
           "title": {
-            "en": "None"
+            "en": "None",
+            "nl": "Geen",
+            "da": "Ingen",
+            "de": "Keine",
+            "es": "Ninguno",
+            "fr": "Aucun",
+            "it": "Nessuno",
+            "no": "Ingen",
+            "sv": "Ingen",
+            "pl": "Brak",
+            "ru": "Нет",
+            "ko": "없음"
           }
         },
         {
           "id": "idle",
           "title": {
-            "en": "Idle"
+            "en": "Idle",
+            "nl": "Inactief",
+            "da": "Inaktiv",
+            "de": "Leerlauf",
+            "es": "Inactivo",
+            "fr": "Inactif",
+            "it": "Inattivo",
+            "no": "Inaktiv",
+            "sv": "Inaktiv",
+            "pl": "Bezczynny",
+            "ru": "Бездействие",
+            "ko": "대기 중"
           }
         },
         {
           "id": "dry",
           "title": {
-            "en": "Drying"
+            "en": "Drying",
+            "nl": "Drogen",
+            "da": "Tørring",
+            "de": "Trocknen",
+            "es": "Secando",
+            "fr": "Séchage",
+            "it": "Asciugatura",
+            "no": "Tørker",
+            "sv": "Torkning",
+            "pl": "Suszenie",
+            "ru": "Сушка",
+            "ko": "건조 중"
           }
         },
         {
           "id": "rinse",
           "title": {
-            "en": "Rinsing"
+            "en": "Rinsing",
+            "nl": "Spoelen",
+            "da": "Skylning",
+            "de": "Spülen",
+            "es": "Enjuagando",
+            "fr": "Rinçage",
+            "it": "Risciacquo",
+            "no": "Skyller",
+            "sv": "Sköljning",
+            "pl": "Płukanie",
+            "ru": "Полоскание",
+            "ko": "헹굼 중"
           }
         },
         {
           "id": "spin",
           "title": {
-            "en": "Spinning"
+            "en": "Spinning",
+            "nl": "Centrifugeren",
+            "da": "Slyngning",
+            "de": "Schleudern",
+            "es": "Centrifugado",
+            "fr": "Essorage",
+            "it": "Centrifuga",
+            "no": "Sentrifugering",
+            "sv": "Centrifugering",
+            "pl": "Wirowanie",
+            "ru": "Отжим",
+            "ko": "회전 중"
           }
         },
         {
           "id": "finished",
           "title": {
-            "en": "Finished"
+            "en": "Finished",
+            "nl": "Klaar",
+            "da": "Færdig",
+            "de": "Fertig",
+            "es": "Terminado",
+            "fr": "Terminé",
+            "it": "Finito",
+            "no": "Ferdig",
+            "sv": "Klar",
+            "pl": "Gotowe",
+            "ru": "Завершено",
+            "ko": "끝남"
           }
         }
       ]
@@ -443,20 +718,53 @@
     "samsung_dryer_progress_percentage": {
       "type": "number",
       "title": {
-        "en": "Progress"
+        "en": "Progress",
+        "nl": "Voortgang",
+        "da": "Fremskridt",
+        "de": "Fortschritt",
+        "es": "Progreso",
+        "fr": "Progrès",
+        "it": "Progresso",
+        "no": "Fremgang",
+        "sv": "Framsteg",
+        "pl": "Postęp",
+        "ru": "Прогресс",
+        "ko": "진행"
       },
       "getable": true,
       "setable": false,
       "uiComponent": "sensor",
       "units": {
-        "en": "%"
+        "en": "%",
+        "nl": "%",
+        "da": "%",
+        "de": "%",
+        "es": "%",
+        "fr": "%",
+        "it": "%",
+        "no": "%",
+        "sv": "%",
+        "pl": "%",
+        "ru": "%",
+        "ko": "%"
       },
       "icon": "/assets/capabilities/samsung_dryer_progress_percentage.svg"
     },
     "samsung_dryer_progress_remaining_time": {
       "type": "string",
       "title": {
-        "en": "Time Remaining"
+        "en": "Time Remaining",
+        "nl": "Resterende tijd",
+        "da": "Tid tilbage",
+        "de": "Verbleibende Zeit",
+        "es": "Tiempo restante",
+        "fr": "Temps restant",
+        "it": "Tempo rimanente",
+        "no": "Gjenstående tid",
+        "sv": "Återstående tid",
+        "pl": "Pozostały czas",
+        "ru": "Оставшееся время",
+        "ko": "남은 시간"
       },
       "getable": true,
       "setable": false,
@@ -466,7 +774,18 @@
     "samsung_oven_status_job": {
       "type": "enum",
       "title": {
-        "en": "Status"
+        "en": "Status",
+        "nl": "Status",
+        "da": "Status",
+        "de": "Status",
+        "es": "Estado",
+        "fr": "Statut",
+        "it": "Stato",
+        "no": "Status",
+        "sv": "Status",
+        "pl": "Status",
+        "ru": "Статус",
+        "ko": "상태"
       },
       "getable": true,
       "setable": false,
@@ -476,103 +795,290 @@
         {
           "id": "cleaning",
           "title": {
-            "en": "Cleaning"
+            "en": "Cleaning",
+            "nl": "Schoonmaken",
+            "da": "Rengøring",
+            "de": "Reinigung",
+            "es": "Limpieza",
+            "fr": "Nettoyage",
+            "it": "Pulizia",
+            "no": "Rengjøring",
+            "sv": "Rengöring",
+            "pl": "Czyszczenie",
+            "ru": "Очистка",
+            "ko": "청소"
           }
         },
         {
           "id": "cooking",
           "title": {
-            "en": "Cooking"
+            "en": "Cooking",
+            "nl": "Koken",
+            "da": "Madlavning",
+            "de": "Kochen",
+            "es": "Cocinando",
+            "fr": "Cuisson",
+            "it": "Cucinare",
+            "no": "Matlaging",
+            "sv": "Matlagning",
+            "pl": "Gotowanie",
+            "ru": "Готовка",
+            "ko": "요리"
           }
         },
         {
           "id": "cooling",
           "title": {
-            "en": "Cooling"
+            "en": "Cooling",
+            "nl": "Koelen",
+            "da": "Nedkøling",
+            "de": "Abkühlung",
+            "es": "Enfriando",
+            "fr": "Refroidissement",
+            "it": "Raffreddamento",
+            "no": "Avkjøling",
+            "sv": "Nedkylning",
+            "pl": "Chłodzenie",
+            "ru": "Охлаждение",
+            "ko": "냉각"
           }
         },
         {
           "id": "draining",
           "title": {
-            "en": "Draining"
+            "en": "Draining",
+            "nl": "Aftappen",
+            "da": "Afløb",
+            "de": "Entleeren",
+            "es": "Drenaje",
+            "fr": "Vidange",
+            "it": "Scolatura",
+            "no": "Drenering",
+            "sv": "Tömning",
+            "pl": "Opróżnianie",
+            "ru": "Слив",
+            "ko": "배수"
           }
         },
         {
           "id": "preheat",
           "title": {
-            "en": "Preheating"
+            "en": "Preheating",
+            "nl": "Voorverwarmen",
+            "da": "Forvarmning",
+            "de": "Vorheizen",
+            "es": "Calentamiento",
+            "fr": "Préchauffage",
+            "it": "Riscaldamento",
+            "no": "Forvarming",
+            "sv": "Förvärmning",
+            "pl": "Rozgrzewanie",
+            "ru": "Предварительный нагрев",
+            "ko": "예열"
           }
         },
         {
           "id": "ready",
           "title": {
-            "en": "Ready"
+            "en": "Ready",
+            "nl": "Klaar",
+            "da": "Klar",
+            "de": "Bereit",
+            "es": "Listo",
+            "fr": "Prêt",
+            "it": "Pronto",
+            "no": "Klar",
+            "sv": "Klar",
+            "pl": "Gotowy",
+            "ru": "Готово",
+            "ko": "준비됨"
           }
         },
         {
           "id": "rinsing",
           "title": {
-            "en": "Rinsing"
+            "en": "Rinsing",
+            "nl": "Spoelen",
+            "da": "Skylning",
+            "de": "Spülen",
+            "es": "Enjuagando",
+            "fr": "Rinçage",
+            "it": "Risciacquo",
+            "no": "Skylling",
+            "sv": "Sköljning",
+            "pl": "Płukanie",
+            "ru": "Полоскание",
+            "ko": "헹굼"
           }
         },
         {
           "id": "finished",
           "title": {
-            "en": "Finished"
+            "en": "Finished",
+            "nl": "Afgewerkt",
+            "da": "Færdig",
+            "de": "Fertig",
+            "es": "Terminado",
+            "fr": "Terminé",
+            "it": "Completato",
+            "no": "Ferdig",
+            "sv": "Klar",
+            "pl": "Ukończony",
+            "ru": "Завершено",
+            "ko": "완료"
           }
         },
         {
           "id": "scheduledStart",
           "title": {
-            "en": "Scheduled Start"
+            "en": "Scheduled Start",
+            "nl": "Geplande start",
+            "da": "Planlagt start",
+            "de": "Geplanter Start",
+            "es": "Inicio programado",
+            "fr": "Démarrage planifié",
+            "it": "Avvio programmato",
+            "no": "Planlagt start",
+            "sv": "Schemalagd start",
+            "pl": "Zaplanowany start",
+            "ru": "Запланированное начало",
+            "ko": "예약 시작"
           }
         },
         {
           "id": "warming",
           "title": {
-            "en": "Warming"
+            "en": "Warming",
+            "nl": "Verwarmen",
+            "da": "Opvarmning",
+            "de": "Erwärmung",
+            "es": "Calentamiento",
+            "fr": "Chauffage",
+            "it": "Riscaldamento",
+            "no": "Oppvarming",
+            "sv": "Uppvärmning",
+            "pl": "Podgrzewanie",
+            "ru": "Согревание",
+            "ko": "따뜻하게"
           }
         },
         {
           "id": "defrosting",
           "title": {
-            "en": "Defrosting"
+            "en": "Defrosting",
+            "nl": "Ontdooien",
+            "da": "Optøning",
+            "de": "Auftauen",
+            "es": "Descongelación",
+            "fr": "Décongélation",
+            "it": "Scongelamento",
+            "no": "Tining",
+            "sv": "Upptining",
+            "pl": "Rozmrażanie",
+            "ru": "Разморозка",
+            "ko": "해동"
           }
         },
         {
           "id": "sensing",
           "title": {
-            "en": "Sensing"
+            "en": "Sensing",
+            "nl": "Detecteren",
+            "da": "Registrering",
+            "de": "Erkennen",
+            "es": "Detección",
+            "fr": "Détection",
+            "it": "Rilevamento",
+            "no": "Sensor",
+            "sv": "Registrerar",
+            "pl": "Wykrywanie",
+            "ru": "Распознавание",
+            "ko": "감지 중"
           }
         },
         {
           "id": "searing",
           "title": {
-            "en": "Searing"
+            "en": "Searing",
+            "nl": "Afdrogen",
+            "da": "Svidning",
+            "de": "Scharf anbraten",
+            "es": "Sellar",
+            "fr": "Saisir",
+            "it": "Scottare",
+            "no": "Brenning",
+            "sv": "Bryning",
+            "pl": "Smażenie",
+            "ru": "Пассеровка",
+            "ko": "굽다"
           }
         },
         {
           "id": "fastPrehat",
           "title": {
-            "en": "Fast preheat"
+            "en": "Fast preheat",
+            "nl": "Snel voorverwarmen",
+            "da": "Hurtig forvarmning",
+            "de": "Schnelles Vorheizen",
+            "es": "Calentamiento rápido",
+            "fr": "Préchauffage rapide",
+            "it": "Riscaldamento veloce",
+            "no": "Hurtig forvarming",
+            "sv": "Snabb förvärmning",
+            "pl": "Szybkie nagrzewanie",
+            "ru": "Быстрый подогрев",
+            "ko": "빠른 예열"
           }
         },
         {
           "id": "scheduledEnd",
           "title": {
-            "en": "Scheduled ending"
+            "en": "Scheduled ending",
+            "nl": "Geplande beëindiging",
+            "da": "Planlagt afslutning",
+            "de": "Geplantes Ende",
+            "es": "Final programado",
+            "fr": "Fin programmée",
+            "it": "Fine programmata",
+            "no": "Planlagt avslutning",
+            "sv": "Schemalagt slut",
+            "pl": "Zaplanowany koniec",
+            "ru": "Запланированное завершение",
+            "ko": "예약 종료"
           }
         },
         {
           "id": "stoneHeating",
           "title": {
-            "en": "Stone heating"
+            "en": "Stone heating",
+            "nl": "Steenverwarming",
+            "da": "Stenopvarmning",
+            "de": "Steinheizung",
+            "es": "Calentamiento de piedras",
+            "fr": "Chauffage en pierre",
+            "it": "Riscaldamento della pietra",
+            "no": "Steinoppvarming",
+            "sv": "Stenvärmare",
+            "pl": "Podgrzewanie kamieni",
+            "ru": "Нагрев камня",
+            "ko": "돌 데우기"
           }
         },
         {
           "id": "timeHoldPreheat",
           "title": {
-            "en": "Hold Preheat"
+            "en": "Hold Preheat",
+            "nl": "Houd voorverwarmen",
+            "da": "Hold forvarmning",
+            "de": "Vorheizen behalten",
+            "es": "Mantener precalentado",
+            "fr": "Maintenir préchauffage",
+            "it": "Mantenere preriscaldamento",
+            "no": "Hold forvarming",
+            "sv": "Håll förvärmning",
+            "pl": "Trzymaj wstępne nagrzewanie",
+            "ru": "Держать разогретым",
+            "ko": "예열 유지"
           }
         }
       ]
@@ -580,7 +1086,18 @@
     "samsung_washer_current_job_state": {
       "type": "enum",
       "title": {
-        "en": "Status"
+        "en": "Status",
+        "nl": "Status",
+        "da": "Status",
+        "de": "Status",
+        "es": "Estado",
+        "fr": "Statut",
+        "it": "Stato",
+        "no": "Status",
+        "sv": "Status",
+        "pl": "Status",
+        "ru": "Статус",
+        "ko": "상태"
       },
       "getable": true,
       "setable": false,
@@ -590,103 +1107,290 @@
         {
           "id": "airWash",
           "title": {
-            "en": "Air Wash"
+            "en": "Air Wash",
+            "nl": "Luchtwassen",
+            "da": "Luftvask",
+            "de": "Luftwäsche",
+            "es": "Lavado de aire",
+            "fr": "Lavage à l'air",
+            "it": "Lavaggio ad aria",
+            "no": "Luftvask",
+            "sv": "Lufttvätt",
+            "pl": "Mycie powietrzem",
+            "ru": "Воздушная стирка",
+            "ko": "에어 워시"
           }
         },
         {
           "id": "aiRinse",
           "title": {
-            "en": "AI Rinse"
+            "en": "AI Rinse",
+            "nl": "AI Spoelen",
+            "da": "AI Skylle",
+            "de": "KI-Spülen",
+            "es": "Enjuague AI",
+            "fr": "Rinçage IA",
+            "it": "Risciacquo AI",
+            "no": "AI Skylling",
+            "sv": "AI Sköljning",
+            "pl": "Płukanie AI",
+            "ru": "ИИ Полоскание",
+            "ko": "AI 헹굼"
           }
         },
         {
           "id": "aiSpin",
           "title": {
-            "en": "AI Spin"
+            "en": "AI Spin",
+            "nl": "AI Zwieren",
+            "da": "AI Centrifugering",
+            "de": "KI-Schleudern",
+            "es": "Centrifugado AI",
+            "fr": "Essorage IA",
+            "it": "Centrifuga AI",
+            "no": "AI Sentrifugering",
+            "sv": "AI Centrifugering",
+            "pl": "Wirowanie AI",
+            "ru": "ИИ Отжим",
+            "ko": "AI 탈수"
           }
         },
         {
           "id": "aiWash",
           "title": {
-            "en": "AI Wash"
+            "en": "AI Wash",
+            "nl": "AI Wassen",
+            "da": "AI Vask",
+            "de": "KI-Wäsche",
+            "es": "Lavado AI",
+            "fr": "Lavage IA",
+            "it": "Lavaggio AI",
+            "no": "AI Vask",
+            "sv": "AI Tvätt",
+            "pl": "Pranie AI",
+            "ru": "ИИ Стирка",
+            "ko": "AI 세탁"
           }
         },
         {
           "id": "cooling",
           "title": {
-            "en": "Cooling"
+            "en": "Cooling",
+            "nl": "Koelen",
+            "da": "Afkøling",
+            "de": "Abkühlen",
+            "es": "Enfriamiento",
+            "fr": "Refroidissement",
+            "it": "Raffreddamento",
+            "no": "Nedkjøling",
+            "sv": "Kylning",
+            "pl": "Chłodzenie",
+            "ru": "Охлаждение",
+            "ko": "냉각"
           }
         },
         {
           "id": "delayWash",
           "title": {
-            "en": "Delay washing"
+            "en": "Delay washing",
+            "nl": "Wassen Uitstellen",
+            "da": "Forsinket vask",
+            "de": "Waschverzögerung",
+            "es": "Lavado retrasado",
+            "fr": "Lavage différé",
+            "it": "Lavaggio ritardato",
+            "no": "Utsatt vasking",
+            "sv": "Fördröjd tvättning",
+            "pl": "Opóźnienie prania",
+            "ru": "Отложенная стирка",
+            "ko": "세탁 지연"
           }
         },
         {
           "id": "drying",
           "title": {
-            "en": "Drying"
+            "en": "Drying",
+            "nl": "Drogen",
+            "da": "Tørring",
+            "de": "Trocknen",
+            "es": "Secado",
+            "fr": "Séchage",
+            "it": "Asciugatura",
+            "no": "Tørking",
+            "sv": "Torkning",
+            "pl": "Suszenie",
+            "ru": "Сушка",
+            "ko": "건조"
           }
         },
         {
           "id": "finished",
           "title": {
-            "en": "Finished"
+            "en": "Finished",
+            "nl": "Klaar",
+            "da": "Færdig",
+            "de": "Fertig",
+            "es": "Terminado",
+            "fr": "Terminé",
+            "it": "Finito",
+            "no": "Ferdig",
+            "sv": "Klar",
+            "pl": "Zakończone",
+            "ru": "Закончил",
+            "ko": "완료됨"
           }
         },
         {
           "id": "none",
           "title": {
-            "en": "None"
+            "en": "None",
+            "nl": "Geen",
+            "da": "Ingen",
+            "de": "Keine",
+            "es": "Ninguno",
+            "fr": "Aucun",
+            "it": "Nessuno",
+            "no": "Ingen",
+            "sv": "Ingen",
+            "pl": "Żaden",
+            "ru": "Нет",
+            "ko": "없음"
           }
         },
         {
           "id": "preWash",
           "title": {
-            "en": "PreWash"
+            "en": "PreWash",
+            "nl": "Voorwas",
+            "da": "Forvask",
+            "de": "Vorwäsche",
+            "es": "Prelavado",
+            "fr": "Prélavage",
+            "it": "Prelavaggio",
+            "no": "Forvask",
+            "sv": "Förtvätt",
+            "pl": "Pranie wstępne",
+            "ru": "Предварительная стирка",
+            "ko": "사전 세탁"
           }
         },
         {
           "id": "weightSensing",
           "title": {
-            "en": "Weight sensing"
+            "en": "Weight sensing",
+            "nl": "Gewicht sensing",
+            "da": "Vægtregistrering",
+            "de": "Gewichtserkennung",
+            "es": "Detección de peso",
+            "fr": "Détection de poids",
+            "it": "Rilevamento del peso",
+            "no": "Vektregistrering",
+            "sv": "Viktsensor",
+            "pl": "Pomiar wagi",
+            "ru": "Определение веса",
+            "ko": "무게 감지"
           }
         },
         {
           "id": "wrinklePrevent",
           "title": {
-            "en": "Wrinkle prevention"
+            "en": "Wrinkle prevention",
+            "nl": "Kreukherstellend",
+            "da": "Krølfri",
+            "de": "Faltenprävention",
+            "es": "Prevención de arrugas",
+            "fr": "Prévention des rides",
+            "it": "Prevenzione delle pieghe",
+            "no": "Rynkeforebygging",
+            "sv": "Skrynkelfri",
+            "pl": "Zapobieganie zagnieceniom",
+            "ru": "Предотвращение складок",
+            "ko": "주름 방지"
           }
         },
         {
           "id": "freezeProtection",
           "title": {
-            "en": "Freeze protection"
+            "en": "Freeze protection",
+            "nl": "Vorstbeveiliging",
+            "da": "Frostbeskyttelse",
+            "de": "Frostschutz",
+            "es": "Protección contra heladas",
+            "fr": "Protection contre le gel",
+            "it": "Protezione dal gelo",
+            "no": "Frostbeskyttelse",
+            "sv": "Frostskydd",
+            "pl": "Ochrona przed zamarzaniem",
+            "ru": "Защита от замерзания",
+            "ko": "동결 방지"
           }
         },
         {
           "id": "wash",
           "title": {
-            "en": "Washing"
+            "en": "Washing",
+            "nl": "Wassen",
+            "da": "Vask",
+            "de": "Waschen",
+            "es": "Lavando",
+            "fr": "Lavage",
+            "it": "Lavaggio",
+            "no": "Vasking",
+            "sv": "Tvätt",
+            "pl": "Pranie",
+            "ru": "Стирка",
+            "ko": "세탁"
           }
         },
         {
           "id": "rinse",
           "title": {
-            "en": "Rinsing"
+            "en": "Rinsing",
+            "nl": "Spoelen",
+            "da": "Skylning",
+            "de": "Spülen",
+            "es": "Enjuagando",
+            "fr": "Rinçage",
+            "it": "Risciacquo",
+            "no": "Skylling",
+            "sv": "Sköljning",
+            "pl": "Płukanie",
+            "ru": "Полоскание",
+            "ko": "헹굼"
           }
         },
         {
           "id": "spin",
           "title": {
-            "en": "Spinning"
+            "en": "Spinning",
+            "nl": "Zwieren",
+            "da": "Centrifugering",
+            "de": "Schleudern",
+            "es": "Centrifugando",
+            "fr": "Essorage",
+            "it": "Centrifuga",
+            "no": "Sentrifugering",
+            "sv": "Centrifugering",
+            "pl": "Wirowanie",
+            "ru": "Отжим",
+            "ko": "탈수"
           }
         },
         {
           "id": "idle",
           "title": {
-            "en": "Idle"
+            "en": "Idle",
+            "nl": "Inactief",
+            "da": "Inaktiv",
+            "de": "Leerlauf",
+            "es": "Inactivo",
+            "fr": "Inactif",
+            "it": "Inattivo",
+            "no": "Inaktiv",
+            "sv": "Inaktiv",
+            "pl": "Bezczynny",
+            "ru": "Бездействующий",
+            "ko": "대기 중"
           }
         }
       ]
@@ -694,20 +1398,53 @@
     "samsung_washer_progress_percentage": {
       "type": "number",
       "title": {
-        "en": "Progress"
+        "en": "Progress",
+        "nl": "Voortgang",
+        "da": "Fremskridt",
+        "de": "Fortschritt",
+        "es": "Progreso",
+        "fr": "Progression",
+        "it": "Progresso",
+        "no": "Fremgang",
+        "sv": "Framsteg",
+        "pl": "Postęp",
+        "ru": "Прогресс",
+        "ko": "진행"
       },
       "getable": true,
       "setable": false,
       "uiComponent": "sensor",
       "units": {
-        "en": "%"
+        "en": "%",
+        "nl": "%",
+        "da": "%",
+        "de": "%",
+        "es": "%",
+        "fr": "%",
+        "it": "%",
+        "no": "%",
+        "sv": "%",
+        "pl": "%",
+        "ru": "%",
+        "ko": "%"
       },
       "icon": "/assets/capabilities/samsung_washer_progress_percentage.svg"
     },
     "samsung_washer_progress_remaining_time": {
       "type": "string",
       "title": {
-        "en": "Time Remaining"
+        "en": "Time Remaining",
+        "nl": "Resterende tijd",
+        "da": "Tid tilbage",
+        "de": "Verbleibende Zeit",
+        "es": "Tiempo restante",
+        "fr": "Temps restant",
+        "it": "Tempo rimanente",
+        "no": "Gjenstående tid",
+        "sv": "Återstående tid",
+        "pl": "Pozostały czas",
+        "ru": "Оставшееся время",
+        "ko": "남은 시간"
       },
       "getable": true,
       "setable": false,

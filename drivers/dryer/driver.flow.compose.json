@@ -3,7 +3,18 @@
     {
       "id": "samsung_dryer_job_finished",
       "title": {
-        "en": "A drying job has finished"
+        "en": "A drying job has finished",
+        "nl": "Een droogklus is klaar",
+        "da": "En tørreopgave er færdig",
+        "de": "Ein Trocknungsvorgang ist abgeschlossen",
+        "es": "Un trabajo de secado ha terminado",
+        "fr": "Un travail de séchage est terminé",
+        "it": "Un lavoro di asciugatura è terminato",
+        "no": "En tørkejobb er ferdig",
+        "sv": "Ett torkjobb är klart",
+        "pl": "Suszenie zakończone",
+        "ru": "Сушка завершена",
+        "ko": "건조 작업이 완료되었습니다"
       }
     }
   ]

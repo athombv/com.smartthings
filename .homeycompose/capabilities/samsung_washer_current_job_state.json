@@ -1,7 +1,18 @@
 {
   "type": "enum",
   "title": {
-    "en": "Status"
+    "en": "Status",
+    "nl": "Status",
+    "da": "Status",
+    "de": "Status",
+    "es": "Estado",
+    "fr": "Statut",
+    "it": "Stato",
+    "no": "Status",
+    "sv": "Status",
+    "pl": "Status",
+    "ru": "Статус",
+    "ko": "상태"
   },
   "getable": true,
   "setable": false,
@@ -11,103 +22,290 @@
     {
       "id": "airWash",
       "title": {
-        "en": "Air Wash"
+        "en": "Air Wash",
+        "nl": "Luchtwassen",
+        "da": "Luftvask",
+        "de": "Luftwäsche",
+        "es": "Lavado de aire",
+        "fr": "Lavage à l'air",
+        "it": "Lavaggio ad aria",
+        "no": "Luftvask",
+        "sv": "Lufttvätt",
+        "pl": "Mycie powietrzem",
+        "ru": "Воздушная стирка",
+        "ko": "에어 워시"
       }
     },
     {
       "id": "aiRinse",
       "title": {
-        "en": "AI Rinse"
+        "en": "AI Rinse",
+        "nl": "AI Spoelen",
+        "da": "AI Skylle",
+        "de": "KI-Spülen",
+        "es": "Enjuague AI",
+        "fr": "Rinçage IA",
+        "it": "Risciacquo AI",
+        "no": "AI Skylling",
+        "sv": "AI Sköljning",
+        "pl": "Płukanie AI",
+        "ru": "ИИ Полоскание",
+        "ko": "AI 헹굼"
       }
     },
     {
       "id": "aiSpin",
       "title": {
-        "en": "AI Spin"
+        "en": "AI Spin",
+        "nl": "AI Zwieren",
+        "da": "AI Centrifugering",
+        "de": "KI-Schleudern",
+        "es": "Centrifugado AI",
+        "fr": "Essorage IA",
+        "it": "Centrifuga AI",
+        "no": "AI Sentrifugering",
+        "sv": "AI Centrifugering",
+        "pl": "Wirowanie AI",
+        "ru": "ИИ Отжим",
+        "ko": "AI 탈수"
       }
     },
     {
       "id": "aiWash",
       "title": {
-        "en": "AI Wash"
+        "en": "AI Wash",
+        "nl": "AI Wassen",
+        "da": "AI Vask",
+        "de": "KI-Wäsche",
+        "es": "Lavado AI",
+        "fr": "Lavage IA",
+        "it": "Lavaggio AI",
+        "no": "AI Vask",
+        "sv": "AI Tvätt",
+        "pl": "Pranie AI",
+        "ru": "ИИ Стирка",
+        "ko": "AI 세탁"
       }
     },
     {
       "id": "cooling",
       "title": {
-        "en": "Cooling"
+        "en": "Cooling",
+        "nl": "Koelen",
+        "da": "Afkøling",
+        "de": "Abkühlen",
+        "es": "Enfriamiento",
+        "fr": "Refroidissement",
+        "it": "Raffreddamento",
+        "no": "Nedkjøling",
+        "sv": "Kylning",
+        "pl": "Chłodzenie",
+        "ru": "Охлаждение",
+        "ko": "냉각"
       }
     },
     {
       "id": "delayWash",
       "title": {
-        "en": "Delay washing"
+        "en": "Delay washing",
+        "nl": "Wassen Uitstellen",
+        "da": "Forsinket vask",
+        "de": "Waschverzögerung",
+        "es": "Lavado retrasado",
+        "fr": "Lavage différé",
+        "it": "Lavaggio ritardato",
+        "no": "Utsatt vasking",
+        "sv": "Fördröjd tvättning",
+        "pl": "Opóźnienie prania",
+        "ru": "Отложенная стирка",
+        "ko": "세탁 지연"
       }
     },
     {
       "id": "drying",
       "title": {
-        "en": "Drying"
+        "en": "Drying",
+        "nl": "Drogen",
+        "da": "Tørring",
+        "de": "Trocknen",
+        "es": "Secado",
+        "fr": "Séchage",
+        "it": "Asciugatura",
+        "no": "Tørking",
+        "sv": "Torkning",
+        "pl": "Suszenie",
+        "ru": "Сушка",
+        "ko": "건조"
       }
     },
     {
       "id": "finished",
       "title": {
-        "en": "Finished"
+        "en": "Finished",
+        "nl": "Klaar",
+        "da": "Færdig",
+        "de": "Fertig",
+        "es": "Terminado",
+        "fr": "Terminé",
+        "it": "Finito",
+        "no": "Ferdig",
+        "sv": "Klar",
+        "pl": "Zakończone",
+        "ru": "Закончил",
+        "ko": "완료됨"
       }
     },
     {
       "id": "none",
       "title": {
-        "en": "None"
+        "en": "None",
+        "nl": "Geen",
+        "da": "Ingen",
+        "de": "Keine",
+        "es": "Ninguno",
+        "fr": "Aucun",
+        "it": "Nessuno",
+        "no": "Ingen",
+        "sv": "Ingen",
+        "pl": "Żaden",
+        "ru": "Нет",
+        "ko": "없음"
       }
     },
     {
       "id": "preWash",
       "title": {
-        "en": "PreWash"
+        "en": "PreWash",
+        "nl": "Voorwas",
+        "da": "Forvask",
+        "de": "Vorwäsche",
+        "es": "Prelavado",
+        "fr": "Prélavage",
+        "it": "Prelavaggio",
+        "no": "Forvask",
+        "sv": "Förtvätt",
+        "pl": "Pranie wstępne",
+        "ru": "Предварительная стирка",
+        "ko": "사전 세탁"
       }
     },
     {
       "id": "weightSensing",
       "title": {
-        "en": "Weight sensing"
+        "en": "Weight sensing",
+        "nl": "Gewicht sensing",
+        "da": "Vægtregistrering",
+        "de": "Gewichtserkennung",
+        "es": "Detección de peso",
+        "fr": "Détection de poids",
+        "it": "Rilevamento del peso",
+        "no": "Vektregistrering",
+        "sv": "Viktsensor",
+        "pl": "Pomiar wagi",
+        "ru": "Определение веса",
+        "ko": "무게 감지"
       }
     },
     {
       "id": "wrinklePrevent",
       "title": {
-        "en": "Wrinkle prevention"
+        "en": "Wrinkle prevention",
+        "nl": "Kreukherstellend",
+        "da": "Krølfri",
+        "de": "Faltenprävention",
+        "es": "Prevención de arrugas",
+        "fr": "Prévention des rides",
+        "it": "Prevenzione delle pieghe",
+        "no": "Rynkeforebygging",
+        "sv": "Skrynkelfri",
+        "pl": "Zapobieganie zagnieceniom",
+        "ru": "Предотвращение складок",
+        "ko": "주름 방지"
       }
     },
     {
       "id": "freezeProtection",
       "title": {
-        "en": "Freeze protection"
+        "en": "Freeze protection",
+        "nl": "Vorstbeveiliging",
+        "da": "Frostbeskyttelse",
+        "de": "Frostschutz",
+        "es": "Protección contra heladas",
+        "fr": "Protection contre le gel",
+        "it": "Protezione dal gelo",
+        "no": "Frostbeskyttelse",
+        "sv": "Frostskydd",
+        "pl": "Ochrona przed zamarzaniem",
+        "ru": "Защита от замерзания",
+        "ko": "동결 방지"
       }
     },
     {
       "id": "wash",
       "title": {
-        "en": "Washing"
+        "en": "Washing",
+        "nl": "Wassen",
+        "da": "Vask",
+        "de": "Waschen",
+        "es": "Lavando",
+        "fr": "Lavage",
+        "it": "Lavaggio",
+        "no": "Vasking",
+        "sv": "Tvätt",
+        "pl": "Pranie",
+        "ru": "Стирка",
+        "ko": "세탁"
       }
     },
     {
       "id": "rinse",
       "title": {
-        "en": "Rinsing"
+        "en": "Rinsing",
+        "nl": "Spoelen",
+        "da": "Skylning",
+        "de": "Spülen",
+        "es": "Enjuagando",
+        "fr": "Rinçage",
+        "it": "Risciacquo",
+        "no": "Skylling",
+        "sv": "Sköljning",
+        "pl": "Płukanie",
+        "ru": "Полоскание",
+        "ko": "헹굼"
       }
     },
     {
       "id": "spin",
       "title": {
-        "en": "Spinning"
+        "en": "Spinning",
+        "nl": "Zwieren",
+        "da": "Centrifugering",
+        "de": "Schleudern",
+        "es": "Centrifugando",
+        "fr": "Essorage",
+        "it": "Centrifuga",
+        "no": "Sentrifugering",
+        "sv": "Centrifugering",
+        "pl": "Wirowanie",
+        "ru": "Отжим",
+        "ko": "탈수"
       }
     },
     {
       "id": "idle",
       "title": {
-        "en": "Idle"
+        "en": "Idle",
+        "nl": "Inactief",
+        "da": "Inaktiv",
+        "de": "Leerlauf",
+        "es": "Inactivo",
+        "fr": "Inactif",
+        "it": "Inattivo",
+        "no": "Inaktiv",
+        "sv": "Inaktiv",
+        "pl": "Bezczynny",
+        "ru": "Бездействующий",
+        "ko": "대기 중"
       }
     }
   ]

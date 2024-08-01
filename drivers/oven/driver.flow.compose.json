@@ -3,7 +3,18 @@
     {
       "id": "samsung_oven_job_finished",
       "title": {
-        "en": "A cooking job has finished"
+        "en": "A cooking job has finished",
+        "nl": "Een kookklus is voltooid",
+        "da": "En madlavningsopgave er afsluttet",
+        "de": "Ein Kochvorgang ist abgeschlossen",
+        "es": "Un trabajo de cocina ha terminado",
+        "fr": "Une tâche de cuisson est terminée",
+        "it": "Un lavoro di cucina è terminato",
+        "no": "En matlagingsoppgave er ferdig",
+        "sv": "Ett matlagningsjobb är avslutat",
+        "pl": "Gotowanie zostało zakończone",
+        "ru": "Готовка завершена",
+        "ko": "요리가 완료되었습니다"
       }
     }
   ]

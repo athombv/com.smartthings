@@ -1,7 +1,18 @@
 {
   "type": "boolean",
   "title": {
-    "en": "AddWash Door Open"
+    "en": "AddWash Door Open",
+    "nl": "AddWash Deur Open",
+    "da": "AddWash Dør Åben",
+    "de": "AddWash Tür Offen",
+    "es": "Puerta AddWash Abierta",
+    "fr": "Porte AddWash Ouverte",
+    "it": "Porta AddWash Aperta",
+    "no": "AddWash Dør Åpen",
+    "sv": "AddWash Dörr Öppen",
+    "pl": "Drzwi AddWash Otwórz",
+    "ru": "Дверца AddWash Открыта",
+    "ko": "AddWash 문 열림"
   },
   "getable": true,
   "setable": false,

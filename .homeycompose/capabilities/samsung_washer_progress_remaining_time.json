@@ -1,7 +1,18 @@
 {
   "type": "string",
   "title": {
-    "en": "Time Remaining"
+    "en": "Time Remaining",
+    "nl": "Resterende tijd",
+    "da": "Tid tilbage",
+    "de": "Verbleibende Zeit",
+    "es": "Tiempo restante",
+    "fr": "Temps restant",
+    "it": "Tempo rimanente",
+    "no": "Gjenstående tid",
+    "sv": "Återstående tid",
+    "pl": "Pozostały czas",
+    "ru": "Оставшееся время",
+    "ko": "남은 시간"
   },
   "getable": true,
   "setable": false,
