@@ -1,7 +1,18 @@
 {
   "type": "enum",
   "title": {
-    "en": "Status"
+    "en": "Status",
+    "nl": "Status",
+    "da": "Status",
+    "de": "Status",
+    "es": "Estado",
+    "fr": "Statut",
+    "it": "Stato",
+    "no": "Status",
+    "sv": "Status",
+    "pl": "Status",
+    "ru": "Статус",
+    "ko": "상태"
   },
   "getable": true,
   "setable": false,
@@ -11,37 +22,103 @@
     {
       "id": "none",
       "title": {
-        "en": "None"
+        "en": "None",
+        "nl": "Geen",
+        "da": "Ingen",
+        "de": "Keine",
+        "es": "Ninguno",
+        "fr": "Aucun",
+        "it": "Nessuno",
+        "no": "Ingen",
+        "sv": "Ingen",
+        "pl": "Brak",
+        "ru": "Нет",
+        "ko": "없음"
       }
     },
     {
       "id": "idle",
       "title": {
-        "en": "Idle"
+        "en": "Idle",
+        "nl": "Inactief",
+        "da": "Inaktiv",
+        "de": "Leerlauf",
+        "es": "Inactivo",
+        "fr": "Inactif",
+        "it": "Inattivo",
+        "no": "Inaktiv",
+        "sv": "Inaktiv",
+        "pl": "Bezczynny",
+        "ru": "Бездействие",
+        "ko": "대기 중"
       }
     },
     {
       "id": "dry",
       "title": {
-        "en": "Drying"
+        "en": "Drying",
+        "nl": "Drogen",
+        "da": "Tørring",
+        "de": "Trocknen",
+        "es": "Secando",
+        "fr": "Séchage",
+        "it": "Asciugatura",
+        "no": "Tørker",
+        "sv": "Torkning",
+        "pl": "Suszenie",
+        "ru": "Сушка",
+        "ko": "건조 중"
       }
     },
     {
       "id": "rinse",
       "title": {
-        "en": "Rinsing"
+        "en": "Rinsing",
+        "nl": "Spoelen",
+        "da": "Skylning",
+        "de": "Spülen",
+        "es": "Enjuagando",
+        "fr": "Rinçage",
+        "it": "Risciacquo",
+        "no": "Skyller",
+        "sv": "Sköljning",
+        "pl": "Płukanie",
+        "ru": "Полоскание",
+        "ko": "헹굼 중"
       }
     },
     {
       "id": "spin",
       "title": {
-        "en": "Spinning"
+        "en": "Spinning",
+        "nl": "Centrifugeren",
+        "da": "Slyngning",
+        "de": "Schleudern",
+        "es": "Centrifugado",
+        "fr": "Essorage",
+        "it": "Centrifuga",
+        "no": "Sentrifugering",
+        "sv": "Centrifugering",
+        "pl": "Wirowanie",
+        "ru": "Отжим",
+        "ko": "회전 중"
       }
     },
     {
       "id": "finished",
       "title": {
-        "en": "Finished"
+        "en": "Finished",
+        "nl": "Klaar",
+        "da": "Færdig",
+        "de": "Fertig",
+        "es": "Terminado",
+        "fr": "Terminé",
+        "it": "Finito",
+        "no": "Ferdig",
+        "sv": "Klar",
+        "pl": "Gotowe",
+        "ru": "Завершено",
+        "ko": "끝남"
       }
     }
   ]

@@ -1,7 +1,18 @@
 {
   "$extends": "apikey",
   "name": {
-    "en": "Samsung Washer"
+    "en": "Samsung Washer",
+    "nl": "Samsung Wasmachine",
+    "da": "Samsung Vaskemaskine",
+    "de": "Samsung Waschmaschine",
+    "es": "Lavadora Samsung",
+    "fr": "Lave-linge Samsung",
+    "it": "Lavatrice Samsung",
+    "no": "Samsung Vaskemaskin",
+    "sv": "Samsung Tvättmaskin",
+    "pl": "Pralka Samsung",
+    "ru": "Стиральная машина Samsung",
+    "ko": "삼성 세탁기"
   },
   "class": "other",
   "capabilities": []

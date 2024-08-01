@@ -4,10 +4,32 @@
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "name": {
-    "en": "Samsung SmartThings"
+    "en": "Samsung SmartThings",
+    "nl": "Samsung SmartThings",
+    "da": "Samsung SmartThings",
+    "de": "Samsung SmartThings",
+    "es": "Samsung SmartThings",
+    "fr": "Samsung SmartThings",
+    "it": "Samsung SmartThings",
+    "no": "Samsung SmartThings",
+    "sv": "Samsung SmartThings",
+    "pl": "Samsung SmartThings",
+    "ru": "Samsung SmartThings",
+    "ko": "Samsung SmartThings"
   },
   "description": {
-    "en": "Connected Life with SmartThings"
+    "en": "Connected Life with SmartThings",
+    "nl": "Verbonden leven met SmartThings",
+    "da": "Forbundet liv med SmartThings",
+    "de": "Vernetztes Leben mit SmartThings",
+    "es": "Vida conectada con SmartThings",
+    "fr": "Vie connectée avec SmartThings",
+    "it": "Vita connessa con SmartThings",
+    "no": "Tilkoblet liv med SmartThings",
+    "sv": "Anslutet liv med SmartThings",
+    "pl": "Życie w połączeniu ze SmartThings",
+    "ru": "Связанная жизнь с SmartThings",
+    "ko": "스마트싱스와 연결된 생활"
   },
   "category": [
     "appliances"

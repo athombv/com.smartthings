@@ -1,7 +1,18 @@
 {
   "$extends": "apikey",
   "name": {
-    "en": "Samsung Dryer"
+    "en": "Samsung Dryer",
+    "nl": "Samsung Droger",
+    "da": "Samsung Tørretumbler",
+    "de": "Samsung Trockner",
+    "es": "Secadora Samsung",
+    "fr": "Sèche-linge Samsung",
+    "it": "Asciugatrice Samsung",
+    "no": "Samsung Tørketrommel",
+    "sv": "Samsung Torktumlare",
+    "pl": "Suszarka Samsung",
+    "ru": "Сушилка Samsung",
+    "ko": "삼성 건조기"
   },
   "class": "other",
   "capabilities": []

@@ -1,13 +1,35 @@
 {
   "type": "number",
   "title": {
-    "en": "Progress"
+    "en": "Progress",
+    "nl": "Voortgang",
+    "da": "Fremskridt",
+    "de": "Fortschritt",
+    "es": "Progreso",
+    "fr": "Progression",
+    "it": "Progresso",
+    "no": "Fremgang",
+    "sv": "Framsteg",
+    "pl": "Postęp",
+    "ru": "Прогресс",
+    "ko": "진행"
   },
   "getable": true,
   "setable": false,
   "uiComponent": "sensor",
   "units": {
-    "en": "%"
+    "en": "%",
+    "nl": "%",
+    "da": "%",
+    "de": "%",
+    "es": "%",
+    "fr": "%",
+    "it": "%",
+    "no": "%",
+    "sv": "%",
+    "pl": "%",
+    "ru": "%",
+    "ko": "%"
   },
   "icon": "/assets/capabilities/samsung_washer_progress_percentage.svg"
 }

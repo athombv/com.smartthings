@@ -1,7 +1,18 @@
 {
   "$extends": "apikey",
   "name": {
-    "en": "Samsung TV"
+    "en": "Samsung TV",
+    "nl": "Samsung TV",
+    "da": "Samsung TV",
+    "de": "Samsung TV",
+    "es": "Samsung TV",
+    "fr": "Samsung TV",
+    "it": "Samsung TV",
+    "no": "Samsung TV",
+    "sv": "Samsung TV",
+    "pl": "Samsung TV",
+    "ru": "Samsung TV",
+    "ko": "Samsung TV"
   },
   "class": "tv",
   "capabilities": [

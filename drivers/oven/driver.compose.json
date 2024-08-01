@@ -1,7 +1,18 @@
 {
   "$extends": "apikey",
   "name": {
-    "en": "Samsung Oven"
+    "en": "Samsung Oven",
+    "nl": "Samsung Oven",
+    "da": "Samsung Ovn",
+    "de": "Samsung Ofen",
+    "es": "Horno Samsung",
+    "fr": "Four Samsung",
+    "it": "Forno Samsung",
+    "no": "Samsung Ovn",
+    "sv": "Samsung Ugn",
+    "pl": "Piekarnik Samsung",
+    "ru": "Духовка Samsung",
+    "ko": "삼성 오븐"
   },
   "class": "other",
   "capabilities": []
