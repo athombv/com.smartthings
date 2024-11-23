@@ -18,6 +18,74 @@
       }
     },
     {
+        "id": "samsung_washer_job_started",
+        "title": {
+          "en": "A washing job has started",
+          "nl": "Een wasbeurt is gestart",
+          "da": "En vaskeopgave er startet",
+          "de": "Ein Waschgang hat begonnen",
+          "es": "Un trabajo de lavado ha comenzado",
+          "fr": "Un cycle de lavage a commencé",
+          "it": "Un lavaggio è iniziato",
+          "no": "En vask har startet",
+          "sv": "En tvätt har startat",
+          "pl": "Rozpoczęto pranie",
+          "ru": "Стирка начата",
+          "ko": "세탁 작업이 시작되었습니다"
+        }
+    },
+    {
+        "id": "samsung_washer_job_weight_sensing",
+        "title": {
+          "en": "Weight sensing",
+          "nl": "Gewichtsdetectie",
+          "da": "Vægtregistrering",
+          "de": "Gewichtserkennung",
+          "es": "Detección de peso",
+          "fr": "Détection de poids",
+          "it": "Rilevamento del peso",
+          "no": "Vektdeteksjon",
+          "sv": "Viktdetektering",
+          "pl": "Wykrywanie wagi",
+          "ru": "Определение веса",
+          "ko": "중량 감지"
+        }
+    },
+    {
+        "id": "samsung_washer_job_pre_wash",
+        "title": {
+          "en": "PreWash",
+          "nl": "Voorwas",
+          "da": "Forvask",
+          "de": "Vorwäsche",
+          "es": "Prelavado",
+          "fr": "Prélavage",
+          "it": "Prelavaggio",
+          "no": "Forvask",
+          "sv": "Förtvätt",
+          "pl": "Pranie wstępne",
+          "ru": "Предварительная стирка",
+          "ko": "사전 세탁"
+        }
+    },
+    {
+        "id": "samsung_washer_job_rinse",
+        "title": {
+            "en": "Started rinsing",
+            "nl": "Begonnen met spoelen",
+            "da": "Begyndte at skylle",
+            "de": "Hat mit dem Spülen begonnen",
+            "es": "Comenzó a enjuagar",
+            "fr": "A commencé à rincer",
+            "it": "Ha iniziato a sciacquare",
+            "no": "Startet skylling",
+            "sv": "Började skölja",
+            "pl": "Rozpoczęto płukanie",
+            "ru": "Начался процесс полоскания",
+            "ko": "헹굼 시작됨"
+        }
+    },
+    {
       "id": "alarm_samsung_washer_addwash_door_open_true",
       "title": {
         "en": "Samsung AddWash door opened",

@@ -79,6 +79,78 @@
         ]
       },
       {
+        "id": "samsung_dryer_job_started",
+        "title": {
+          "en": "A drying job has started",
+          "nl": "Een droogklus is gestart",
+          "da": "En tørreopgave er startet",
+          "de": "Ein Trocknungsvorgang hat begonnen",
+          "es": "Un trabajo de secado ha comenzado",
+          "fr": "Un travail de séchage a commencé",
+          "it": "Un lavoro di asciugatura è iniziato",
+          "no": "En tørkejobb har startet",
+          "sv": "Ett torkjobb har startat",
+          "pl": "Rozpoczęto suszenie",
+          "ru": "Сушка начата",
+          "ko": "건조 작업이 시작되었습니다"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dryer"
+          }
+        ]
+      },
+      {
+        "id": "samsung_dryer_job_spin",
+        "title": {
+          "en": "A drying job is spinning",
+          "nl": "Een droogklus draait",
+          "da": "En tørreopgave spinner",
+          "de": "Ein Trocknungsvorgang dreht",
+          "es": "Un trabajo de secado está girando",
+          "fr": "Un travail de séchage tourne",
+          "it": "Un lavoro di asciugatura sta girando",
+          "no": "En tørkejobb spinner",
+          "sv": "Ett torkjobb snurrar",
+          "pl": "Suszenie się kręci",
+          "ru": "Сушка крутится",
+          "ko": "건조 작업이 회전 중입니다"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dryer"
+          }
+        ]
+      },
+      {
+        "id": "samsung_dryer_job_rinse",
+        "title": {
+          "en": "A drying job is rinsing",
+          "nl": "Een droogklus spoelt",
+          "da": "En tørreopgave skyller",
+          "de": "Ein Trocknungsvorgang spült",
+          "es": "Un trabajo de secado está enjuagando",
+          "fr": "Un travail de séchage rince",
+          "it": "Un lavoro di asciugatura sta risciacquando",
+          "no": "En tørkejobb skyller",
+          "sv": "Ett torkjobb sköljer",
+          "pl": "Suszenie płucze",
+          "ru": "Сушка промывается",
+          "ko": "건조 작업이 헹구는 중입니다"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dryer"
+          }
+        ]
+      },
+      {
         "id": "samsung_oven_job_finished",
         "title": {
           "en": "A cooking job has finished",
@@ -117,6 +189,102 @@
           "pl": "Zakończono pranie",
           "ru": "Стирка завершена",
           "ko": "세탁 작업이 완료되었습니다"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=washer"
+          }
+        ]
+      },
+      {
+        "id": "samsung_washer_job_started",
+        "title": {
+          "en": "A washing job has started",
+          "nl": "Een wasbeurt is gestart",
+          "da": "En vaskeopgave er startet",
+          "de": "Ein Waschgang hat begonnen",
+          "es": "Un trabajo de lavado ha comenzado",
+          "fr": "Un cycle de lavage a commencé",
+          "it": "Un lavaggio è iniziato",
+          "no": "En vask har startet",
+          "sv": "En tvätt har startat",
+          "pl": "Rozpoczęto pranie",
+          "ru": "Стирка начата",
+          "ko": "세탁 작업이 시작되었습니다"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=washer"
+          }
+        ]
+      },
+      {
+        "id": "samsung_washer_job_weight_sensing",
+        "title": {
+          "en": "Weight sensing",
+          "nl": "Gewichtsdetectie",
+          "da": "Vægtregistrering",
+          "de": "Gewichtserkennung",
+          "es": "Detección de peso",
+          "fr": "Détection de poids",
+          "it": "Rilevamento del peso",
+          "no": "Vektdeteksjon",
+          "sv": "Viktdetektering",
+          "pl": "Wykrywanie wagi",
+          "ru": "Определение веса",
+          "ko": "중량 감지"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=washer"
+          }
+        ]
+      },
+      {
+        "id": "samsung_washer_job_pre_wash",
+        "title": {
+          "en": "PreWash",
+          "nl": "Voorwas",
+          "da": "Forvask",
+          "de": "Vorwäsche",
+          "es": "Prelavado",
+          "fr": "Prélavage",
+          "it": "Prelavaggio",
+          "no": "Forvask",
+          "sv": "Förtvätt",
+          "pl": "Pranie wstępne",
+          "ru": "Предварительная стирка",
+          "ko": "사전 세탁"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=washer"
+          }
+        ]
+      },
+      {
+        "id": "samsung_washer_job_rinse",
+        "title": {
+          "en": "Started rinsing",
+          "nl": "Begonnen met spoelen",
+          "da": "Begyndte at skylle",
+          "de": "Hat mit dem Spülen begonnen",
+          "es": "Comenzó a enjuagar",
+          "fr": "A commencé à rincer",
+          "it": "Ha iniziato a sciacquare",
+          "no": "Startet skylling",
+          "sv": "Började skölja",
+          "pl": "Rozpoczęto płukanie",
+          "ru": "Начался процесс полоскания",
+          "ko": "헹굼 시작됨"
         },
         "args": [
           {

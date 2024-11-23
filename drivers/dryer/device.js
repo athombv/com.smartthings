@@ -29,12 +29,35 @@ module.exports = class SmartThingsDeviceDryer extends SmartThingsDevice {
       smartThingsCapabilityId: 'samsungce.dryerOperatingState',
       smartThingsAttributeId: 'washerJobState',
       async onReport({ value }) {
-        if (value === 'finished') {
-          this.homey.flow
-            .getDeviceTriggerCard('samsung_dryer_job_finished')
-            .trigger(this)
-            .catch(this.error);
-        }
+        const homeyCapabilityId = 'samsung_dryer_current_job_state';
+
+        const flowArray = [
+          {
+            value: 'finished',
+            flow: 'samsung_dryer_job_finished',
+          },
+          {
+            value: 'dry',
+            flow: 'samsung_dryer_job_started',
+          },
+          {
+            value: 'spin',
+            flow: 'samsung_dryer_job_spin',
+          },
+          {
+            value: 'rinse',
+            flow: 'samsung_dryer_job_rinse',
+          },
+        ];
+
+        flowArray.forEach(f => {
+          if (value === f.value && this.getCapabilityValue(homeyCapabilityId) !== f.value) {
+            this.homey.flow
+              .getDeviceTriggerCard(f.flow)
+              .trigger(this)
+              .catch(this.error);
+          }
+        });
 
         return value;
       },
