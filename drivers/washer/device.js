@@ -29,12 +29,39 @@ module.exports = class SmartThingsDeviceWasher extends SmartThingsDevice {
       smartThingsCapabilityId: 'samsungce.washerOperatingState',
       smartThingsAttributeId: 'washerJobState',
       async onReport({ value }) {
-        if (value === 'finished') {
-          this.homey.flow
-            .getDeviceTriggerCard('samsung_washer_job_finished')
-            .trigger(this)
-            .catch(this.error);
-        }
+        const homeyCapabilityId = 'samsung_washer_current_job_state';
+
+        const flowArray = [
+          {
+            value: 'finished',
+            flow: 'samsung_washer_job_finished',
+          },
+          {
+            value: 'wash',
+            flow: 'samsung_washer_job_started',
+          },
+          {
+            value: 'weightSensing',
+            flow: 'samsung_washer_job_weight_sensing',
+          },
+          {
+            value: 'preWash',
+            flow: 'samsung_washer_job_pre_wash',
+          },
+          {
+            value: 'rinse',
+            flow: 'samsung_washer_job_rinse',
+          },
+        ];
+
+        flowArray.forEach(f => {
+          if (value === f.value && this.getCapabilityValue(homeyCapabilityId) !== f.value) {
+            this.homey.flow
+              .getDeviceTriggerCard(f.flow)
+              .trigger(this)
+              .catch(this.error);
+          }
+        });
 
         return value;
       },

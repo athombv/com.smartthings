@@ -16,6 +16,57 @@
         "ru": "Сушка завершена",
         "ko": "건조 작업이 완료되었습니다"
       }
+    },
+    {
+        "id": "samsung_dryer_job_started",
+        "title": {
+          "en": "A drying job has started",
+          "nl": "Een droogklus is gestart",
+          "da": "En tørreopgave er startet",
+          "de": "Ein Trocknungsvorgang hat begonnen",
+          "es": "Un trabajo de secado ha comenzado",
+          "fr": "Un travail de séchage a commencé",
+          "it": "Un lavoro di asciugatura è iniziato",
+          "no": "En tørkejobb har startet",
+          "sv": "Ett torkjobb har startat",
+          "pl": "Rozpoczęto suszenie",
+          "ru": "Сушка начата",
+          "ko": "건조 작업이 시작되었습니다"
+        }
+    },
+    {
+        "id": "samsung_dryer_job_spin",
+        "title": {
+          "en": "A drying job is spinning",
+          "nl": "Een droogklus draait",
+          "da": "En tørreopgave spinner",
+          "de": "Ein Trocknungsvorgang dreht",
+          "es": "Un trabajo de secado está girando",
+          "fr": "Un travail de séchage tourne",
+          "it": "Un lavoro di asciugatura sta girando",
+          "no": "En tørkejobb spinner",
+          "sv": "Ett torkjobb snurrar",
+          "pl": "Suszenie się kręci",
+          "ru": "Сушка крутится",
+          "ko": "건조 작업이 회전 중입니다"
+        }
+    },
+    {
+        "id": "samsung_dryer_job_rinse",
+        "title": {
+          "en": "A drying job is rinsing",
+          "nl": "Een droogklus spoelt",
+          "da": "En tørreopgave skyller",
+          "de": "Ein Trocknungsvorgang spült",
+          "es": "Un trabajo de secado está enjuagando",
+          "fr": "Un travail de séchage rince",
+          "it": "Un lavoro di asciugatura sta risciacquando",
+          "no": "En tørkejobb skyller",
+          "sv": "Ett torkjobb sköljer",
+          "pl": "Suszenie płucze",
+          "ru": "Сушка промывается",
+          "ko": "건조 작업이 헹구는 중입니다"
+        }
     }
   ]
 }
