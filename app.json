@@ -1375,6 +1375,7 @@
       "getable": true,
       "setable": true,
       "uiComponent": "picker",
+      "icon": "/assets/capabilities/samsung_airconditioning_fan_mode.svg",
       "values": [
         {
           "id": "auto",
@@ -1482,6 +1483,7 @@
       "getable": true,
       "setable": true,
       "uiComponent": "picker",
+      "icon": "/assets/capabilities/samsung_airconditioning_fan_oscillation_mode.svg",
       "values": [
         {
           "id": "fixed",
@@ -1572,6 +1574,7 @@
       "getable": true,
       "setable": true,
       "uiComponent": "picker",
+      "icon": "/assets/capabilities/samsung_airconditioning_mode.svg",
       "values": [
         {
           "id": "auto",

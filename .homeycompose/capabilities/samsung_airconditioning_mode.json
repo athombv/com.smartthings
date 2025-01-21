@@ -17,6 +17,7 @@
   "getable": true,
   "setable": true,
   "uiComponent": "picker",
+  "icon": "/assets/capabilities/samsung_airconditioning_mode.svg",
   "values": [
     {
         "id": "auto",
