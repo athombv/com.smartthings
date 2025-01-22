@@ -2,7 +2,7 @@
 
 const SmartThingsDriver = require('../../lib/SmartThingsDriver');
 
-module.exports = class SmartThingsDriverAirConditioning extends SmartThingsDriver {
+module.exports = class SmartThingsDriverAirconditioning extends SmartThingsDriver {
 
   async onOAuth2Init() {
     await super.onOAuth2Init();

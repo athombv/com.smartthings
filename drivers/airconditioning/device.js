@@ -2,7 +2,7 @@
 
 const SmartThingsDevice = require('../../lib/SmartThingsDevice');
 
-module.exports = class SmartThingsDeviceAirConditioning extends SmartThingsDevice {
+module.exports = class SmartThingsDeviceAirconditioning extends SmartThingsDevice {
 
   async onInit() {
     await super.onInit();
