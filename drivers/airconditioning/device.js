@@ -4,17 +4,6 @@ const SmartThingsDevice = require('../../lib/SmartThingsDevice');
 
 module.exports = class SmartThingsDeviceAirconditioning extends SmartThingsDevice {
 
-  async onInit() {
-    await super.onInit();
-    this.log('onInit');
-
-    const [version] = this.homey.version.split('.');
-
-    if (version >= 12) {
-      await this.setClass('airconditioning');
-    }
-  }
-
   static CAPABILITIES = [
     {
       homeyCapabilityId: 'onoff',
