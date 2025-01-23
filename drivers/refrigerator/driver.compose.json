@@ -14,7 +14,7 @@
     "ru": "Холодильник Samsung",
     "ko": "삼성 냉장고"
   },
-  "class": "other",
+  "class": "fridge",
   "capabilities": [],
   "capabilitiesOptions": {
     "measure_temperature.cooler": {
