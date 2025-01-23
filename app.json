@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.smartthings",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "compatibility": ">=12.0.0",
   "sdk": 3,
   "name": {
@@ -1104,7 +1104,7 @@
         "ru": "Сушилка Samsung",
         "ko": "삼성 건조기"
       },
-      "class": "other",
+      "class": "dryer",
       "capabilities": [],
       "id": "dryer"
     },
@@ -1156,7 +1156,7 @@
         "ru": "Духовка Samsung",
         "ko": "삼성 오븐"
       },
-      "class": "other",
+      "class": "oven",
       "capabilities": [],
       "id": "oven"
     },
@@ -1208,7 +1208,7 @@
         "ru": "Холодильник Samsung",
         "ko": "삼성 냉장고"
       },
-      "class": "other",
+      "class": "fridge",
       "capabilities": [],
       "capabilitiesOptions": {
         "measure_temperature.cooler": {
@@ -1329,7 +1329,7 @@
         "ru": "Стиральная машина Samsung",
         "ko": "삼성 세탁기"
       },
-      "class": "other",
+      "class": "washer",
       "capabilities": [],
       "id": "washer"
     }

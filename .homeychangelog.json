@@ -22,5 +22,8 @@
   },
   "2.4.0": {
     "en": "Added support for airconditioning"
+  },
+  "2.4.1": {
+    "en": "Updated devices to use the new classes instead of 'other'"
   }
 }
