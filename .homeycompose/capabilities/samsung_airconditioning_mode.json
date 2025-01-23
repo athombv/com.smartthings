@@ -1,0 +1,108 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Mode",
+    "nl": "Modus",
+    "da": "Tilstand",
+    "de": "Modus",
+    "es": "Modo",
+    "fr": "Mode",
+    "it": "Modalità",
+    "no": "Modus",
+    "sv": "Läge",
+    "pl": "Tryb",
+    "ru": "Режим",
+    "ko": "모드"
+  },
+  "getable": true,
+  "setable": true,
+  "uiComponent": "picker",
+  "icon": "/assets/capabilities/samsung_airconditioning_mode.svg",
+  "values": [
+    {
+        "id": "auto",
+        "title": {
+            "en": "Auto",
+            "nl": "Automatisch",
+            "da": "Auto",
+            "de": "Auto",
+            "es": "Automático",
+            "fr": "Auto",
+            "it": "Auto",
+            "no": "Auto",
+            "sv": "Auto",
+            "pl": "Auto",
+            "ru": "Авто",
+            "ko": "자동"
+        }
+    },
+    {
+      "id": "cool",
+      "title": {
+        "en": "Cool",
+        "nl": "Koelen",
+        "da": "Køl",
+        "de": "Kühlen",
+        "es": "Frío",
+        "fr": "Froid",
+        "it": "Raffreddamento",
+        "no": "Kjøling",
+        "sv": "Kyla",
+        "pl": "Chłodzenie",
+        "ru": "Охлаждение",
+        "ko": "냉방"
+      }
+    },
+    {
+        "id": "dry",
+        "title": {
+            "en": "Dry",
+            "nl": "Drogen",
+            "da": "Tør",
+            "de": "Trocknen",
+            "es": "Seco",
+            "fr": "Sec",
+            "it": "Asciutto",
+            "no": "Tørr",
+            "sv": "Torka",
+            "pl": "Suszenie",
+            "ru": "Сухой",
+            "ko": "건조"
+        }
+    },
+    {
+        "id": "wind",
+        "title": {
+            "en": "Fan",
+            "nl": "Ventilator",
+            "da": "Blæser",
+            "de": "Lüfter",
+            "es": "Ventilador",
+            "fr": "Ventilateur",
+            "it": "Ventilatore",
+            "no": "Vifte",
+            "sv": "Fläkt",
+            "pl": "Wentylator",
+            "ru": "Вентилятор",
+            "ko": "팬"
+        }
+    },
+    {
+      "id": "heat",
+      "title": {
+        "en": "Heat",
+        "nl": "Verwarmen",
+        "da": "Varme",
+        "de": "Heizen",
+        "es": "Calor",
+        "fr": "Chaleur",
+        "it": "Riscaldamento",
+        "no": "Varme",
+        "sv": "Värme",
+        "pl": "Ogrzewanie",
+        "ru": "Нагрев",
+        "ko": "난방"
+      }
+    }
+  ]
+}

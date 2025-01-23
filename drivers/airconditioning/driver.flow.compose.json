@@ -1,0 +1,516 @@
+{
+  "triggers": [
+    {
+      "id": "samsung_airconditioning_mode_changed",
+      "title": {
+        "en": "The mode changed",
+        "nl": "De modus is gewijzigd",
+        "da": "Tilstand er ændret",
+        "de": "Der Modus wurde geändert",
+        "es": "El modo ha cambiado",
+        "fr": "Le mode a changé",
+        "it": "La modalità è cambiata",
+        "no": "Modus endret",
+        "sv": "Läget har ändrats",
+        "pl": "Zmieniono tryb",
+        "ru": "Режим изменен",
+        "ko": "모드가 변경되었습니다"
+      },
+      "hint": {
+        "en": "auto, cool, dry, wind, heat"
+      },
+      "tokens": [
+        {
+          "name": "mode",
+          "type": "string",
+          "title": {
+            "en": "Mode",
+            "nl": "Modus",
+            "da": "Tilstand",
+            "de": "Modus",
+            "es": "Modo",
+            "fr": "Mode",
+            "it": "Modalità",
+            "no": "Modus",
+            "sv": "Läge",
+            "pl": "Tryb",
+            "ru": "Режим",
+            "ko": "모드"
+          },
+          "example": {
+            "en": "cool"
+          }
+        }
+      ]
+    },
+    {
+      "id": "samsung_airconditioning_fan_mode_changed",
+      "title": {
+        "en": "The fan mode changed",
+        "nl": "De ventilatorstand is gewijzigd",
+        "da": "Blæserhastighed er ændret",
+        "de": "Der Lüftermodus wurde geändert",
+        "es": "El modo de ventilador ha cambiado",
+        "fr": "Le mode de ventilation a changé",
+        "it": "La modalità di ventilazione è cambiata",
+        "no": "Viftemodus endret",
+        "sv": "Fläktläget har ändrats",
+        "pl": "Zmieniono tryb wentylatora",
+        "ru": "Режим вентилятора изменен",
+        "ko": "팬 모드가 변경되었습니다"
+      },
+      "hint": {
+        "en": "auto, low, medium, high, turbo"
+      },
+      "tokens": [
+        {
+          "name": "fan_mode",
+          "type": "string",
+          "title": {
+            "en": "Fan Mode",
+            "nl": "Ventilator Modus",
+            "da": "Blæser Tilstand",
+            "de": "Lüfter Modus",
+            "es": "Modo Ventilador",
+            "fr": "Mode Ventilateur",
+            "it": "Modalità Ventilatore",
+            "no": "Viftemodus",
+            "sv": "Fläktläge",
+            "pl": "Tryb wentylatora",
+            "ru": "Режим вентилятора",
+            "ko": "팬 모드"
+          },
+          "example": {
+            "en": "auto"
+          }
+        }
+      ]
+    },
+    {
+      "id": "samsung_airconditioning_fan_oscillation_mode_changed",
+      "title": {
+        "en": "The fan oscillation mode changed",
+        "nl": "De ventilatoroscillatiestand is gewijzigd",
+        "da": "Blæseroscillationshastighed er ændret",
+        "de": "Der Lüfterschwingmodus wurde geändert",
+        "es": "El modo de oscilación del ventilador ha cambiado",
+        "fr": "Le mode d'oscillation du ventilateur a changé",
+        "it": "La modalità di oscillazione del ventilatore è cambiata",
+        "no": "Vifteoscillasjonsmodus endret",
+        "sv": "Fläktoscillationsläget har ändrats",
+        "pl": "Zmieniono tryb oscylacji wentylatora",
+        "ru": "Режим осцилляции вентилятора изменен",
+        "ko": "팬 진동 모드가 변경되었습니다"
+      },
+      "hint": {
+        "en": "fixed, all, vertical, horizontal"
+      },
+      "tokens": [
+        {
+          "name": "fan_oscillation_mode",
+          "type": "string",
+          "title": {
+            "en": "Fan Oscillation Mode",
+            "nl": "Ventilator Oscillatiemodus",
+            "da": "Blæseroscillations Tilstand",
+            "de": "Lüfter Schwingmodus",
+            "es": "Modo de oscilación del ventilador",
+            "fr": "Mode d'oscillation du ventilateur",
+            "it": "Modalità di oscillazione del ventilatore",
+            "no": "Vifteoscillasjonsmodus",
+            "sv": "Fläktoscillationsläge",
+            "pl": "Tryb oscylacji wentylatora",
+            "ru": "Режим осцилляции вентилятора",
+            "ko": "팬 진동 모드"
+          },
+          "example": {
+            "en": "all"
+          }
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "id": "set_mode",
+      "highlight": true,
+      "title": {
+        "en": "Set the mode",
+        "nl": "Zet de modus",
+        "da": "Indstil tilstand",
+        "de": "Modus einstellen",
+        "es": "Ajustar el modo",
+        "fr": "Régler le mode",
+        "it": "Imposta la modalità",
+        "no": "Sett modus",
+        "sv": "Ställ in läge",
+        "pl": "Ustaw tryb",
+        "ru": "Установить режим",
+        "ko": "모드 설정"
+      },
+      "titleFormatted": {
+        "en": "Set the mode to [[mode]]",
+        "nl": "Zet de modus op [[mode]]",
+        "da": "Indstil tilstand til [[mode]]",
+        "de": "Stelle Modus auf [[mode]] ein",
+        "es": "Ajusta el modo a [[mode]]",
+        "fr": "Régler le mode à [[mode]]",
+        "it": "Imposta la modalità su [[mode]]",
+        "no": "Sett modus til [[mode]]",
+        "sv": "Ställ in läge till [[mode]]",
+        "pl": "Ustaw tryb na [[mode]]",
+        "ru": "Установите режим на [[mode]]",
+        "ko": "[[mode]]으로 모드 설정"
+      },
+      "args": [
+        {
+          "name": "mode",
+          "type": "dropdown",
+          "title": {
+            "en": "Mode",
+            "nl": "Modus",
+            "da": "Tilstand",
+            "de": "Modus",
+            "es": "Modo",
+            "fr": "Mode",
+            "it": "Modalità",
+            "no": "Modus",
+            "sv": "Läge",
+            "pl": "Tryb",
+            "ru": "Режим",
+            "ko": "모드"
+          },
+          "values": [
+            {
+              "id": "auto",
+              "title": {
+                "en": "Auto",
+                "nl": "Automatisch",
+                "da": "Auto",
+                "de": "Auto",
+                "es": "Automático",
+                "fr": "Auto",
+                "it": "Auto",
+                "no": "Auto",
+                "sv": "Auto",
+                "pl": "Auto",
+                "ru": "Авто",
+                "ko": "자동"
+              }
+            },
+            {
+              "id": "cool",
+              "title": {
+                "en": "Cool",
+                "nl": "Koelen",
+                "da": "Køl",
+                "de": "Kühlen",
+                "es": "Frío",
+                "fr": "Froid",
+                "it": "Raffreddamento",
+                "no": "Kjøling",
+                "sv": "Kyla",
+                "pl": "Chłodzenie",
+                "ru": "Охлаждение",
+                "ko": "냉방"
+              }
+            },
+            {
+              "id": "dry",
+              "title": {
+                "en": "Dry",
+                "nl": "Drogen",
+                "da": "Tør",
+                "de": "Trocknen",
+                "es": "Seco",
+                "fr": "Sec",
+                "it": "Asciutto",
+                "no": "Tørr",
+                "sv": "Torka",
+                "pl": "Suszenie",
+                "ru": "Сухой",
+                "ko": "건조"
+              }
+            },
+            {
+              "id": "wind",
+              "title": {
+                "en": "Fan",
+                "nl": "Ventilator",
+                "da": "Blæser",
+                "de": "Lüfter",
+                "es": "Ventilador",
+                "fr": "Ventilateur",
+                "it": "Ventilatore",
+                "no": "Vifte",
+                "sv": "Fläkt",
+                "pl": "Wentylator",
+                "ru": "Вентилятор",
+                "ko": "팬"
+              }
+            },
+            {
+              "id": "heat",
+              "title": {
+                "en": "Heat",
+                "nl": "Verwarmen",
+                "da": "Varme",
+                "de": "Heizen",
+                "es": "Calor",
+                "fr": "Chaleur",
+                "it": "Riscaldamento",
+                "no": "Varme",
+                "sv": "Värme",
+                "pl": "Ogrzewanie",
+                "ru": "Нагрев",
+                "ko": "난방"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "set_fan_mode",
+      "title": {
+        "en": "Set the fan mode",
+        "nl": "Zet de ventilatorstand",
+        "da": "Indstil blæserhastighed",
+        "de": "Lüftermodus einstellen",
+        "es": "Ajustar el modo de ventilador",
+        "fr": "Régler le mode de ventilation",
+        "it": "Imposta la modalità di ventilazione",
+        "no": "Sett viftemodus",
+        "sv": "Ställ in fläktläge",
+        "pl": "Ustaw tryb wentylatora",
+        "ru": "Установить режим вентилятора",
+        "ko": "팬 모드 설정"
+      },
+      "titleFormatted": {
+        "en": "Set the fan mode to [[mode]]",
+        "nl": "Zet de ventilatorstand op [[mode]]",
+        "da": "Indstil blæserhastighed til [[mode]]",
+        "de": "Stelle Lüftermodus auf [[mode]] ein",
+        "es": "Ajusta el modo de ventilador a [[mode]]",
+        "fr": "Régler le mode de ventilation à [[mode]]",
+        "it": "Imposta la modalità di ventilazione su [[mode]]",
+        "no": "Sett viftemodus til [[mode]]",
+        "sv": "Ställ in fläktläge till [[mode]]",
+        "pl": "Ustaw tryb wentylatora na [[mode]]",
+        "ru": "Установите режим вентилятора на [[mode]]",
+        "ko": "[[mode]]으로 팬 모드 설정"
+      },
+      "args": [
+        {
+          "name": "mode",
+          "type": "dropdown",
+          "title": {
+            "en": "Fan Mode",
+            "nl": "Ventilator Modus",
+            "da": "Blæser Tilstand",
+            "de": "Lüfter Modus",
+            "es": "Modo Ventilador",
+            "fr": "Mode Ventilateur",
+            "it": "Modalità Ventilatore",
+            "no": "Viftemodus",
+            "sv": "Fläktläge",
+            "pl": "Tryb wentylatora",
+            "ru": "Режим вентилятора",
+            "ko": "팬 모드"
+          },
+          "values": [
+            {
+              "id": "auto",
+              "title": {
+                "en": "Auto",
+                "nl": "Automatisch",
+                "da": "Auto",
+                "de": "Auto",
+                "es": "Automático",
+                "fr": "Auto",
+                "it": "Auto",
+                "no": "Auto",
+                "sv": "Auto",
+                "pl": "Auto",
+                "ru": "Авто",
+                "ko": "자동"
+              }
+            },
+            {
+              "id": "low",
+              "title": {
+                "en": "Low",
+                "nl": "Laag",
+                "da": "Lav",
+                "de": "Niedrig",
+                "es": "Bajo",
+                "fr": "Faible",
+                "it": "Basso",
+                "no": "Lav",
+                "sv": "Låg",
+                "pl": "Niski",
+                "ru": "Низкий",
+                "ko": "낮은"
+              }
+            },
+            {
+              "id": "medium",
+              "title": {
+                "en": "Medium",
+                "nl": "Middel",
+                "da": "Mellem",
+                "de": "Mittel",
+                "es": "Medio",
+                "fr": "Moyen",
+                "it": "Medio",
+                "no": "Middels",
+                "sv": "Medium",
+                "pl": "Średni",
+                "ru": "Средний",
+                "ko": "중간"
+              }
+            },
+            {
+              "id": "high",
+              "title": {
+                "en": "High",
+                "nl": "Hoog",
+                "da": "Høj",
+                "de": "Hoch",
+                "es": "Alto",
+                "fr": "Élevé",
+                "it": "Alto",
+                "no": "Høy",
+                "sv": "Hög",
+                "pl": "Wysoki",
+                "ru": "Высокий",
+                "ko": "높은"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "set_fan_oscillation_mode",
+      "title": {
+        "en": "Set the fan oscillation mode",
+        "nl": "Zet de ventilatoroscillatiestand",
+        "da": "Indstil blæseroscillationshastighed",
+        "de": "Lüfterschwingmodus einstellen",
+        "es": "Ajustar el modo de oscilación del ventilador",
+        "fr": "Régler le mode d'oscillation du ventilateur",
+        "it": "Imposta la modalità di oscillazione del ventilatore",
+        "no": "Sett vifteoscillasjonsmodus",
+        "sv": "Ställ in fläktoscillationsläge",
+        "pl": "Ustaw tryb oscylacji wentylatora",
+        "ru": "Установить режим осцилляции вентилятора",
+        "ko": "팬 진동 모드 설정"
+      },
+      "titleFormatted": {
+        "en": "Set the fan oscillation mode to [[mode]]",
+        "nl": "Zet de ventilatoroscillatiestand op [[mode]]",
+        "da": "Indstil blæseroscillationshastighed til [[mode]]",
+        "de": "Stelle Lüfterschwingmodus auf [[mode]] ein",
+        "es": "Ajusta el modo de oscilación del ventilador a [[mode]]",
+        "fr": "Régler le mode d'oscillation du ventilateur à [[mode]]",
+        "it": "Imposta la modalità di oscillazione del ventilatore su [[mode]]",
+        "no": "Sett vifteoscillasjonsmodus til [[mode]]",
+        "sv": "Ställ in fläktoscillationsläge till [[mode]]",
+        "pl": "Ustaw tryb oscylacji wentylatora na [[mode]]",
+        "ru": "Установите режим осцилляции вентилятора на [[mode]]",
+        "ko": "[[mode]]으로 팬 진동 모드 설정"
+      },
+      "args": [
+        {
+          "name": "mode",
+          "type": "dropdown",
+          "title": {
+            "en": "Fan Oscillation Mode",
+            "nl": "Ventilator Oscillatiemodus",
+            "da": "Blæseroscillations Tilstand",
+            "de": "Lüfter Schwingmodus",
+            "es": "Modo de oscilación del ventilador",
+            "fr": "Mode d'oscillation du ventilateur",
+            "it": "Modalità di oscillazione del ventilatore",
+            "no": "Vifteoscillasjonsmodus",
+            "sv": "Fläktoscillationsläge",
+            "pl": "Tryb oscylacji wentylatora",
+            "ru": "Режим осцилляции вентилятора",
+            "ko": "팬 진동 모드"
+          },
+          "values": [
+            {
+              "id": "fixed",
+              "title": {
+                "en": "Fixed",
+                "nl": "Vast",
+                "da": "Fast",
+                "de": "Fest",
+                "es": "Fijo",
+                "fr": "Fixe",
+                "it": "Fisso",
+                "no": "Fast",
+                "sv": "Fast",
+                "pl": "Stały",
+                "ru": "Фиксированный",
+                "ko": "고정"
+              }
+            },
+            {
+              "id": "all",
+              "title": {
+                "en": "All",
+                "nl": "Alle",
+                "da": "Alle",
+                "de": "Alle",
+                "es": "Todos",
+                "fr": "Tous",
+                "it": "Tutti",
+                "no": "Alle",
+                "sv": "Alla",
+                "pl": "Wszystkie",
+                "ru": "Все",
+                "ko": "모두"
+              }
+            },
+            {
+              "id": "vertical",
+              "title": {
+                "en": "Vertical",
+                "nl": "Verticaal",
+                "da": "Vertikal",
+                "de": "Vertikal",
+                "es": "Vertical",
+                "fr": "Vertical",
+                "it": "Verticale",
+                "no": "Vertikal",
+                "sv": "Vertikal",
+                "pl": "Pionowy",
+                "ru": "Вертикальный",
+                "ko": "수직"
+              }
+            },
+            {
+              "id": "horizontal",
+              "title": {
+                "en": "Horizontal",
+                "nl": "Horizontaal",
+                "da": "Horisontal",
+                "de": "Horizontal",
+                "es": "Horizontal",
+                "fr": "Horizontal",
+                "it": "Orizzontale",
+                "no": "Horisontal",
+                "sv": "Horisontell",
+                "pl": "Poziomy",
+                "ru": "Горизонтальный",
+                "ko": "수평"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

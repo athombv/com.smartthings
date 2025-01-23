@@ -1,0 +1,19 @@
+{
+  "$extends": "apikey",
+  "name": {
+    "en": "Samsung Air Conditioning",
+    "nl": "Samsung Airconditioning",
+    "da": "Samsung Airconditioning",
+    "de": "Samsung Klimaanlage",
+    "es": "Aire acondicionado Samsung",
+    "fr": "Climatisation Samsung",
+    "it": "Climatizzatore Samsung",
+    "no": "Samsung Airconditioning",
+    "sv": "Samsung Airconditioning",
+    "pl": "Klimatyzacja Samsung",
+    "ru": "Кондиционер Samsung",
+    "ko": "삼성 에어컨"
+  },
+  "class": "airconditioning",
+  "capabilities": []
+}

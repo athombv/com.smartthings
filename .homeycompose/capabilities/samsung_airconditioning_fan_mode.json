@@ -1,0 +1,108 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Fan Mode",
+    "nl": "Ventilator Modus",
+    "da": "Blæser Tilstand",
+    "de": "Lüfter Modus",
+    "es": "Modo Ventilador",
+    "fr": "Mode Ventilateur",
+    "it": "Modalità Ventilatore",
+    "no": "Viftemodus",
+    "sv": "Fläktläge",
+    "pl": "Tryb wentylatora",
+    "ru": "Режим вентилятора",
+    "ko": "팬 모드"
+  },
+  "getable": true,
+  "setable": true,
+  "uiComponent": "picker",
+  "icon": "/assets/capabilities/samsung_airconditioning_fan_mode.svg",
+  "values": [
+    {
+        "id": "auto",
+        "title": {
+            "en": "Auto",
+            "nl": "Automatisch",
+            "da": "Auto",
+            "de": "Auto",
+            "es": "Automático",
+            "fr": "Auto",
+            "it": "Auto",
+            "no": "Auto",
+            "sv": "Auto",
+            "pl": "Auto",
+            "ru": "Авто",
+            "ko": "자동"
+        }
+    },
+    {
+      "id": "low",
+      "title": {
+        "en": "Low",
+        "nl": "Laag",
+        "da": "Lav",
+        "de": "Niedrig",
+        "es": "Bajo",
+        "fr": "Faible",
+        "it": "Basso",
+        "no": "Lav",
+        "sv": "Låg",
+        "pl": "Niski",
+        "ru": "Низкий",
+        "ko": "낮은"
+      }
+    },
+    {
+      "id": "medium",
+      "title": {
+        "en": "Medium",
+        "nl": "Middel",
+        "da": "Mellem",
+        "de": "Mittel",
+        "es": "Medio",
+        "fr": "Moyen",
+        "it": "Medio",
+        "no": "Middels",
+        "sv": "Medium",
+        "pl": "Średni",
+        "ru": "Средний",
+        "ko": "중간"
+      }
+    },
+    {
+      "id": "high",
+      "title": {
+        "en": "High",
+        "nl": "Hoog",
+        "da": "Høj",
+        "de": "Hoch",
+        "es": "Alto",
+        "fr": "Élevé",
+        "it": "Alto",
+        "no": "Høy",
+        "sv": "Hög",
+        "pl": "Wysoki",
+        "ru": "Высокий",
+        "ko": "높은"
+      }
+    },
+    {
+      "id": "turbo",
+      "title": {
+        "en": "Turbo",
+        "nl": "Turbo",
+        "da": "Turbo",
+        "de": "Turbo",
+        "es": "Turbo",
+        "fr": "Turbo",
+        "it": "Turbo",
+        "no": "Turbo",
+        "sv": "Turbo",
+        "pl": "Turbo",
+        "ru": "Турбо",
+        "ko": "터보"
+      }
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Fan Oscillation Mode",
+    "nl": "Ventilator Oscillatie Modus",
+    "da": "Blæser Oscillation Tilstand",
+    "de": "Lüfter-Schwingmodus",
+    "es": "Modo de oscilación del ventilador",
+    "fr": "Mode d'oscillation du ventilateur",
+    "it": "Modalità oscillazione ventilatore",
+    "no": "Vifte Oscillasjonsmodus",
+    "sv": "Fläkt Oscillationsläge",
+    "pl": "Tryb oscylacji wentylatora",
+    "ru": "Режим осцилляции вентилятора",
+    "ko": "팬 진동 모드"
+  },
+  "getable": true,
+  "setable": true,
+  "uiComponent": "picker",
+  "icon": "/assets/capabilities/samsung_airconditioning_fan_oscillation_mode.svg",
+  "values": [
+    {
+        "id": "fixed",
+        "title": {
+          "en": "Fixed",
+          "nl": "Vast",
+          "da": "Fast",
+          "de": "Fest",
+          "es": "Fijo",
+          "fr": "Fixe",
+          "it": "Fisso",
+          "no": "Fast",
+          "sv": "Fast",
+          "pl": "Stały",
+          "ru": "Фиксированный",
+          "ko": "고정"
+        }
+    },
+    {
+        "id": "all",
+        "title": {
+          "en": "All",
+          "nl": "Alle",
+          "da": "Alle",
+          "de": "Alle",
+          "es": "Todos",
+          "fr": "Tous",
+          "it": "Tutti",
+          "no": "Alle",
+          "sv": "Alla",
+          "pl": "Wszystkie",
+          "ru": "Все",
+          "ko": "모두"
+        }
+    },
+    {
+        "id": "vertical",
+        "title": {
+          "en": "Vertical",
+          "nl": "Verticaal",
+          "da": "Vertikal",
+          "de": "Vertikal",
+          "es": "Vertical",
+          "fr": "Vertical",
+          "it": "Verticale",
+          "no": "Vertikal",
+          "sv": "Vertikal",
+          "pl": "Pionowy",
+          "ru": "Вертикальный",
+          "ko": "수직"
+        }
+    },
+    {
+        "id": "horizontal",
+        "title": {
+          "en": "Horizontal",
+          "nl": "Horizontaal",
+          "da": "Horisontal",
+          "de": "Horizontal",
+          "es": "Horizontal",
+          "fr": "Horizontal",
+          "it": "Orizzontale",
+          "no": "Horisontal",
+          "sv": "Horisontell",
+          "pl": "Poziomy",
+          "ru": "Горизонтальный",
+          "ko": "수평"
+        }
+    }
+  ]
+}
