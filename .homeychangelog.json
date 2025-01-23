@@ -19,5 +19,8 @@
   },
   "2.3.1": {
     "en": "Added new trigger cards for washer and dryer"
+  },
+  "2.4.0": {
+    "en": "Added support for airconditioning"
   }
 }
