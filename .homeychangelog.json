@@ -25,5 +25,8 @@
   },
   "2.4.1": {
     "en": "Updated devices to use the new classes instead of 'other'"
+  },
+  "3.0.0": {
+    "en": "Circumvented Samsung SmartThing's decision to let API Keys expire after a day."
   }
 }
