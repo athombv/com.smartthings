@@ -39,7 +39,7 @@
         target="_blank"
         style="color: rgb(0, 130, 250);"
       >Sign in to SmartThings</a>.</li>
-    <li>Type <strong>Homey</strong> as name. Select the <strong>Devices</strong> checkbox.</li>
+    <li>Type <strong>Homey</strong> as name. Select the <strong>Applications</strong> checkbox.</li>
     <li>Tap <strong>Generate Token</strong>, and then copy & paste the key here.</li>
   </ol>
 
@@ -69,7 +69,7 @@
       Homey.hideLoadingOverlay();
 
       if (hasClient) {
-        return Homey.nextView();
+        return Homey.showView('list_devices');
       }
 
       const $link = document.getElementById('st-link');
@@ -96,7 +96,7 @@
 
         Homey.emit('validateKey', $apikey.value)
           .then(valid => {
-            if (valid) return Homey.done();
+            if (valid) return Homey.nextView();
             Homey.alert('That Access Token did not work. Please try again.');
           })
           .catch(err => {

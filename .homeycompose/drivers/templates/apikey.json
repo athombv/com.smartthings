@@ -27,6 +27,10 @@
   ],
   "repair": [
     {
+      "id": "apikey",
+      "$template": "apikey"
+    },
+    {
       "id": "login_oauth2",
       "template": "login_oauth2"
     }

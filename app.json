@@ -1032,6 +1032,9 @@
       ],
       "repair": [
         {
+          "id": "apikey"
+        },
+        {
           "id": "login_oauth2",
           "template": "login_oauth2"
         }
@@ -1088,6 +1091,9 @@
         }
       ],
       "repair": [
+        {
+          "id": "apikey"
+        },
         {
           "id": "login_oauth2",
           "template": "login_oauth2"
@@ -1146,6 +1152,9 @@
       ],
       "repair": [
         {
+          "id": "apikey"
+        },
+        {
           "id": "login_oauth2",
           "template": "login_oauth2"
         }
@@ -1202,6 +1211,9 @@
         }
       ],
       "repair": [
+        {
+          "id": "apikey"
+        },
         {
           "id": "login_oauth2",
           "template": "login_oauth2"
@@ -1271,6 +1283,9 @@
       ],
       "repair": [
         {
+          "id": "apikey"
+        },
+        {
           "id": "login_oauth2",
           "template": "login_oauth2"
         }
@@ -1333,6 +1348,9 @@
         }
       ],
       "repair": [
+        {
+          "id": "apikey"
+        },
         {
           "id": "login_oauth2",
           "template": "login_oauth2"
