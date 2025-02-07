@@ -31,5 +31,8 @@
   },
   "3.0.1": {
     "en": "Fixed an issue when refreshing the token."
+  },
+  "3.1.0": {
+    "en": "Circumvented Samsung SmartThing's decision to let API Keys expire after a day."
   }
 }
