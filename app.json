@@ -1001,6 +1001,21 @@
           }
         ]
       }
+    ],
+    "conditions": [
+      {
+        "id": "samsung_washer_job_running",
+        "title": {
+          "en": "Samsung Washer !{{is|isn't}} running"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=washer"
+          }
+        ]
+      }
     ]
   },
   "drivers": [
