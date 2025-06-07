@@ -37,7 +37,7 @@ module.exports = class SmartThingsDeviceDryer extends SmartThingsDevice {
             flow: 'samsung_dryer_job_finished',
           },
           {
-            value: 'dry',
+            value: 'drying',
             flow: 'samsung_dryer_job_started',
           },
           {
