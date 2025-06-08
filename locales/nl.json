@@ -1,5 +1,25 @@
 {
   "errors": {
     "offline": "Apparaat Offline"
+  },
+  "samsung_washer_current_job_state": {
+    "airWash": "Luchtwassen",
+    "aiRinse": "AI Spoelen",
+    "aiSpin": "AI Zwieren",
+    "aiWash": "AI Wassen",
+    "cooling": "Koelen",
+    "delayWash": "Wassen Uitstellen",
+    "drying": "Drogen",
+    "finished": "Klaar",
+    "none": "Geen",
+    "preWash": "Voorwas",
+    "weightSensing": "Gewicht sensing",
+    "wrinklePrevent": "Kreukherstellend",
+    "freezeProtection": "Vorstbeveiliging",
+    "wash": "Wassen",
+    "rinse": "Spoelen",
+    "spin": "Zwieren",
+    "idle": "Inactief",
+    "off": "Uit"
   }
 }

@@ -1,5 +1,25 @@
 {
   "errors": {
     "offline": "Enheten är offline"
+  },
+  "samsung_washer_current_job_state": {
+    "airWash": "Lufttvätt",
+    "aiRinse": "AI Sköljning",
+    "aiSpin": "AI Centrifugering",
+    "aiWash": "AI Tvätt",
+    "cooling": "Kylning",
+    "delayWash": "Fördröjd tvättning",
+    "drying": "Torkning",
+    "finished": "Klar",
+    "none": "Ingen",
+    "preWash": "Förtvätt",
+    "weightSensing": "Viktsensor",
+    "wrinklePrevent": "Skrynkelfri",
+    "freezeProtection": "Frostskydd",
+    "wash": "Tvätt",
+    "rinse": "Sköljning",
+    "spin": "Centrifugering",
+    "idle": "Inaktiv",
+    "off": "Av"
   }
 }

@@ -1,5 +1,25 @@
 {
   "errors": {
     "offline": "Enhed Offline"
+  },
+  "samsung_washer_current_job_state": {
+    "airWash": "Luftvask",
+    "aiRinse": "AI Skylle",
+    "aiSpin": "AI Centrifugering",
+    "aiWash": "AI Vask",
+    "cooling": "Afkøling",
+    "delayWash": "Forsinket vask",
+    "drying": "Tørring",
+    "finished": "Færdig",
+    "none": "Ingen",
+    "preWash": "Forvask",
+    "weightSensing": "Vægtregistrering",
+    "wrinklePrevent": "Krølfri",
+    "freezeProtection": "Frostbeskyttelse",
+    "wash": "Vask",
+    "rinse": "Skylning",
+    "spin": "Centrifugering",
+    "idle": "Inaktiv",
+    "off": "Slukket"
   }
 }

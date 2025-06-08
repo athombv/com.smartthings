@@ -1,5 +1,25 @@
 {
   "errors": {
     "offline": "Устройство не в сети"
+  },
+  "samsung_washer_current_job_state": {
+    "airWash": "Воздушная стирка",
+    "aiRinse": "ИИ полоскание",
+    "aiSpin": "ИИ отжим",
+    "aiWash": "ИИ стирка",
+    "cooling": "Охлаждение",
+    "delayWash": "Отложенная стирка",
+    "drying": "Сушка",
+    "finished": "Завершено",
+    "none": "Нет",
+    "preWash": "Предварительная стирка",
+    "weightSensing": "Определение веса",
+    "wrinklePrevent": "Защита от складок",
+    "freezeProtection": "Защита от замерзания",
+    "wash": "Стирка",
+    "rinse": "Полоскание",
+    "spin": "Отжим",
+    "idle": "Ожидание",
+    "off": "Выключено"
   }
 }

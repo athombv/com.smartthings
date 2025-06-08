@@ -1,5 +1,25 @@
 {
   "errors": {
     "offline": "Urządzenie offline"
+  },
+  "samsung_washer_current_job_state": {
+    "airWash": "Pranie powietrzem",
+    "aiRinse": "Płukanie AI",
+    "aiSpin": "Wirowanie AI",
+    "aiWash": "Pranie AI",
+    "cooling": "Chłodzenie",
+    "delayWash": "Pranie opóźnione",
+    "drying": "Suszenie",
+    "finished": "Zakończone",
+    "none": "Brak",
+    "preWash": "Pranie wstępne",
+    "weightSensing": "Wykrywanie wagi",
+    "wrinklePrevent": "Zapobieganie zagnieceniom",
+    "freezeProtection": "Ochrona przed zamarzaniem",
+    "wash": "Pranie",
+    "rinse": "Płukanie",
+    "spin": "Wirowanie",
+    "idle": "Bezczynny",
+    "off": "Wyłączony"
   }
 }

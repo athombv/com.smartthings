@@ -1,5 +1,25 @@
 {
   "errors": {
     "offline": "Appareil hors ligne"
+  },
+  "samsung_washer_current_job_state": {
+    "airWash": "Lavage à l'air",
+    "aiRinse": "Rinçage IA",
+    "aiSpin": "Essorage IA",
+    "aiWash": "Lavage IA",
+    "cooling": "Refroidissement",
+    "delayWash": "Lavage différé",
+    "drying": "Séchage",
+    "finished": "Terminé",
+    "none": "Aucun",
+    "preWash": "Prélavage",
+    "weightSensing": "Détection de poids",
+    "wrinklePrevent": "Prévention des rides",
+    "freezeProtection": "Protection contre le gel",
+    "wash": "Lavage",
+    "rinse": "Rinçage",
+    "spin": "Essorage",
+    "idle": "Inactif",
+    "off": "Éteint"
   }
 }
