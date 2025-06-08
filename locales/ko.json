@@ -1,5 +1,25 @@
 {
   "errors": {
     "offline": "장치가 오프라인 상태입니다."
+  },
+  "samsung_washer_current_job_state": {
+    "airWash": "에어 워시",
+    "aiRinse": "AI 헹굼",
+    "aiSpin": "AI 탈수",
+    "aiWash": "AI 세탁",
+    "cooling": "냉각",
+    "delayWash": "예약 세탁",
+    "drying": "건조",
+    "finished": "완료",
+    "none": "없음",
+    "preWash": "예비 세탁",
+    "weightSensing": "무게 감지",
+    "wrinklePrevent": "주름 방지",
+    "freezeProtection": "동결 방지",
+    "wash": "세탁",
+    "rinse": "헹굼",
+    "spin": "탈수",
+    "idle": "대기",
+    "off": "꺼짐"
   }
 }

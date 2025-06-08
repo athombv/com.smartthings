@@ -1,5 +1,25 @@
 {
   "errors": {
     "offline": "Enheten er frakoblet"
+  },
+  "samsung_washer_current_job_state": {
+    "airWash": "Luftvask",
+    "aiRinse": "AI Skylling",
+    "aiSpin": "AI Sentrifugering",
+    "aiWash": "AI Vask",
+    "cooling": "Nedkjøling",
+    "delayWash": "Utsatt vasking",
+    "drying": "Tørking",
+    "finished": "Ferdig",
+    "none": "Ingen",
+    "preWash": "Forvask",
+    "weightSensing": "Vektregistrering",
+    "wrinklePrevent": "Rynkeforebygging",
+    "freezeProtection": "Frostbeskyttelse",
+    "wash": "Vasking",
+    "rinse": "Skylling",
+    "spin": "Sentrifugering",
+    "idle": "Inaktiv",
+    "off": "Av"
   }
 }

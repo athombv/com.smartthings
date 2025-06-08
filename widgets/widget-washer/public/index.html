@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <link href="./style.css" rel="stylesheet">
+  </head>
+
+  <body class="homey-widget-full">
+    <h2 class="device-name homey-text-bold" id="deviceName">[name]</h2>
+    <div class="main-container background">
+        <div class="washer-info-panel">
+          <div class="status-container">
+            <div class="status-row">
+              <div class="status-info">
+                <span class="status-value homey-text-medium homey-color-text" id="currentJobState">[State]</span>
+                <div class="time-value homey-text-medium homey-color-text" id="remainingTime">
+                  <span id="timeHours">00</span><span class="time-colon">:</span><span id="timeMinutes">00</span>
+                </div>
+              </div>
+              <div class="progress-container">
+                <svg class="progress-circle" width="64" height="64" viewBox="0 0 48 48">
+                  <circle class="progress-circle-bg" cx="24" cy="24" r="20"/>
+                  <circle class="progress-circle-path" cx="24" cy="24" r="20"/>
+                </svg>
+                <div class="progress-text homey-color-text" id="progressText">0%</div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function onHomeyReady(Homey) {
+        Homey.ready({ height: 150 });
+
+        const $deviceName = document.getElementById('deviceName');
+        const $currentJobState = document.getElementById('currentJobState');
+        const $remainingTime = document.getElementById('remainingTime');
+        const $progressCircle = document.querySelector('.progress-circle-path');
+        const $progressCircleContainer = document.querySelector('.progress-circle');
+        const $progressText = document.getElementById('progressText');
+        const $selectedDeviceId = Homey.getDeviceIds()[0];
+
+        // Calculate stroke-dasharray and stroke-dashoffset
+        const radius = 20;
+        const circumference = 2 * Math.PI * radius;
+        $progressCircle.style.strokeDasharray = circumference;
+
+        // Function to update progress circle
+        function updateProgress(progress) {
+          // Adjust offset calculation to start from bottom
+          const offset = (((100 - progress) / 100) * circumference);
+          $progressCircle.style.strokeDashoffset = offset;
+          
+          // Update progress text
+          $progressText.textContent = progress < 2 ? '-' : `${Math.round(progress)}%`;
+          
+          // Add or remove active class based on progress
+          if (progress > 1) {
+            $progressCircleContainer.classList.add('active');
+          } else {
+            $progressCircleContainer.classList.remove('active');
+          }
+        }
+
+        // Function to get readable status text
+        function getStatusText(value) {
+          return Homey.__(`samsung_washer_current_job_state.${value}`) || value || 'Unknown';
+        }
+
+        function updateWasherInfo() {
+          // Get washer state from root endpoint
+          Homey.api('GET', `/?deviceId=${$selectedDeviceId}`)
+            .then((washerInfo) => {
+
+              //test
+              // washerInfo.progress = 13;
+              // washerInfo.remainingTime = '01:14';
+              // washerInfo.state = 'wash'; 
+              // washerInfo.name = 'Samsung Washer';
+              //
+
+              // Update device name
+              $deviceName.textContent = washerInfo.name || 'Samsung Washer';
+              
+              // Update job state
+              $currentJobState.textContent = getStatusText(washerInfo.state);
+              
+              // Update progress
+              updateProgress(washerInfo.progress || 0);
+              
+              // Update remaining time
+              if (washerInfo.remainingTime === '-') {
+                document.getElementById('timeHours').textContent = '-';
+                document.getElementById('timeMinutes').textContent = '';
+                document.querySelector('.time-colon').style.display = 'none';
+              } else {
+                const [hours, minutes] = (washerInfo.remainingTime || '00:00').split(':');
+                document.getElementById('timeHours').textContent = hours;
+                document.getElementById('timeMinutes').textContent = minutes;
+                document.querySelector('.time-colon').style.display = 'inline-block';
+              }
+            })
+            .catch(error => {
+              console.error('Error fetching washer data:', error);
+              $deviceName.textContent = 'Samsung Washer';
+              $currentJobState.textContent = 'Error loading';
+              document.getElementById('timeHours').textContent = '-';
+              document.getElementById('timeMinutes').textContent = '';
+              document.querySelector('.time-colon').style.display = 'none';
+              updateProgress(0);
+            });
+        }
+
+        // Update immediately and then every 5 seconds
+        updateWasherInfo();
+        setInterval(updateWasherInfo, 5000);
+      }
+    </script>
+  </body>
+</html>
