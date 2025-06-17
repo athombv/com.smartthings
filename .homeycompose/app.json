@@ -44,6 +44,13 @@
     "name": "Emile Nijssen",
     "email": "emile@athom.nl"
   },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Philip Østli"
+      }
+    ]
+  },
   "platforms": [
     "local",
     "cloud"
