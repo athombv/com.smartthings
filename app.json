@@ -2,7 +2,7 @@
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.smartthings",
   "version": "3.1.2",
-  "compatibility": ">=12.0.0",
+  "compatibility": ">=12.3.0",
   "sdk": 3,
   "name": {
     "en": "Samsung SmartThings",
@@ -44,6 +44,13 @@
   "author": {
     "name": "Emile Nijssen",
     "email": "emile@athom.nl"
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Philip Østli"
+      }
+    ]
   },
   "platforms": [
     "local",
@@ -1382,6 +1389,29 @@
       "id": "washer"
     }
   ],
+  "widgets": {
+    "widget-washer": {
+      "name": {
+        "en": "Washer"
+      },
+      "height": 140,
+      "settings": [],
+      "devices": {
+        "type": "app",
+        "singular": true,
+        "filter": {
+          "capabilities": "samsung_washer_current_job_state"
+        }
+      },
+      "api": {
+        "getWasherState": {
+          "method": "GET",
+          "path": "/"
+        }
+      },
+      "id": "widget-washer"
+    }
+  },
   "capabilities": {
     "alarm_samsung_washer_addwash_door_open": {
       "type": "boolean",
