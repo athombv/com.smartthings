@@ -40,5 +40,8 @@
   },
   "3.1.2": {
     "en": "Fixed dryer started card not triggering"
+  },
+  "3.1.3": {
+    "en": "Added widget for washer"
   }
 }
