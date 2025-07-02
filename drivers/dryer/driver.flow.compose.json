@@ -68,5 +68,33 @@
           "ko": "건조 작업이 헹구는 중입니다"
         }
     }
+  ],
+  "actions": [
+    {
+      "id": "set_dryer_state",
+      "title": {
+        "en": "Set dryer state to...",
+        "nl": "Zet droger status naar..."
+      },
+      "titleFormatted": {
+        "en": "Set dryer state to [[state]]",
+        "nl": "Zet droger status naar [[state]]"
+      },
+      "args": [
+        {
+          "name": "state",
+          "type": "dropdown",
+          "placeholder": {
+            "en": "Choose state",
+            "nl": "Kies status"
+          },
+          "values": [
+            { "id": "run", "title": { "en": "run" } },
+            { "id": "pause", "title": { "en": "pause" } },
+            { "id": "stop", "title": { "en": "stop" } }
+          ]
+        }
+      ]
+    }
   ]
 }
