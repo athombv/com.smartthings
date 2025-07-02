@@ -916,6 +916,10 @@
           {
             "name": "state",
             "type": "dropdown",
+            "title": {
+              "en": "State",
+              "nl": "Status"
+            },
             "placeholder": {
               "en": "Choose state",
               "nl": "Kies status"
