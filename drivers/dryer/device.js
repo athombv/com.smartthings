@@ -62,22 +62,5 @@ module.exports = class SmartThingsDeviceDryer extends SmartThingsDevice {
         return value;
       },
     },
-  ];
-
-  onInit() {
-    super.onInit?.();
-
-    this.homey.flow.getActionCard('set_dryer_state')
-      .registerRunListener(async args => {
-        const selectedState = args.state; // "run", "pause" or "stop"
-        await this.executeCommand({
-          component: 'main',
-          capability: 'dryerOperatingState',
-          command: 'setMachineState',
-          args: [selectedState],
-        });
-        return true;
-      });
-  }
-
+  ];  
 };
