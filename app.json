@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.smartthings",
-  "version": "3.1.4",
+  "version": "3.1.5",
   "compatibility": ">=12.3.0",
   "sdk": 3,
   "name": {
@@ -906,6 +906,9 @@
         "titleFormatted": {
           "en": "Set dryer state to [[state]]",
           "nl": "Zet droger status naar [[state]]"
+        },
+        "hint": {
+          "en": "You need to enable Samsung Smart Control on your dryer for this flowcard to work."
         },
         "args": [
           {

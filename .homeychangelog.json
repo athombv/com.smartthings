@@ -46,5 +46,8 @@
   },
   "3.1.4": {
     "en": "Fixed issue causing dryer done trigger not to run"
+  },
+  "3.1.5": {
+    "en": "Fixed an issue where it was not possible to pair 2 dryer's."
   }
 }
