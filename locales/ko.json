@@ -21,5 +21,14 @@
     "spin": "탈수",
     "idle": "대기",
     "off": "꺼짐"
+  },
+  "samsung_dryer_current_job_state": {
+    "none": "없음",
+    "idle": "대기 중",
+    "cooling": "냉각 중",
+    "drying": "건조 중",
+    "rinse": "헹굼 중",
+    "spin": "회전 중",
+    "finished": "끝남"
   }
 }

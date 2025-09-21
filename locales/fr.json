@@ -21,5 +21,14 @@
     "spin": "Essorage",
     "idle": "Inactif",
     "off": "Éteint"
+  },
+  "samsung_dryer_current_job_state": {
+    "none": "Aucun",
+    "idle": "Inactif",
+    "cooling": "Refroidissement",
+    "drying": "Séchage",
+    "rinse": "Rinçage",
+    "spin": "Essorage",
+    "finished": "Terminé"
   }
 }

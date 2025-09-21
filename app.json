@@ -1716,6 +1716,27 @@
     }
   ],
   "widgets": {
+    "widget-dryer": {
+      "name": {
+        "en": "Dryer"
+      },
+      "height": 140,
+      "settings": [],
+      "devices": {
+        "type": "app",
+        "singular": true,
+        "filter": {
+          "capabilities": "samsung_dryer_current_job_state"
+        }
+      },
+      "api": {
+        "getDryerState": {
+          "method": "GET",
+          "path": "/"
+        }
+      },
+      "id": "widget-dryer"
+    },
     "widget-washer": {
       "name": {
         "en": "Washer"

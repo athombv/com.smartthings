@@ -21,5 +21,14 @@
     "spin": "Zwieren",
     "idle": "Inactief",
     "off": "Uit"
+  },
+  "samsung_dryer_current_job_state": {
+    "none": "Geen",
+    "idle": "Inactief",
+    "cooling": "Koelen",
+    "drying": "Drogen",
+    "rinse": "Spoelen",
+    "spin": "Centrifugeren",
+    "finished": "Klaar"
   }
 }

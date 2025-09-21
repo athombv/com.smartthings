@@ -21,5 +21,14 @@
     "spin": "Centrifuga",
     "idle": "Inattivo",
     "off": "Spento"
+  },
+  "samsung_dryer_current_job_state": {
+    "none": "Nessuno",
+    "idle": "Inattivo",
+    "cooling": "Raffreddamento",
+    "drying": "Asciugatura",
+    "rinse": "Risciacquo",
+    "spin": "Centrifuga",
+    "finished": "Finito"
   }
 }
