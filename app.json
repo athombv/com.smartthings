@@ -1535,7 +1535,13 @@
         "ko": "삼성 냉장고"
       },
       "class": "fridge",
-      "capabilities": [],
+      "capabilities": [
+        "measure_temperature.cooler",
+        "measure_temperature.freezer",
+        "alarm_contact",
+        "samsung_refrigerator_rapid_cool",
+        "samsung_refrigerator_rapid_freeze"
+      ],
       "capabilitiesOptions": {
         "measure_temperature.cooler": {
           "title": {
@@ -1584,6 +1590,48 @@
             "ru": "Дверь открыта",
             "ko": "문 열림"
           }
+        },
+        "samsung_refrigerator_rapid_cool": {
+          "type": "boolean",
+          "title": {
+            "en": "Rapid Cool",
+            "nl": "Snel koelen",
+            "de": "Schnellkühlung",
+            "fr": "Refroidissement rapide",
+            "es": "Enfriamiento rápido",
+            "it": "Raffreddamento rapido",
+            "da": "Hurtigkøling",
+            "no": "Hurtigkjøling",
+            "sv": "Snabbkylning",
+            "pl": "Szybkie chłodzenie",
+            "ru": "Быстрое охлаждение",
+            "ko": "급속 냉각"
+          },
+          "getable": true,
+          "setable": false,
+          "uiComponent": "sensor",
+          "icon": "/assets/capabilities/samsung_refrigerator_rapid_cool_mode.svg"
+        },
+        "samsung_refrigerator_rapid_freeze": {
+          "type": "boolean",
+          "title": {
+            "en": "Rapid Freeze",
+            "nl": "Snel vriezen",
+            "de": "Schnellgefrieren",
+            "fr": "Congélation rapide",
+            "es": "Congelación rápida",
+            "it": "Congelamento rapido",
+            "da": "Hurtigfrysning",
+            "no": "Hurtigfrysing",
+            "sv": "Snabbfrysning",
+            "pl": "Szybkie mrożenie",
+            "ru": "Быстрая заморозка",
+            "ko": "급속 냉동"
+          },
+          "getable": true,
+          "setable": false,
+          "uiComponent": "sensor",
+          "icon": "/assets/capabilities/samsung_refrigerator_rapid_freeze_mode.svg"
         }
       },
       "id": "refrigerator"
