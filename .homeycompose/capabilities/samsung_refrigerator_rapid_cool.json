@@ -1,0 +1,9 @@
+{
+  "type": "boolean",
+  "title": { "en": "Rapid Cool" },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/samsung_refrigerator_rapid_cool_mode.svg"
+}
+

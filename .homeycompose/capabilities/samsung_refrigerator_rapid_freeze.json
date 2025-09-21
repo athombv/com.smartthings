@@ -1,0 +1,9 @@
+{
+  "type": "boolean",
+  "title": { "en": "Rapid Freeze" },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/samsung_refrigerator_rapid_freeze_mode.svg"
+}
+
