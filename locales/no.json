@@ -21,5 +21,15 @@
     "spin": "Sentrifugering",
     "idle": "Inaktiv",
     "off": "Av"
+  },
+  "samsung_dryer_current_job_state": {
+    "none": "Ingen",
+    "idle": "Inaktiv",
+    "cooling": "Nedkjøling",
+    "drying": "Tørker",
+    "rinse": "Skyller",
+    "spin": "Sentrifugering",
+    "finished": "Ferdig",
+    "off": "Av"
   }
 }

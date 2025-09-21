@@ -21,5 +21,15 @@
     "spin": "Wirowanie",
     "idle": "Bezczynny",
     "off": "Wyłączony"
+  },
+  "samsung_dryer_current_job_state": {
+    "none": "Brak",
+    "idle": "Bezczynny",
+    "cooling": "Chłodzenie",
+    "drying": "Suszenie",
+    "rinse": "Płukanie",
+    "spin": "Wirowanie",
+    "finished": "Gotowe",
+    "off": "Wyłączony"
   }
 }

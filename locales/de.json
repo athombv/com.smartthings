@@ -21,5 +21,15 @@
     "spin": "Schleudern",
     "idle": "Leerlauf",
     "off": "Aus"
+  },
+  "samsung_dryer_current_job_state": {
+    "none": "Keine",
+    "idle": "Leerlauf",
+    "cooling": "Abkühlen",
+    "drying": "Trocknen",
+    "rinse": "Spülen",
+    "spin": "Schleudern",
+    "finished": "Fertig",
+    "off": "Aus"
   }
 }
