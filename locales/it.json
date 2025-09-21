@@ -29,6 +29,7 @@
     "drying": "Asciugatura",
     "rinse": "Risciacquo",
     "spin": "Centrifuga",
-    "finished": "Finito"
+    "finished": "Finito",
+    "off": "Spento"
   }
 }

@@ -29,6 +29,7 @@
     "drying": "Tørker",
     "rinse": "Skyller",
     "spin": "Sentrifugering",
-    "finished": "Ferdig"
+    "finished": "Ferdig",
+    "off": "Av"
   }
 }

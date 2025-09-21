@@ -29,6 +29,7 @@
     "drying": "Torkning",
     "rinse": "Sköljning",
     "spin": "Centrifugering",
-    "finished": "Klar"
+    "finished": "Klar",
+    "off": "Av"
   }
 }

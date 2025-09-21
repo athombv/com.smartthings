@@ -29,6 +29,7 @@
     "drying": "Secando",
     "rinse": "Enjuagando",
     "spin": "Centrifugado",
-    "finished": "Terminado"
+    "finished": "Terminado",
+    "off": "Apagado"
   }
 }

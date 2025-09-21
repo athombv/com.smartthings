@@ -29,6 +29,7 @@
     "drying": "Drogen",
     "rinse": "Spoelen",
     "spin": "Centrifugeren",
-    "finished": "Klaar"
+    "finished": "Klaar",
+    "off": "Uit"
   }
 }

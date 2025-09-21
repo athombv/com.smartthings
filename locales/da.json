@@ -29,6 +29,7 @@
     "drying": "Tørring",
     "rinse": "Skylning",
     "spin": "Centrifugering",
-    "finished": "Færdig"
+    "finished": "Færdig",
+    "off": "Slukket"
   }
 }
