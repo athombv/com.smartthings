@@ -1,5 +1,25 @@
 {
   "errors": {
     "offline": "Device Offline"
+  },
+  "samsung_washer_current_job_state": {
+    "airWash": "Air Wash",
+    "aiRinse": "AI Rinse",
+    "aiSpin": "AI Spin",
+    "aiWash": "AI Wash",
+    "cooling": "Cooling",
+    "delayWash": "Delay washing",
+    "drying": "Drying",
+    "finished": "Finished",
+    "none": "None",
+    "preWash": "PreWash",
+    "weightSensing": "Weight sensing",
+    "wrinklePrevent": "Wrinkle prevention",
+    "freezeProtection": "Freeze protection",
+    "wash": "Washing",
+    "rinse": "Rinsing",
+    "spin": "Spinning",
+    "idle": "Idle",
+    "off": "Off"
   }
 }

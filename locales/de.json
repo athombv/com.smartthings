@@ -1,5 +1,25 @@
 {
   "errors": {
     "offline": "Gerät offline"
+  },
+  "samsung_washer_current_job_state": {
+    "airWash": "Luftwäsche",
+    "aiRinse": "KI-Spülen",
+    "aiSpin": "KI-Schleudern",
+    "aiWash": "KI-Wäsche",
+    "cooling": "Abkühlen",
+    "delayWash": "Waschverzögerung",
+    "drying": "Trocknen",
+    "finished": "Fertig",
+    "none": "Keine",
+    "preWash": "Vorwäsche",
+    "weightSensing": "Gewichtserkennung",
+    "wrinklePrevent": "Faltenprävention",
+    "freezeProtection": "Frostschutz",
+    "wash": "Waschen",
+    "rinse": "Spülen",
+    "spin": "Schleudern",
+    "idle": "Leerlauf",
+    "off": "Aus"
   }
 }

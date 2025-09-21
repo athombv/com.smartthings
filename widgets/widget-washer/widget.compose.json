@@ -1,0 +1,20 @@
+{
+  "name": {
+    "en": "Washer"
+  },
+  "height": 140,
+  "settings": [],
+  "devices": {
+    "type": "app",
+    "singular": true,
+    "filter": {
+      "capabilities": "samsung_washer_current_job_state"
+    }
+  },
+  "api": {
+    "getWasherState": {
+      "method": "GET",
+      "path": "/"
+    }
+  }
+}

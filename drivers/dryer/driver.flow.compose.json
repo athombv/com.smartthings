@@ -80,10 +80,17 @@
         "en": "Set dryer state to [[state]]",
         "nl": "Zet droger status naar [[state]]"
       },
+       "hint": {
+        "en": "You need to enable Samsung Smart Control on your dryer for this flowcard to work."
+      },
       "args": [
         {
           "name": "state",
           "type": "dropdown",
+          "title": {
+            "en": "State",
+            "nl": "Status"
+          },
           "placeholder": {
             "en": "Choose state",
             "nl": "Kies status"
