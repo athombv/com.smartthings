@@ -2,7 +2,7 @@
 
 const SmartThingsDriver = require('../../lib/SmartThingsDriver');
 
-module.exports = class SmartThingsDriverWasher extends SmartThingsDriver {
+module.exports = class SmartThingsDriverRefrigerator extends SmartThingsDriver {
 
   onPairFilterDevice(device) {
     this.log('onPairFilterDevice', device.deviceTypeName);

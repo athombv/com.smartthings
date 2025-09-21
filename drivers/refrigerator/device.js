@@ -19,7 +19,7 @@ module.exports = class SmartThingsDeviceRefrigerator extends SmartThingsDevice {
     },
     {
       homeyCapabilityId: 'alarm_contact',
-      smartThingsComponentId: 'cooler',
+      smartThingsComponentId: 'main',
       smartThingsCapabilityId: 'contactSensor',
       smartThingsAttributeId: 'contact',
       async onReport({ value }) {
@@ -92,10 +92,18 @@ module.exports = class SmartThingsDeviceRefrigerator extends SmartThingsDevice {
       .registerRunListener(args => this.rapidFreezeState(args));
     this.homey.flow.getConditionCard('rapid_cool_state')
       .registerRunListener(args => this.rapidCoolState(args));
+    if (super.onOAuth2Init) await super.onOAuth2Init();
   }
 
   onInit() {
     super.onInit?.();
+
+    // Zorg dat alle capabilities aanwezig zijn op het apparaat
+    for (const cap of this.constructor.CAPABILITIES) {
+      if (!this.hasCapability(cap.homeyCapabilityId)) {
+        this.addCapability(cap.homeyCapabilityId).catch(this.error);
+      }
+    }
 
     this.homey.flow.getActionCard('set_rapid_freeze')
       .registerRunListener(async args => {
