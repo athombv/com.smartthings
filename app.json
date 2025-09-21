@@ -1521,7 +1521,13 @@
         "ko": "삼성 냉장고"
       },
       "class": "fridge",
-      "capabilities": [],
+      "capabilities": [
+        "measure_temperature.cooler",
+        "measure_temperature.freezer",
+        "alarm_contact",
+        "samsung_refrigerator_rapid_cool",
+        "samsung_refrigerator_rapid_freeze"
+      ],
       "capabilitiesOptions": {
         "measure_temperature.cooler": {
           "title": {
