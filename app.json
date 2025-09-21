@@ -937,6 +937,122 @@
         ]
       },
       {
+        "id": "set_rapid_freeze",
+        "title": {
+          "en": "Set rapid freeze to...",
+          "nl": "Zet snel vriezen op...",
+          "de": "Schnellgefrieren einstellen auf...",
+          "fr": "Définir la congélation rapide sur...",
+          "es": "Establecer congelación rápida en...",
+          "it": "Imposta congelamento rapido su...",
+          "da": "Indstil hurtigfrysning til...",
+          "no": "Sett hurtigfrysing til...",
+          "sv": "Ställ in snabbfrysning på...",
+          "pl": "Ustaw szybkie mrożenie na...",
+          "ru": "Установить быструю заморозку на...",
+          "ko": "급속 냉동을 ...로 설정"
+        },
+        "titleFormatted": {
+          "en": "Set rapid freeze to [[state]]",
+          "nl": "Zet snel vriezen op [[state]]",
+          "de": "Schnellgefrieren einstellen auf [[state]]",
+          "fr": "Définir la congélation rapide sur [[state]]",
+          "es": "Establecer congelación rápida en [[state]]",
+          "it": "Imposta congelamento rapido su [[state]]",
+          "da": "Indstil hurtigfrysning til [[state]]",
+          "no": "Sett hurtigfrysing til [[state]]",
+          "sv": "Ställ in snabbfrysning på [[state]]",
+          "pl": "Ustaw szybkie mrożenie na [[state]]",
+          "ru": "Установить быструю заморозку на [[state]]",
+          "ko": "급속 냉동을 [[state]]로 설정"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=refrigerator"
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "on",
+                "title": {
+                  "en": "On",
+                  "nl": "Aan"
+                }
+              },
+              {
+                "id": "off",
+                "title": {
+                  "en": "Off",
+                  "nl": "Uit"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "set_rapid_cool",
+        "title": {
+          "en": "Set rapid cool to...",
+          "nl": "Zet snel koelen op...",
+          "de": "Schnellkühlung einstellen auf...",
+          "fr": "Définir le refroidissement rapide sur...",
+          "es": "Establecer enfriamiento rápido en...",
+          "it": "Imposta raffreddamento rapido su...",
+          "da": "Indstil hurtigkøling til...",
+          "no": "Sett hurtigkjøling til...",
+          "sv": "Ställ in snabbkylning på...",
+          "pl": "Ustaw szybkie chłodzenie na...",
+          "ru": "Установить быстрое охлаждение на...",
+          "ko": "급속 냉각을 ...로 설정"
+        },
+        "titleFormatted": {
+          "en": "Set rapid cool to [[state]]",
+          "nl": "Zet snel koelen op [[state]]",
+          "de": "Schnellkühlung einstellen auf [[state]]",
+          "fr": "Définir le refroidissement rapide sur [[state]]",
+          "es": "Establecer enfriamiento rápido en [[state]]",
+          "it": "Imposta raffreddamento rapido su [[state]]",
+          "da": "Indstil hurtigkøling til [[state]]",
+          "no": "Sett hurtigkjøling til [[state]]",
+          "sv": "Ställ in snabbkylning på [[state]]",
+          "pl": "Ustaw szybkie chłodzenie na [[state]]",
+          "ru": "Установить быстрое охлаждение на [[state]]",
+          "ko": "급속 냉각을 [[state]]로 설정"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=refrigerator"
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "on",
+                "title": {
+                  "en": "On",
+                  "nl": "Aan"
+                }
+              },
+              {
+                "id": "off",
+                "title": {
+                  "en": "Off",
+                  "nl": "Uit"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "set_volume",
         "title": {
           "en": "Set the volume",
@@ -1044,6 +1160,124 @@
             "type": "device",
             "name": "device",
             "filter": "driver_id=tv"
+          }
+        ]
+      }
+    ],
+    "conditions": [
+      {
+        "id": "rapid_freeze_state",
+        "title": {
+          "en": "Rapid freeze is...",
+          "nl": "Snel vriezen is...",
+          "de": "Schnellgefrieren ist...",
+          "fr": "La congélation rapide est...",
+          "es": "La congelación rápida está...",
+          "it": "Il congelamento rapido è...",
+          "da": "Hurtigfrysning er...",
+          "no": "Hurtigfrysing er...",
+          "sv": "Snabbfrysning är...",
+          "pl": "Szybkie mrożenie jest...",
+          "ru": "Быстрая заморозка...",
+          "ko": "급속 냉동 상태..."
+        },
+        "titleFormatted": {
+          "en": "Rapid freeze is [[state]]",
+          "nl": "Snel vriezen is [[state]]",
+          "de": "Schnellgefrieren ist [[state]]",
+          "fr": "La congélation rapide est [[state]]",
+          "es": "La congelación rápida está [[state]]",
+          "it": "Il congelamento rapido è [[state]]",
+          "da": "Hurtigfrysning er [[state]]",
+          "no": "Hurtigfrysing er [[state]]",
+          "sv": "Snabbfrysning är [[state]]",
+          "pl": "Szybkie mrożenie jest [[state]]",
+          "ru": "Быстрая заморозка [[state]]",
+          "ko": "급속 냉동 상태 [[state]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=refrigerator"
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "on",
+                "title": {
+                  "en": "On",
+                  "nl": "Aan"
+                }
+              },
+              {
+                "id": "off",
+                "title": {
+                  "en": "Off",
+                  "nl": "Uit"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "rapid_cool_state",
+        "title": {
+          "en": "Rapid cool is...",
+          "nl": "Snel koelen is...",
+          "de": "Schnellkühlung ist...",
+          "fr": "Le refroidissement rapide est...",
+          "es": "El enfriamiento rápido está...",
+          "it": "Il raffreddamento rapido è...",
+          "da": "Hurtigkøling er...",
+          "no": "Hurtigkjøling er...",
+          "sv": "Snabbkylning är...",
+          "pl": "Szybkie chłodzenie jest...",
+          "ru": "Быстрое охлаждение...",
+          "ko": "급속 냉각 상태..."
+        },
+        "titleFormatted": {
+          "en": "Rapid cool is [[state]]",
+          "nl": "Snel koelen is [[state]]",
+          "de": "Schnellkühlung ist [[state]]",
+          "fr": "Le refroidissement rapide est [[state]]",
+          "es": "El enfriamiento rápido está [[state]]",
+          "it": "Il raffreddamento rapido è [[state]]",
+          "da": "Hurtigkøling er [[state]]",
+          "no": "Hurtigkjøling er [[state]]",
+          "sv": "Snabbkylning är [[state]]",
+          "pl": "Szybkie chłodzenie jest [[state]]",
+          "ru": "Быстрое охлаждение [[state]]",
+          "ko": "급속 냉각 상태 [[state]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=refrigerator"
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "on",
+                "title": {
+                  "en": "On",
+                  "nl": "Aan"
+                }
+              },
+              {
+                "id": "off",
+                "title": {
+                  "en": "Off",
+                  "nl": "Uit"
+                }
+              }
+            ]
           }
         ]
       }
@@ -1290,13 +1524,52 @@
       "capabilities": [],
       "capabilitiesOptions": {
         "measure_temperature.cooler": {
-          "title": "Cooler Temperature"
+          "title": {
+            "en": "Cooler Temperature",
+            "nl": "Koelkast temperatuur",
+            "da": "Køleskabstemperatur",
+            "de": "Kühlschranktemperatur",
+            "es": "Temperatura del frigorífico",
+            "fr": "Température du réfrigérateur",
+            "it": "Temperatura frigorifero",
+            "no": "Kjøleskapstemperatur",
+            "sv": "Kylskåpstemperatur",
+            "pl": "Temperatura lodówki",
+            "ru": "Температура холодильника",
+            "ko": "냉장고 온도"
+          }
         },
         "measure_temperature.freezer": {
-          "title": "Freezer Temperature"
+          "title": {
+            "en": "Freezer Temperature",
+            "nl": "Vriezer temperatuur",
+            "da": "Frysertemperatur",
+            "de": "Gefriertemperatur",
+            "es": "Temperatura del congelador",
+            "fr": "Température du congélateur",
+            "it": "Temperatura congelatore",
+            "no": "Frysertemperatur",
+            "sv": "Frysrumstemperatur",
+            "pl": "Temperatura zamrażarki",
+            "ru": "Температура морозильника",
+            "ko": "냉동실 온도"
+          }
         },
         "alarm_contact": {
-          "title": "Door Open"
+          "title": {
+            "en": "Door Open",
+            "nl": "Deur open",
+            "da": "Dør åben",
+            "de": "Tür offen",
+            "es": "Puerta abierta",
+            "fr": "Porte ouverte",
+            "it": "Porta aperta",
+            "no": "Dør åpen",
+            "sv": "Dörr öppen",
+            "pl": "Drzwi otwarte",
+            "ru": "Дверь открыта",
+            "ko": "문 열림"
+          }
         }
       },
       "id": "refrigerator"
@@ -2249,6 +2522,48 @@
           }
         }
       ]
+    },
+    "samsung_refrigerator_rapid_cool": {
+      "type": "boolean",
+      "title": {
+        "en": "Rapid Cool",
+        "nl": "Snel koelen",
+        "de": "Schnellkühlung",
+        "fr": "Refroidissement rapide",
+        "es": "Enfriamiento rápido",
+        "it": "Raffreddamento rapido",
+        "da": "Hurtigkøling",
+        "no": "Hurtigkjøling",
+        "sv": "Snabbkylning",
+        "pl": "Szybkie chłodzenie",
+        "ru": "Быстрое охлаждение",
+        "ko": "급속 냉각"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/samsung_refrigerator_rapid_cool_mode.svg"
+    },
+    "samsung_refrigerator_rapid_freeze": {
+      "type": "boolean",
+      "title": {
+        "en": "Rapid Freeze",
+        "nl": "Snel vriezen",
+        "de": "Schnellgefrieren",
+        "fr": "Congélation rapide",
+        "es": "Congelación rápida",
+        "it": "Congelamento rapido",
+        "da": "Hurtigfrysning",
+        "no": "Hurtigfrysing",
+        "sv": "Snabbfrysning",
+        "pl": "Szybkie mrożenie",
+        "ru": "Быстрая заморозка",
+        "ko": "급속 냉동"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/samsung_refrigerator_rapid_freeze_mode.svg"
     },
     "samsung_washer_current_job_state": {
       "type": "enum",

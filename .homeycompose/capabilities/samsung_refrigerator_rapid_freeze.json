@@ -1,0 +1,21 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "Rapid Freeze",
+    "nl": "Snel vriezen",
+    "de": "Schnellgefrieren",
+    "fr": "Congélation rapide",
+    "es": "Congelación rápida",
+    "it": "Congelamento rapido",
+    "da": "Hurtigfrysning",
+    "no": "Hurtigfrysing",
+    "sv": "Snabbfrysning",
+    "pl": "Szybkie mrożenie",
+    "ru": "Быстрая заморозка",
+    "ko": "급속 냉동"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/samsung_refrigerator_rapid_freeze_mode.svg"
+}

@@ -18,13 +18,52 @@
   "capabilities": [],
   "capabilitiesOptions": {
     "measure_temperature.cooler": {
-      "title": "Cooler Temperature"
+      "title": {
+        "en": "Cooler Temperature",
+        "nl": "Koelkast temperatuur",
+        "da": "Køleskabstemperatur",
+        "de": "Kühlschranktemperatur",
+        "es": "Temperatura del frigorífico",
+        "fr": "Température du réfrigérateur",
+        "it": "Temperatura frigorifero",
+        "no": "Kjøleskapstemperatur",
+        "sv": "Kylskåpstemperatur",
+        "pl": "Temperatura lodówki",
+        "ru": "Температура холодильника",
+        "ko": "냉장고 온도"
+      }
     },
     "measure_temperature.freezer": {
-      "title": "Freezer Temperature"
+      "title": {
+        "en": "Freezer Temperature",
+        "nl": "Vriezer temperatuur",
+        "da": "Frysertemperatur",
+        "de": "Gefriertemperatur",
+        "es": "Temperatura del congelador",
+        "fr": "Température du congélateur",
+        "it": "Temperatura congelatore",
+        "no": "Frysertemperatur",
+        "sv": "Frysrumstemperatur",
+        "pl": "Temperatura zamrażarki",
+        "ru": "Температура морозильника",
+        "ko": "냉동실 온도"
+      }
     },
     "alarm_contact": {
-      "title": "Door Open"
+      "title": {
+        "en": "Door Open",
+        "nl": "Deur open",
+        "da": "Dør åben",
+        "de": "Tür offen",
+        "es": "Puerta abierta",
+        "fr": "Porte ouverte",
+        "it": "Porta aperta",
+        "no": "Dør åpen",
+        "sv": "Dörr öppen",
+        "pl": "Drzwi otwarte",
+        "ru": "Дверь открыта",
+        "ko": "문 열림"
+      }
     }
   }
 }
