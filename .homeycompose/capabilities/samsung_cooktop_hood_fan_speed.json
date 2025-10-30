@@ -1,0 +1,23 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Hood Fan Speed",
+    "nl": "Afzuigkap Ventilator Snelheid",
+    "da": "Emhætte Blæserhastighed",
+    "de": "Dunstabzugshaube Lüftergeschwindigkeit",
+    "es": "Velocidad del Ventilador de Campana",
+    "fr": "Vitesse Ventilateur Hotte",
+    "it": "Velocità Ventola Cappa",
+    "no": "Kjøkkenvifte Viftehastighet",
+    "sv": "Fläkthastighet Kåpa",
+    "pl": "Prędkość Wentylatora Okapu",
+    "ru": "Скорость вентилятора вытяжки",
+    "ko": "후드 팬 속도"
+  },
+  "getable": true,
+  "setable": true,
+  "uiComponent": "slider",
+  "min": 0,
+  "max": 4,
+  "step": 1
+}

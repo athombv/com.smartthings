@@ -1230,6 +1230,57 @@
       },
       "class": "cooktop",
       "capabilities": [],
+      "capabilitiesOptions": {
+        "onoff": {
+          "setable": false,
+          "title": {
+            "en": "Cooktop",
+            "nl": "Kookplaat",
+            "da": "Kogeplade",
+            "de": "Kochfeld",
+            "es": "Placa de cocina",
+            "fr": "Table de cuisson",
+            "it": "Piano cottura",
+            "no": "Platetopp",
+            "sv": "Häll",
+            "pl": "Płyta grzewcza",
+            "ru": "Варочная панель",
+            "ko": "쿡탑"
+          }
+        },
+        "onoff.hood_fan": {
+          "title": {
+            "en": "Hood Fan",
+            "nl": "Afzuigkap Ventilator",
+            "da": "Emhætte Ventilator",
+            "de": "Dunstabzug Ventilator",
+            "es": "Campana Ventilador",
+            "fr": "Hotte Ventilateur",
+            "it": "Cappa Ventilatore",
+            "no": "Kjøkkenvifte Vifte",
+            "sv": "Fläkt Fläkt",
+            "pl": "Okap Wentylator",
+            "ru": "Вытяжка Вентилятор",
+            "ko": "후드 팬"
+          }
+        },
+        "onoff.hood_light": {
+          "title": {
+            "en": "Hood Light",
+            "nl": "Afzuigkap Licht",
+            "da": "Emhætte Lys",
+            "de": "Dunstabzug Licht",
+            "es": "Campana Luz",
+            "fr": "Hotte Lumière",
+            "it": "Cappa Luce",
+            "no": "Kjøkkenvifte Lys",
+            "sv": "Fläkt Ljus",
+            "pl": "Okap Światło",
+            "ru": "Вытяжка Свет",
+            "ko": "후드 조명"
+          }
+        }
+      },
       "id": "cooktop"
     },
     {
@@ -1961,6 +2012,29 @@
           }
         }
       ]
+    },
+    "samsung_cooktop_hood_fan_speed": {
+      "type": "number",
+      "title": {
+        "en": "Hood Fan Speed",
+        "nl": "Afzuigkap Ventilator Snelheid",
+        "da": "Emhætte Blæserhastighed",
+        "de": "Dunstabzugshaube Lüftergeschwindigkeit",
+        "es": "Velocidad del Ventilador de Campana",
+        "fr": "Vitesse Ventilateur Hotte",
+        "it": "Velocità Ventola Cappa",
+        "no": "Kjøkkenvifte Viftehastighet",
+        "sv": "Fläkthastighet Kåpa",
+        "pl": "Prędkość Wentylatora Okapu",
+        "ru": "Скорость вентилятора вытяжки",
+        "ko": "후드 팬 속도"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "slider",
+      "min": 0,
+      "max": 4,
+      "step": 1
     },
     "samsung_dishwasher_status_job": {
       "type": "enum",

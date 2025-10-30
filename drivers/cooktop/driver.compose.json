@@ -15,5 +15,56 @@
     "ko": "삼성 쿡탑"
   },
   "class": "cooktop",
-  "capabilities": []
+  "capabilities": [],
+  "capabilitiesOptions": {
+    "onoff": {
+      "setable": false,
+      "title": {
+        "en": "Cooktop",
+        "nl": "Kookplaat",
+        "da": "Kogeplade",
+        "de": "Kochfeld",
+        "es": "Placa de cocina",
+        "fr": "Table de cuisson",
+        "it": "Piano cottura",
+        "no": "Platetopp",
+        "sv": "Häll",
+        "pl": "Płyta grzewcza",
+        "ru": "Варочная панель",
+        "ko": "쿡탑"
+      }
+    },
+    "onoff.hood_fan": {
+      "title": {
+        "en": "Hood Fan",
+        "nl": "Afzuigkap Ventilator",
+        "da": "Emhætte Ventilator",
+        "de": "Dunstabzug Ventilator",
+        "es": "Campana Ventilador",
+        "fr": "Hotte Ventilateur",
+        "it": "Cappa Ventilatore",
+        "no": "Kjøkkenvifte Vifte",
+        "sv": "Fläkt Fläkt",
+        "pl": "Okap Wentylator",
+        "ru": "Вытяжка Вентилятор",
+        "ko": "후드 팬"
+      }
+    },
+    "onoff.hood_light": {
+      "title": {
+        "en": "Hood Light",
+        "nl": "Afzuigkap Licht",
+        "da": "Emhætte Lys",
+        "de": "Dunstabzug Licht",
+        "es": "Campana Luz",
+        "fr": "Hotte Lumière",
+        "it": "Cappa Luce",
+        "no": "Kjøkkenvifte Lys",
+        "sv": "Fläkt Ljus",
+        "pl": "Okap Światło",
+        "ru": "Вытяжка Свет",
+        "ko": "후드 조명"
+      }
+    }
+  }
 }
