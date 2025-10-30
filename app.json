@@ -2013,6 +2013,27 @@
         }
       ]
     },
+    "samsung_cooktop_burner_power": {
+      "type": "string",
+      "title": {
+        "en": "Burner Power",
+        "nl": "Kookpit Vermogen",
+        "da": "Kogeplade Effekt",
+        "de": "Kochfeld Leistung",
+        "es": "Potencia del Quemador",
+        "fr": "Puissance du Brûleur",
+        "it": "Potenza Bruciatore",
+        "no": "Brenner Effekt",
+        "sv": "Brännareffekt",
+        "pl": "Moc Palnika",
+        "ru": "Мощность конфорки",
+        "ko": "버너 출력"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/samsung_cooktop_burner_power.svg"
+    },
     "samsung_cooktop_hood_fan_speed": {
       "type": "number",
       "title": {

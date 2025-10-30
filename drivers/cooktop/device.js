@@ -82,6 +82,108 @@ module.exports = class SmartThingsDeviceCooktop extends SmartThingsDevice {
         return null;
       },
     },
+    {
+      homeyCapabilityId: 'samsung_cooktop_burner_power.burner-01',
+      smartThingsComponentId: 'burner-01',
+      smartThingsCapabilityId: 'samsungce.cooktopHeatingPower',
+      smartThingsAttributeId: 'manualLevel',
+      async onReport({ value, capability }) {
+        if (capability?.manualLevelMax?.value) {
+          this.__burner_01_max = capability.manualLevelMax.value;
+        }
+
+        if (this.__burner_01_max) {
+          return `${value} / ${this.__burner_01_max}`;
+        }
+
+        return `${value}`;
+      },
+    },
+    {
+      homeyCapabilityId: 'samsung_cooktop_burner_power.burner-02',
+      smartThingsComponentId: 'burner-02',
+      smartThingsCapabilityId: 'samsungce.cooktopHeatingPower',
+      smartThingsAttributeId: 'manualLevel',
+      async onReport({ value, capability }) {
+        if (capability?.manualLevelMax?.value) {
+          this.__burner_01_max = capability.manualLevelMax.value;
+        }
+
+        if (this.__burner_01_max) {
+          return `${value} / ${this.__burner_01_max}`;
+        }
+
+        return `${value}`;
+      },
+    },
+    {
+      homeyCapabilityId: 'samsung_cooktop_burner_power.burner-03',
+      smartThingsComponentId: 'burner-03',
+      smartThingsCapabilityId: 'samsungce.cooktopHeatingPower',
+      smartThingsAttributeId: 'manualLevel',
+      async onReport({ value, capability }) {
+        if (capability?.manualLevelMax?.value) {
+          this.__burner_01_max = capability.manualLevelMax.value;
+        }
+
+        if (this.__burner_01_max) {
+          return `${value} / ${this.__burner_01_max}`;
+        }
+
+        return `${value}`;
+      },
+    },
+    {
+      homeyCapabilityId: 'samsung_cooktop_burner_power.burner-04',
+      smartThingsComponentId: 'burner-04',
+      smartThingsCapabilityId: 'samsungce.cooktopHeatingPower',
+      smartThingsAttributeId: 'manualLevel',
+      async onReport({ value, capability }) {
+        if (capability?.manualLevelMax?.value) {
+          this.__burner_01_max = capability.manualLevelMax.value;
+        }
+
+        if (this.__burner_01_max) {
+          return `${value} / ${this.__burner_01_max}`;
+        }
+
+        return `${value}`;
+      },
+    },
+    {
+      homeyCapabilityId: 'samsung_cooktop_burner_power.burner-05',
+      smartThingsComponentId: 'burner-05',
+      smartThingsCapabilityId: 'samsungce.cooktopHeatingPower',
+      smartThingsAttributeId: 'manualLevel',
+      async onReport({ value, capability }) {
+        if (capability?.manualLevelMax?.value) {
+          this.__burner_01_max = capability.manualLevelMax.value;
+        }
+
+        if (this.__burner_01_max) {
+          return `${value} / ${this.__burner_01_max}`;
+        }
+
+        return `${value}`;
+      },
+    },
+    {
+      homeyCapabilityId: 'samsung_cooktop_burner_power.burner-06',
+      smartThingsComponentId: 'burner-06',
+      smartThingsCapabilityId: 'samsungce.cooktopHeatingPower',
+      smartThingsAttributeId: 'manualLevel',
+      async onReport({ value, capability }) {
+        if (capability?.manualLevelMax?.value) {
+          this.__burner_01_max = capability.manualLevelMax.value;
+        }
+
+        if (this.__burner_01_max) {
+          return `${value} / ${this.__burner_01_max}`;
+        }
+
+        return `${value}`;
+      },
+    },
   ];
 
 };
