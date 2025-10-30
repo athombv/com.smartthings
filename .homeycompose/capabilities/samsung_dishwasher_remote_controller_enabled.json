@@ -1,0 +1,21 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "Remote Control Enabled",
+    "nl": "Afstandsbediening Ingeschakeld",
+    "da": "Fjernbetjening Aktiveret",
+    "de": "Fernbedienung Aktiviert",
+    "es": "Control Remoto Habilitado",
+    "fr": "Télécommande Activée",
+    "it": "Controllo Remoto Abilitato",
+    "no": "Fjernkontroll Aktivert",
+    "sv": "Fjärrkontroll Aktiverad",
+    "pl": "Zdalne Sterowanie Włączone",
+    "ru": "Удаленное Управление Включено",
+    "ko": "원격 제어 활성화"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/samsung_dishwasher_remote_controller_enabled.svg"
+}

@@ -1341,6 +1341,24 @@
       },
       "class": "dishwasher",
       "capabilities": [],
+      "capabilitiesOptions": {
+        "alarm_contact.dishwasher_door": {
+          "title": {
+            "en": "Dishwasher Door Open",
+            "nl": "Vaatwasserdeur Open",
+            "da": "Opvaskemaskinedør Åben",
+            "de": "Geschirrspülertür Offen",
+            "es": "Puerta del Lavavajillas Abierta",
+            "fr": "Porte du Lave-vaisselle Ouverte",
+            "it": "Porta della Lavastoviglie Aperta",
+            "no": "Oppvaskmaskindør Åpen",
+            "sv": "Diskmaskinsdörr Öppen",
+            "pl": "Drzwi Zmywarki Otwarte",
+            "ru": "Дверца Посудомоечной Машины Открыта",
+            "ko": "식기세척기 문 열림"
+          }
+        }
+      },
       "id": "dishwasher"
     },
     {
@@ -2057,10 +2075,101 @@
       "max": 4,
       "step": 1
     },
-    "samsung_dishwasher_status_job": {
+    "samsung_dishwasher_current_job_state": {
       "type": "enum",
       "title": {
-        "en": "Status",
+        "en": "Job State",
+        "nl": "Taakstatus",
+        "da": "Jobstatus",
+        "de": "Auftragsstatus",
+        "es": "Estado de trabajo",
+        "fr": "État du travail",
+        "it": "Stato lavoro",
+        "no": "Jobbstatus",
+        "sv": "Jobbstatus",
+        "pl": "Stan zadania",
+        "ru": "Состояние задания",
+        "ko": "작업 상태"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/samsung_dishwasher_current_job_state.svg",
+      "values": [
+        {
+          "id": "finished",
+          "title": {
+            "en": "Finished",
+            "nl": "Klaar",
+            "da": "Færdig",
+            "de": "Fertig",
+            "es": "Terminado",
+            "fr": "Terminé",
+            "it": "Finito",
+            "no": "Ferdig",
+            "sv": "Klar",
+            "pl": "Zakończone",
+            "ru": "Закончил",
+            "ko": "완료됨"
+          }
+        },
+        {
+          "id": "none",
+          "title": {
+            "en": "None",
+            "nl": "Geen",
+            "da": "Ingen",
+            "de": "Keine",
+            "es": "Ninguno",
+            "fr": "Aucun",
+            "it": "Nessuno",
+            "no": "Ingen",
+            "sv": "Ingen",
+            "pl": "Żaden",
+            "ru": "Нет",
+            "ko": "없음"
+          }
+        },
+        {
+          "id": "idle",
+          "title": {
+            "en": "Idle",
+            "nl": "Inactief",
+            "da": "Inaktiv",
+            "de": "Leerlauf",
+            "es": "Inactivo",
+            "fr": "Inactif",
+            "it": "Inattivo",
+            "no": "Inaktiv",
+            "sv": "Inaktiv",
+            "pl": "Bezczynny",
+            "ru": "Бездействующий",
+            "ko": "대기 중"
+          }
+        },
+        {
+          "id": "preWashing",
+          "title": {
+            "en": "Pre-washing",
+            "nl": "Voorwassen",
+            "da": "Forvask",
+            "de": "Vorwäsche",
+            "es": "Prelavado",
+            "fr": "Prélavage",
+            "it": "Prelavaggio",
+            "no": "Forvask",
+            "sv": "Förtvätt",
+            "pl": "Pranie wstępne",
+            "ru": "Предварительная стирка",
+            "ko": "예비 세척"
+          }
+        }
+      ]
+    },
+    "samsung_dishwasher_current_operation_state": {
+      "type": "enum",
+      "title": {
+        "en": "Status (samsung_dishwasher_current_operation_state)",
         "nl": "Status",
         "da": "Status",
         "de": "Status",
@@ -2076,80 +2185,339 @@
       "getable": true,
       "setable": false,
       "uiComponent": "sensor",
-      "icon": "/assets/capabilities/samsung_dishwasher_current_job_state.svg",
+      "icon": "/assets/capabilities/samsung_dishwasher_current_operation_state.svg",
       "values": [
         {
-          "id": "unknown",
+          "id": "running",
           "title": {
-            "en": "Unknown"
+            "en": "Running",
+            "nl": "Bezig",
+            "da": "Kører",
+            "de": "Läuft",
+            "es": "En marcha",
+            "fr": "En cours",
+            "it": "In esecuzione",
+            "no": "Kjører",
+            "sv": "Körs",
+            "pl": "W trakcie",
+            "ru": "В работе",
+            "ko": "작동 중"
           }
         },
         {
-          "id": "ready",
+          "id": "paused",
           "title": {
-            "en": "Ready",
-            "nl": "Klaar",
-            "da": "Klar",
-            "de": "Bereit",
-            "es": "Listo",
-            "fr": "Prêt",
-            "it": "Pronto",
-            "no": "Klar",
-            "sv": "Klar",
-            "pl": "Gotowy",
-            "ru": "Готово",
-            "ko": "준비됨"
+            "en": "Paused",
+            "nl": "Gepauzeerd",
+            "da": "Pauset",
+            "de": "Pausiert",
+            "es": "Pausado",
+            "fr": "En pause",
+            "it": "In pausa",
+            "no": "Pauset",
+            "sv": "Pausad",
+            "pl": "Wstrzymany",
+            "ru": "На паузе",
+            "ko": "일시 중지됨"
           }
         },
         {
           "id": "finished",
           "title": {
             "en": "Finished",
-            "nl": "Afgewerkt",
+            "nl": "Klaar",
             "da": "Færdig",
             "de": "Fertig",
             "es": "Terminado",
             "fr": "Terminé",
-            "it": "Completato",
+            "it": "Finito",
             "no": "Ferdig",
             "sv": "Klar",
-            "pl": "Ukończony",
-            "ru": "Завершено",
-            "ko": "완료"
+            "pl": "Zakończone",
+            "ru": "Закончил",
+            "ko": "완료됨"
           }
         },
         {
-          "id": "scheduledStart",
+          "id": "none",
           "title": {
-            "en": "Scheduled Start",
-            "nl": "Geplande start",
-            "da": "Planlagt start",
-            "de": "Geplanter Start",
-            "es": "Inicio programado",
-            "fr": "Démarrage planifié",
-            "it": "Avvio programmato",
-            "no": "Planlagt start",
-            "sv": "Schemalagd start",
-            "pl": "Zaplanowany start",
-            "ru": "Запланированное начало",
-            "ko": "예약 시작"
+            "en": "None",
+            "nl": "Geen",
+            "da": "Ingen",
+            "de": "Keine",
+            "es": "Ninguno",
+            "fr": "Aucun",
+            "it": "Nessuno",
+            "no": "Ingen",
+            "sv": "Ingen",
+            "pl": "Żaden",
+            "ru": "Нет",
+            "ko": "없음"
           }
         },
         {
-          "id": "scheduledEnd",
+          "id": "idle",
           "title": {
-            "en": "Scheduled ending",
-            "nl": "Geplande beëindiging",
-            "da": "Planlagt afslutning",
-            "de": "Geplantes Ende",
-            "es": "Final programado",
-            "fr": "Fin programmée",
-            "it": "Fine programmata",
-            "no": "Planlagt avslutning",
-            "sv": "Schemalagt slut",
-            "pl": "Zaplanowany koniec",
-            "ru": "Запланированное завершение",
-            "ko": "예약 종료"
+            "en": "Idle",
+            "nl": "Inactief",
+            "da": "Inaktiv",
+            "de": "Leerlauf",
+            "es": "Inactivo",
+            "fr": "Inactif",
+            "it": "Inattivo",
+            "no": "Inaktiv",
+            "sv": "Inaktiv",
+            "pl": "Bezczynny",
+            "ru": "Бездействующий",
+            "ko": "대기 중"
+          }
+        },
+        {
+          "id": "preWashing",
+          "title": {
+            "en": "Pre-washing",
+            "nl": "Voorwassen",
+            "da": "Forvask",
+            "de": "Vorwäsche",
+            "es": "Prelavado",
+            "fr": "Prélavage",
+            "it": "Prelavaggio",
+            "no": "Forvask",
+            "sv": "Förtvätt",
+            "pl": "Pranie wstępne",
+            "ru": "Предварительная стирка",
+            "ko": "예비 세척"
+          }
+        }
+      ]
+    },
+    "samsung_dishwasher_remote_controller_enabled": {
+      "type": "boolean",
+      "title": {
+        "en": "Remote Control Enabled",
+        "nl": "Afstandsbediening Ingeschakeld",
+        "da": "Fjernbetjening Aktiveret",
+        "de": "Fernbedienung Aktiviert",
+        "es": "Control Remoto Habilitado",
+        "fr": "Télécommande Activée",
+        "it": "Controllo Remoto Abilitato",
+        "no": "Fjernkontroll Aktivert",
+        "sv": "Fjärrkontroll Aktiverad",
+        "pl": "Zdalne Sterowanie Włączone",
+        "ru": "Удаленное Управление Включено",
+        "ko": "원격 제어 활성화"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/samsung_dishwasher_remote_controller_enabled.svg"
+    },
+    "samsung_dishwasher_washing_course": {
+      "type": "enum",
+      "title": {
+        "en": "Washing Course",
+        "nl": "Wasprogramma",
+        "da": "Vaskeprogram",
+        "de": "Waschprogramm",
+        "es": "Programa de lavado",
+        "fr": "Programme de lavage",
+        "it": "Programma di lavaggio",
+        "no": "Vaskeprogram",
+        "sv": "Tvättprogram",
+        "pl": "Program prania",
+        "ru": "Программа стирки",
+        "ko": "세탁 코스"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/samsung_dishwasher_washing_course.svg",
+      "values": [
+        {
+          "id": "auto",
+          "title": {
+            "en": "Auto",
+            "nl": "Auto",
+            "da": "Auto",
+            "de": "Auto",
+            "es": "Auto",
+            "fr": "Auto",
+            "it": "Auto",
+            "no": "Auto",
+            "sv": "Auto",
+            "pl": "Auto",
+            "ru": "Авто",
+            "ko": "자동"
+          }
+        },
+        {
+          "id": "eco",
+          "title": {
+            "en": "Eco",
+            "nl": "Eco",
+            "da": "Eco",
+            "de": "Eco",
+            "es": "Ecológico",
+            "fr": "Éco",
+            "it": "Eco",
+            "no": "Eco",
+            "sv": "Eco",
+            "pl": "Eko",
+            "ru": "Эко",
+            "ko": "에코"
+          }
+        },
+        {
+          "id": "delicate",
+          "title": {
+            "en": "Delicate",
+            "nl": "Delicaat",
+            "da": "Sart",
+            "de": "Feinwäsche",
+            "es": "Delicado",
+            "fr": "Délicat",
+            "it": "Delicato",
+            "no": "Skånsom",
+            "sv": "Ömtålig",
+            "pl": "Delikatny",
+            "ru": "Деликатный",
+            "ko": "섬세"
+          }
+        },
+        {
+          "id": "express_0C",
+          "title": {
+            "en": "Express 0°C",
+            "nl": "Express 0°C",
+            "da": "Ekspres 0°C",
+            "de": "Express 0°C",
+            "es": "Exprés 0°C",
+            "fr": "Express 0°C",
+            "it": "Express 0°C",
+            "no": "Ekspress 0°C",
+            "sv": "Express 0°C",
+            "pl": "Ekspres 0°C",
+            "ru": "Экспресс 0°C",
+            "ko": "익스프레스 0°C"
+          }
+        },
+        {
+          "id": "intensive",
+          "title": {
+            "en": "Intensive",
+            "nl": "Intensief",
+            "da": "Intensiv",
+            "de": "Intensiv",
+            "es": "Intensivo",
+            "fr": "Intensif",
+            "it": "Intensivo",
+            "no": "Intensiv",
+            "sv": "Intensiv",
+            "pl": "Intensywny",
+            "ru": "Интенсивный",
+            "ko": "강력"
+          }
+        },
+        {
+          "id": "preWash",
+          "title": {
+            "en": "PreWash",
+            "nl": "Voorwas",
+            "da": "Forvask",
+            "de": "Vorwäsche",
+            "es": "Prelavado",
+            "fr": "Prélavage",
+            "it": "Prelavaggio",
+            "no": "Forvask",
+            "sv": "Förtvätt",
+            "pl": "Pranie wstępne",
+            "ru": "Предварительная стирка",
+            "ko": "사전 세탁"
+          }
+        },
+        {
+          "id": "extraSilence",
+          "title": {
+            "en": "Extra Silence",
+            "nl": "Extra Stil",
+            "da": "Ekstra stille",
+            "de": "Extra Leise",
+            "es": "Extra Silencio",
+            "fr": "Silence supplémentaire",
+            "it": "Extra Silenzio",
+            "no": "Ekstra stille",
+            "sv": "Extra tyst",
+            "pl": "Dodatkowa cisza",
+            "ru": "Дополнительная тишина",
+            "ko": "초저소음"
+          }
+        },
+        {
+          "id": "machineCare",
+          "title": {
+            "en": "Machine Care",
+            "nl": "Machineverzorging",
+            "da": "Maskinpleje",
+            "de": "Maschinenpflege",
+            "es": "Cuidado de la máquina",
+            "fr": "Entretien de la machine",
+            "it": "Cura della macchina",
+            "no": "Maskinpleie",
+            "sv": "Maskinvård",
+            "pl": "Pielęgnacja maszyny",
+            "ru": "Уход за машиной",
+            "ko": "기기 관리"
+          }
+        },
+        {
+          "id": "plastics",
+          "title": {
+            "en": "Plastics",
+            "nl": "Kunststof",
+            "da": "Plastik",
+            "de": "Kunststoffe",
+            "es": "Plásticos",
+            "fr": "Plastiques",
+            "it": "Plastica",
+            "no": "Plast",
+            "sv": "Plast",
+            "pl": "Tworzywa sztuczne",
+            "ru": "Пластик",
+            "ko": "플라스틱"
+          }
+        },
+        {
+          "id": "none",
+          "title": {
+            "en": "None",
+            "nl": "Geen",
+            "da": "Ingen",
+            "de": "Keine",
+            "es": "Ninguno",
+            "fr": "Aucun",
+            "it": "Nessuno",
+            "no": "Ingen",
+            "sv": "Ingen",
+            "pl": "Żaden",
+            "ru": "Нет",
+            "ko": "없음"
+          }
+        },
+        {
+          "id": "finished",
+          "title": {
+            "en": "Finished",
+            "nl": "Klaar",
+            "da": "Færdig",
+            "de": "Fertig",
+            "es": "Terminado",
+            "fr": "Terminé",
+            "it": "Finito",
+            "no": "Ferdig",
+            "sv": "Klar",
+            "pl": "Zakończone",
+            "ru": "Закончил",
+            "ko": "완료됨"
           }
         }
       ]
