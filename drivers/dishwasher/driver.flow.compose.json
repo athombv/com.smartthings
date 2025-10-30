@@ -1,0 +1,21 @@
+{
+  "triggers": [
+    {
+      "id": "samsung_dishwasher_job_finished",
+      "title": {
+        "en": "A job has finished",
+        "nl": "Een klus is voltooid",
+        "da": "En opgave er afsluttet",
+        "de": "Ein Vorgang ist abgeschlossen",
+        "es": "Un Vorgang ha terminado",
+        "fr": "Une tâche est terminée",
+        "it": "Un lavoro è terminato",
+        "no": "En oppgave er ferdig",
+        "sv": "Ett jobb är avslutat",
+        "pl": "Zadanie zostało zakończone",
+        "ru": "Задача завершена",
+        "ko": "작업이 완료되었습니다"
+      }
+    }
+  ]
+}

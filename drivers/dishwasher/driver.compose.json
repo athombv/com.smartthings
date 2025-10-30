@@ -1,0 +1,19 @@
+{
+  "$extends": "apikey",
+  "name": {
+    "en": "Samsung Dishwasher",
+    "nl": "Samsung Vaatwasser",
+    "da": "Samsung Opvaskemaskine",
+    "de": "Samsung Geschirrspüler",
+    "es": "Lavavajillas Samsung",
+    "fr": "Lave-vaisselle Samsung",
+    "it": "Lavastoviglie Samsung",
+    "no": "Samsung Oppvaskmaskin",
+    "sv": "Samsung Diskmaskin",
+    "pl": "Zmywarka Samsung",
+    "ru": "Посудомоечная машина Samsung",
+    "ko": "삼성 식기세척기"
+  },
+  "class": "dishwasher",
+  "capabilities": []
+}

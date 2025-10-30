@@ -1,0 +1,19 @@
+{
+  "$extends": "apikey",
+  "name": {
+    "en": "Samsung Cooktop",
+    "nl": "Samsung Kookplaat",
+    "da": "Samsung Kogeplade",
+    "de": "Samsung Kochfeld",
+    "es": "Placa de cocina Samsung",
+    "fr": "Table de cuisson Samsung",
+    "it": "Piano cottura Samsung",
+    "no": "Samsung Platetopp",
+    "sv": "Samsung Häll",
+    "pl": "Płyta grzewcza Samsung",
+    "ru": "Варочная панель Samsung",
+    "ko": "삼성 쿡탑"
+  },
+  "class": "cooktop",
+  "capabilities": []
+}

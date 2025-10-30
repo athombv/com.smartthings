@@ -212,6 +212,54 @@
         ]
       },
       {
+        "id": "samsung_cooktop_job_finished",
+        "title": {
+          "en": "A job has finished",
+          "nl": "Een klus is voltooid",
+          "da": "En opgave er afsluttet",
+          "de": "Ein Vorgang ist abgeschlossen",
+          "es": "Un Vorgang ha terminado",
+          "fr": "Une tâche est terminée",
+          "it": "Un lavoro è terminato",
+          "no": "En oppgave er ferdig",
+          "sv": "Ett jobb är avslutat",
+          "pl": "Zadanie zostało zakończone",
+          "ru": "Задача завершена",
+          "ko": "작업이 완료되었습니다"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=cooktop"
+          }
+        ]
+      },
+      {
+        "id": "samsung_dishwasher_job_finished",
+        "title": {
+          "en": "A job has finished",
+          "nl": "Een klus is voltooid",
+          "da": "En opgave er afsluttet",
+          "de": "Ein Vorgang ist abgeschlossen",
+          "es": "Un Vorgang ha terminado",
+          "fr": "Une tâche est terminée",
+          "it": "Un lavoro è terminato",
+          "no": "En oppgave er ferdig",
+          "sv": "Ett jobb är avslutat",
+          "pl": "Zadanie zostało zakończone",
+          "ru": "Задача завершена",
+          "ko": "작업이 완료되었습니다"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dishwasher"
+          }
+        ]
+      },
+      {
         "id": "samsung_dryer_job_finished",
         "title": {
           "en": "A drying job has finished",
@@ -1126,6 +1174,126 @@
     },
     {
       "images": {
+        "small": "/drivers/cooktop/assets/images/small.png",
+        "large": "/drivers/cooktop/assets/images/large.png",
+        "xlarge": "/drivers/cooktop/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "apikey"
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "apikey"
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "cloud",
+        "local"
+      ],
+      "name": {
+        "en": "Samsung Cooktop",
+        "nl": "Samsung Kookplaat",
+        "da": "Samsung Kogeplade",
+        "de": "Samsung Kochfeld",
+        "es": "Placa de cocina Samsung",
+        "fr": "Table de cuisson Samsung",
+        "it": "Piano cottura Samsung",
+        "no": "Samsung Platetopp",
+        "sv": "Samsung Häll",
+        "pl": "Płyta grzewcza Samsung",
+        "ru": "Варочная панель Samsung",
+        "ko": "삼성 쿡탑"
+      },
+      "class": "cooktop",
+      "capabilities": [],
+      "id": "cooktop"
+    },
+    {
+      "images": {
+        "small": "/drivers/dishwasher/assets/images/small.png",
+        "large": "/drivers/dishwasher/assets/images/large.png",
+        "xlarge": "/drivers/dishwasher/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "apikey"
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "apikey"
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "cloud",
+        "local"
+      ],
+      "name": {
+        "en": "Samsung Dishwasher",
+        "nl": "Samsung Vaatwasser",
+        "da": "Samsung Opvaskemaskine",
+        "de": "Samsung Geschirrspüler",
+        "es": "Lavavajillas Samsung",
+        "fr": "Lave-vaisselle Samsung",
+        "it": "Lavastoviglie Samsung",
+        "no": "Samsung Oppvaskmaskin",
+        "sv": "Samsung Diskmaskin",
+        "pl": "Zmywarka Samsung",
+        "ru": "Посудомоечная машина Samsung",
+        "ko": "삼성 식기세척기"
+      },
+      "class": "dishwasher",
+      "capabilities": [],
+      "id": "dishwasher"
+    },
+    {
+      "images": {
         "small": "/drivers/dryer/assets/images/small.png",
         "large": "/drivers/dryer/assets/images/large.png",
         "xlarge": "/drivers/dryer/assets/images/xlarge.png"
@@ -1790,6 +1958,103 @@
             "pl": "Ogrzewanie",
             "ru": "Нагрев",
             "ko": "난방"
+          }
+        }
+      ]
+    },
+    "samsung_dishwasher_status_job": {
+      "type": "enum",
+      "title": {
+        "en": "Status",
+        "nl": "Status",
+        "da": "Status",
+        "de": "Status",
+        "es": "Estado",
+        "fr": "Statut",
+        "it": "Stato",
+        "no": "Status",
+        "sv": "Status",
+        "pl": "Status",
+        "ru": "Статус",
+        "ko": "상태"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/samsung_dishwasher_current_job_state.svg",
+      "values": [
+        {
+          "id": "unknown",
+          "title": {
+            "en": "Unknown"
+          }
+        },
+        {
+          "id": "ready",
+          "title": {
+            "en": "Ready",
+            "nl": "Klaar",
+            "da": "Klar",
+            "de": "Bereit",
+            "es": "Listo",
+            "fr": "Prêt",
+            "it": "Pronto",
+            "no": "Klar",
+            "sv": "Klar",
+            "pl": "Gotowy",
+            "ru": "Готово",
+            "ko": "준비됨"
+          }
+        },
+        {
+          "id": "finished",
+          "title": {
+            "en": "Finished",
+            "nl": "Afgewerkt",
+            "da": "Færdig",
+            "de": "Fertig",
+            "es": "Terminado",
+            "fr": "Terminé",
+            "it": "Completato",
+            "no": "Ferdig",
+            "sv": "Klar",
+            "pl": "Ukończony",
+            "ru": "Завершено",
+            "ko": "완료"
+          }
+        },
+        {
+          "id": "scheduledStart",
+          "title": {
+            "en": "Scheduled Start",
+            "nl": "Geplande start",
+            "da": "Planlagt start",
+            "de": "Geplanter Start",
+            "es": "Inicio programado",
+            "fr": "Démarrage planifié",
+            "it": "Avvio programmato",
+            "no": "Planlagt start",
+            "sv": "Schemalagd start",
+            "pl": "Zaplanowany start",
+            "ru": "Запланированное начало",
+            "ko": "예약 시작"
+          }
+        },
+        {
+          "id": "scheduledEnd",
+          "title": {
+            "en": "Scheduled ending",
+            "nl": "Geplande beëindiging",
+            "da": "Planlagt afslutning",
+            "de": "Geplantes Ende",
+            "es": "Final programado",
+            "fr": "Fin programmée",
+            "it": "Fine programmata",
+            "no": "Planlagt avslutning",
+            "sv": "Schemalagt slut",
+            "pl": "Zaplanowany koniec",
+            "ru": "Запланированное завершение",
+            "ko": "예약 종료"
           }
         }
       ]
