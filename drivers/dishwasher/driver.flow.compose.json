@@ -4,79 +4,360 @@
       "id": "samsung_dishwasher_washing_course_changed",
       "title": {
         "en": "The washing course changed",
-        "nl": "De wasprogramma is gewijzigd",
-        "da": "Vaskeprogrammet er ændret",
-        "de": "Das Spülprogramm wurde geändert",
-        "es": "El programa de lavado cambió",
-        "fr": "Le programme de lavage a changé",
-        "it": "Il programma di lavaggio è cambiato",
-        "no": "Vaskeprogrammet er endret",
-        "sv": "Diskprogrammet har ändrats",
-        "pl": "Program zmywania uległ zmianie",
-        "ru": "Программа мойки изменилась",
-        "ko": "세척 코스가 변경되었습니다"
+        "nl": "De wascyclus is gewijzigd",
+        "da": "Vaskekursus ændret",
+        "de": "Der Waschgang wurde geändert",
+        "es": "El ciclo de lavado cambió",
+        "fr": "Le cycle de lavage est passé",
+        "it": "Il ciclo di lavaggio è cambiato",
+        "no": "Vaskeprogrammet endret",
+        "sv": "Tvättprogrammet ändrades",
+        "pl": "Program prania zmieniony",
+        "ru": "Программа стирки изменена",
+        "ko": "세탁 코스가 변경됨"
       },
-      "tokens": [
+      "titleFormatted": {
+        "en": "The washing course changed to [[value]]",
+        "nl": "De wascyclus is gewijzigd in [[value]]",
+        "da": "Vaskekursus ændret til [[value]]",
+        "de": "Der Waschgang wurde geändert zu [[value]]",
+        "es": "El ciclo de lavado cambió a [[value]]",
+        "fr": "Le cycle de lavage est passé à [[value]]",
+        "it": "Il ciclo di lavaggio è cambiato in [[value]]",
+        "no": "Vaskeprogrammet endret til [[value]]",
+        "sv": "Tvättprogrammet ändrades till [[value]]",
+        "pl": "Program prania zmieniony na [[value]]",
+        "ru": "Программа стирки изменена на [[value]]",
+        "ko": "세탁 코스가 [[value]](으)로 변경됨"
+      },
+      "args": [
         {
-          "name": "washing_course",
-          "type": "string",
+          "name": "value",
+          "type": "dropdown",
           "title": {
             "en": "Washing Course",
             "nl": "Wasprogramma",
             "da": "Vaskeprogram",
-            "de": "Spülprogramm",
+            "de": "Waschprogramm",
             "es": "Programa de lavado",
             "fr": "Programme de lavage",
             "it": "Programma di lavaggio",
             "no": "Vaskeprogram",
-            "sv": "Diskprogram",
-            "pl": "Program zmywania",
-            "ru": "Программа мойки",
-            "ko": "세척 코스"
+            "sv": "Tvättprogram",
+            "pl": "Program prania",
+            "ru": "Программа стирки",
+            "ko": "세탁 코스"
           },
-          "example": {
-            "en": "auto"
-          }
+          "values": [
+            {
+              "id": "auto",
+              "title": {
+                "en": "Auto",
+                "nl": "Auto",
+                "da": "Auto",
+                "de": "Auto",
+                "es": "Auto",
+                "fr": "Auto",
+                "it": "Auto",
+                "no": "Auto",
+                "sv": "Auto",
+                "pl": "Auto",
+                "ru": "Авто",
+                "ko": "자동"
+              }
+            },
+            {
+              "id": "eco",
+              "title": {
+                "en": "Eco",
+                "nl": "Eco",
+                "da": "Eco",
+                "de": "Eco",
+                "es": "Ecológico",
+                "fr": "Éco",
+                "it": "Eco",
+                "no": "Eco",
+                "sv": "Eco",
+                "pl": "Eko",
+                "ru": "Эко",
+                "ko": "에코"
+              }
+            },
+            {
+              "id": "delicate",
+              "title": {
+                "en": "Delicate",
+                "nl": "Delicaat",
+                "da": "Sart",
+                "de": "Feinwäsche",
+                "es": "Delicado",
+                "fr": "Délicat",
+                "it": "Delicato",
+                "no": "Skånsom",
+                "sv": "Ömtålig",
+                "pl": "Delikatny",
+                "ru": "Деликатный",
+                "ko": "섬세"
+              }
+            },
+            {
+              "id": "express_0C",
+              "title": {
+                "en": "Express 0°C",
+                "nl": "Express 0°C",
+                "da": "Ekspres 0°C",
+                "de": "Express 0°C",
+                "es": "Exprés 0°C",
+                "fr": "Express 0°C",
+                "it": "Express 0°C",
+                "no": "Ekspress 0°C",
+                "sv": "Express 0°C",
+                "pl": "Ekspres 0°C",
+                "ru": "Экспресс 0°C",
+                "ko": "익스프레스 0°C"
+              }
+            },
+            {
+              "id": "intensive",
+              "title": {
+                "en": "Intensive",
+                "nl": "Intensief",
+                "da": "Intensiv",
+                "de": "Intensiv",
+                "es": "Intensivo",
+                "fr": "Intensif",
+                "it": "Intensivo",
+                "no": "Intensiv",
+                "sv": "Intensiv",
+                "pl": "Intensywny",
+                "ru": "Интенсивный",
+                "ko": "강력"
+              }
+            },
+            {
+              "id": "preWash",
+              "title": {
+                "en": "PreWash",
+                "nl": "Voorwas",
+                "da": "Forvask",
+                "de": "Vorwäsche",
+                "es": "Prelavado",
+                "fr": "Prélavage",
+                "it": "Prelavaggio",
+                "no": "Forvask",
+                "sv": "Förtvätt",
+                "pl": "Pranie wstępne",
+                "ru": "Предварительная стирка",
+                "ko": "사전 세탁"
+              }
+            },
+            {
+              "id": "extraSilence",
+              "title": {
+                "en": "Extra Silence",
+                "nl": "Extra Stil",
+                "da": "Ekstra stille",
+                "de": "Extra Leise",
+                "es": "Extra Silencio",
+                "fr": "Silence supplémentaire",
+                "it": "Extra Silenzio",
+                "no": "Ekstra stille",
+                "sv": "Extra tyst",
+                "pl": "Dodatkowa cisza",
+                "ru": "Дополнительная тишина",
+                "ko": "초저소음"
+              }
+            },
+            {
+              "id": "machineCare",
+              "title": {
+                "en": "Machine Care",
+                "nl": "Machineverzorging",
+                "da": "Maskinpleje",
+                "de": "Maschinenpflege",
+                "es": "Cuidado de la máquina",
+                "fr": "Entretien de la machine",
+                "it": "Cura della macchina",
+                "no": "Maskinpleie",
+                "sv": "Maskinvård",
+                "pl": "Pielęgnacja maszyny",
+                "ru": "Уход за машиной",
+                "ko": "기기 관리"
+              }
+            },
+            {
+              "id": "plastics",
+              "title": {
+                "en": "Plastics",
+                "nl": "Kunststof",
+                "da": "Plastik",
+                "de": "Kunststoffe",
+                "es": "Plásticos",
+                "fr": "Plastiques",
+                "it": "Plastica",
+                "no": "Plast",
+                "sv": "Plast",
+                "pl": "Tworzywa sztuczne",
+                "ru": "Пластик",
+                "ko": "플라스틱"
+              }
+            },
+            {
+              "id": "none",
+              "title": {
+                "en": "None",
+                "nl": "Geen",
+                "da": "Ingen",
+                "de": "Keine",
+                "es": "Ninguno",
+                "fr": "Aucun",
+                "it": "Nessuno",
+                "no": "Ingen",
+                "sv": "Ingen",
+                "pl": "Żaden",
+                "ru": "Нет",
+                "ko": "없음"
+              }
+            },
+            {
+              "id": "finished",
+              "title": {
+                "en": "Finished",
+                "nl": "Klaar",
+                "da": "Færdig",
+                "de": "Fertig",
+                "es": "Terminado",
+                "fr": "Terminé",
+                "it": "Finito",
+                "no": "Ferdig",
+                "sv": "Klar",
+                "pl": "Zakończone",
+                "ru": "Закончил",
+                "ko": "완료됨"
+              }
+            }
+          ]
         }
       ]
     },
     {
       "id": "samsung_dishwasher_current_job_state_changed",
       "title": {
-        "en": "The job state changed",
-        "nl": "De taakstatus is gewijzigd",
-        "da": "Jobstatus er ændret",
-        "de": "Der Auftragsstatus wurde geändert",
+        "en": "Job state changed",
+        "nl": "Taakstatus gewijzigd",
+        "da": "Jobstatus ændret",
+        "de": "Auftragsstatus geändert",
         "es": "El estado del trabajo cambió",
-        "fr": "L'état de la tâche a changé",
-        "it": "Lo stato del ciclo è cambiato",
-        "no": "Jobbstatusen er endret",
-        "sv": "Jobbstatusen har ändrats",
-        "pl": "Stan programu uległ zmianie",
-        "ru": "Состояние цикла изменилось",
-        "ko": "작업 상태가 변경되었습니다"
+        "fr": "L'état du travail a changé",
+        "it": "Lo stato del lavoro è cambiato",
+        "no": "Jobbstatus endret",
+        "sv": "Jobbstatus ändrad",
+        "pl": "Stan zadania zmieniony",
+        "ru": "Состояние задачи изменено",
+        "ko": "작업 상태 변경됨"
       },
-      "tokens": [
+      "titleFormatted": {
+        "en": "Job state changed to [[value]]",
+        "nl": "Taakstatus gewijzigd in [[value]]",
+        "da": "Jobstatus ændret til [[value]]",
+        "de": "Auftragsstatus geändert zu [[value]]",
+        "es": "El estado del trabajo cambió a [[value]]",
+        "fr": "L'état du travail est passé à [[value]]",
+        "it": "Stato del lavoro cambiato in [[value]]",
+        "no": "Jobbstatus endret til [[value]]",
+        "sv": "Jobbstatus ändrad till [[value]]",
+        "pl": "Stan zadania zmieniony na [[value]]",
+        "ru": "Состояние задачи изменено на [[value]]",
+        "ko": "작업 상태가 [[value]](으)로 변경됨"
+      },
+      "args": [
         {
-          "name": "job_state",
-          "type": "string",
+          "name": "value",
+          "type": "dropdown",
           "title": {
             "en": "Job State",
             "nl": "Taakstatus",
             "da": "Jobstatus",
-            "de": "Programmstatus",
+            "de": "Auftragsstatus",
             "es": "Estado del trabajo",
-            "fr": "État du cycle",
-            "it": "Stato del ciclo",
+            "fr": "État du travail",
+            "it": "Stato del lavoro",
             "no": "Jobbstatus",
             "sv": "Jobbstatus",
-            "pl": "Stan programu",
-            "ru": "Состояние цикла",
+            "pl": "Stan zadania",
+            "ru": "Состояние задачи",
             "ko": "작업 상태"
           },
-          "example": {
-            "en": "washing"
-          }
+          "values": [
+            {
+              "id": "none",
+              "title": {
+                "en": "None",
+                "nl": "Geen",
+                "da": "Ingen",
+                "de": "Keine",
+                "es": "Ninguno",
+                "fr": "Aucun",
+                "it": "Nessuno",
+                "no": "Ingen",
+                "sv": "Ingen",
+                "pl": "Żaden",
+                "ru": "Нет",
+                "ko": "없음"
+              }
+            },
+            {
+              "id": "idle",
+              "title": {
+                "en": "Idle",
+                "nl": "Inactief",
+                "da": "Inaktiv",
+                "de": "Leerlauf",
+                "es": "Inactivo",
+                "fr": "Inactif",
+                "it": "Inattivo",
+                "no": "Inaktiv",
+                "sv": "Inaktiv",
+                "pl": "Bezczynny",
+                "ru": "Бездействующий",
+                "ko": "대기 중"
+              }
+            },
+            {
+              "id": "preWashing",
+              "title": {
+                "en": "Pre-washing",
+                "nl": "Voorwassen",
+                "da": "Forvask",
+                "de": "Vorwäsche",
+                "es": "Prelavado",
+                "fr": "Prélavage",
+                "it": "Prelavaggio",
+                "no": "Forvask",
+                "sv": "Förtvätt",
+                "pl": "Pranie wstępne",
+                "ru": "Предварительная стирка",
+                "ko": "예비 세척"
+              }
+            },
+            {
+              "id": "finished",
+              "title": {
+                "en": "Finished",
+                "nl": "Klaar",
+                "da": "Færdig",
+                "de": "Fertig",
+                "es": "Terminado",
+                "fr": "Terminé",
+                "it": "Finito",
+                "no": "Ferdig",
+                "sv": "Klar",
+                "pl": "Zakończone",
+                "ru": "Закончил",
+                "ko": "완료됨"
+              }
+            }
+          ]
         }
       ]
     },
@@ -121,60 +402,37 @@
       ]
     },
     {
-      "id": "samsung_dishwasher_remote_controller_enabled_changed",
+      "id": "samsung_dishwasher_remote_controller_enabled_true",
       "title": {
-        "en": "Remote control availability changed",
-        "nl": "Beschikbaarheid afstandsbediening gewijzigd",
-        "da": "Fjernbetjenings-tilgængelighed ændret",
-        "de": "Verfügbarkeit der Fernsteuerung geändert",
-        "es": "La disponibilidad del control remoto cambió",
-        "fr": "La disponibilité du contrôle à distance a changé",
-        "it": "Disponibilità del controllo remoto cambiata",
-        "no": "Fjernkontrolltilgjengelighet endret",
-        "sv": "Tillgänglighet för fjärrkontroll har ändrats",
-        "pl": "Dostępność zdalnego sterowania uległa zmianie",
-        "ru": "Доступность дистанционного управления изменилась",
-        "ko": "원격 제어 가능 여부가 변경되었습니다"
-      },
-      "tokens": [
-        {
-          "name": "remote_control_enabled",
-          "type": "boolean",
-          "title": {
-            "en": "Remote Control Enabled",
-            "nl": "Afstandsbediening ingeschakeld",
-            "da": "Fjernbetjening aktiveret",
-            "de": "Fernsteuerung aktiviert",
-            "es": "Control remoto habilitado",
-            "fr": "Contrôle à distance activé",
-            "it": "Controllo remoto abilitato",
-            "no": "Fjernkontroll aktivert",
-            "sv": "Fjärrkontroll aktiverad",
-            "pl": "Zdalne sterowanie włączone",
-            "ru": "Удалённое управление включено",
-            "ko": "원격 제어 활성화"
-          },
-          "example": {
-            "en": "false"
-          }
-        }
-      ]
+        "en": "Remote control turned on",
+        "nl": "Afstandsbediening ingeschakeld",
+        "da": "Fjernbetjening tændt",
+        "de": "Fernbedienung eingeschaltet",
+        "es": "Control remoto activado",
+        "fr": "Télécommande activée",
+        "it": "Telecomando attivata",
+        "no": "Fjernkontroll slått på",
+        "sv": "Fjärrkontroll aktiverad",
+        "pl": "Zdalne sterowanie włączone",
+        "ru": "Удаленное управление включено",
+        "ko": "원격 제어 켜짐"
+      }
     },
     {
-      "id": "samsung_dishwasher_job_finished",
+      "id": "samsung_dishwasher_remote_controller_enabled_false",
       "title": {
-        "en": "A job has finished",
-        "nl": "Een klus is voltooid",
-        "da": "En opgave er afsluttet",
-        "de": "Ein Vorgang ist abgeschlossen",
-        "es": "Un Vorgang ha terminado",
-        "fr": "Une tâche est terminée",
-        "it": "Un lavoro è terminato",
-        "no": "En oppgave er ferdig",
-        "sv": "Ett jobb är avslutat",
-        "pl": "Zadanie zostało zakończone",
-        "ru": "Задача завершена",
-        "ko": "작업이 완료되었습니다"
+        "en": "Remote control turned off",
+        "nl": "Afstandsbediening uitgeschakeld",
+        "da": "Fjernbetjening slukket",
+        "de": "Fernbedienung ausgeschaltet",
+        "es": "Control remoto desactivado",
+        "fr": "Télécommande désactivée",
+        "it": "Telecomando disattivata",
+        "no": "Fjernkontroll slått av",
+        "sv": "Fjärrkontroll inaktiverad",
+        "pl": "Zdalne sterowanie wyłączone",
+        "ru": "Удаленное управление отключено",
+        "ko": "원격 제어 꺼짐"
       }
     }
   ],

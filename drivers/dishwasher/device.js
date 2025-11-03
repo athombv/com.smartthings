@@ -17,7 +17,7 @@ module.exports = class SmartThingsDeviceDishwasher extends SmartThingsDevice {
         if (previousValue !== value) {
           this.homey.flow
             .getDeviceTriggerCard('samsung_dishwasher_washing_course_changed')
-            .trigger(this, { washing_course: value })
+            .trigger(this, { value })
             .catch(this.error);
         }
 
@@ -33,17 +33,10 @@ module.exports = class SmartThingsDeviceDishwasher extends SmartThingsDevice {
         const homeyCapabilityId = 'samsung_dishwasher_current_job_state';
         const previousValue = this.getCapabilityValue(homeyCapabilityId);
 
-        if (value === 'finished' && previousValue !== 'finished') {
-          this.homey.flow
-            .getDeviceTriggerCard('samsung_dishwasher_job_finished')
-            .trigger(this)
-            .catch(this.error);
-        }
-
         if (previousValue !== value) {
           this.homey.flow
             .getDeviceTriggerCard('samsung_dishwasher_current_job_state_changed')
-            .trigger(this, { job_state: value })
+            .trigger(this, { value })
             .catch(this.error);
         }
 
@@ -60,18 +53,6 @@ module.exports = class SmartThingsDeviceDishwasher extends SmartThingsDevice {
 
         if (value === 'open') newValue = true;
         if (value === 'closed') newValue = false;
-
-        if (newValue !== null) {
-          const homeyCapabilityId = 'alarm_contact.dishwasher_door';
-          const previousValue = this.getCapabilityValue(homeyCapabilityId);
-
-          if (previousValue !== newValue) {
-            this.homey.flow
-              .getDeviceTriggerCard('alarm_contact_dishwasher_door_changed')
-              .trigger(this, { door_open: newValue })
-              .catch(this.error);
-          }
-        }
 
         return newValue;
       },
@@ -91,10 +72,15 @@ module.exports = class SmartThingsDeviceDishwasher extends SmartThingsDevice {
           const homeyCapabilityId = 'samsung_dishwasher_remote_controller_enabled';
           const previousValue = this.getCapabilityValue(homeyCapabilityId);
 
-          if (previousValue !== newValue) {
+          if (newValue === true && previousValue !== true) {
             this.homey.flow
-              .getDeviceTriggerCard('samsung_dishwasher_remote_controller_enabled_changed')
-              .trigger(this, { remote_control_enabled: newValue })
+              .getDeviceTriggerCard('samsung_dishwasher_remote_controller_enabled_true')
+              .trigger(this)
+              .catch(this.error);
+          } else if (newValue === false && previousValue !== false) {
+            this.homey.flow
+              .getDeviceTriggerCard('samsung_dishwasher_remote_controller_enabled_false')
+              .trigger(this)
               .catch(this.error);
           }
         }
