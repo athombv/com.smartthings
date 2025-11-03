@@ -1,0 +1,37 @@
+{
+  "$extends": "apikey",
+  "name": {
+    "en": "Samsung Dishwasher",
+    "nl": "Samsung Vaatwasser",
+    "da": "Samsung Opvaskemaskine",
+    "de": "Samsung Geschirrspüler",
+    "es": "Lavavajillas Samsung",
+    "fr": "Lave-vaisselle Samsung",
+    "it": "Lavastoviglie Samsung",
+    "no": "Samsung Oppvaskmaskin",
+    "sv": "Samsung Diskmaskin",
+    "pl": "Zmywarka Samsung",
+    "ru": "Посудомоечная машина Samsung",
+    "ko": "삼성 식기세척기"
+  },
+  "class": "dishwasher",
+  "capabilities": [],
+  "capabilitiesOptions": {
+    "alarm_contact.dishwasher_door": {
+      "title": {
+        "en": "Dishwasher Door Open",
+        "nl": "Vaatwasserdeur Open",
+        "da": "Opvaskemaskinedør Åben",
+        "de": "Geschirrspülertür Offen",
+        "es": "Puerta del Lavavajillas Abierta",
+        "fr": "Porte du Lave-vaisselle Ouverte",
+        "it": "Porta della Lavastoviglie Aperta",
+        "no": "Oppvaskmaskindør Åpen",
+        "sv": "Diskmaskinsdörr Öppen",
+        "pl": "Drzwi Zmywarki Otwarte",
+        "ru": "Дверца Посудомоечной Машины Открыта",
+        "ko": "식기세척기 문 열림"
+      }
+    }
+  }
+}

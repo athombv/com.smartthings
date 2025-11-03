@@ -1,0 +1,91 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Job State",
+    "nl": "Taakstatus",
+    "da": "Jobstatus",
+    "de": "Auftragsstatus",
+    "es": "Estado de trabajo",
+    "fr": "État du travail",
+    "it": "Stato lavoro",
+    "no": "Jobbstatus",
+    "sv": "Jobbstatus",
+    "pl": "Stan zadania",
+    "ru": "Состояние задания",
+    "ko": "작업 상태"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/samsung_dishwasher_current_job_state.svg",
+  "values": [
+    {
+      "id": "finished",
+      "title": {
+        "en": "Finished",
+        "nl": "Klaar",
+        "da": "Færdig",
+        "de": "Fertig",
+        "es": "Terminado",
+        "fr": "Terminé",
+        "it": "Finito",
+        "no": "Ferdig",
+        "sv": "Klar",
+        "pl": "Zakończone",
+        "ru": "Закончил",
+        "ko": "완료됨"
+      }
+    },
+    {
+      "id": "none",
+      "title": {
+        "en": "None",
+        "nl": "Geen",
+        "da": "Ingen",
+        "de": "Keine",
+        "es": "Ninguno",
+        "fr": "Aucun",
+        "it": "Nessuno",
+        "no": "Ingen",
+        "sv": "Ingen",
+        "pl": "Żaden",
+        "ru": "Нет",
+        "ko": "없음"
+      }
+    },
+    {
+      "id": "idle",
+      "title": {
+        "en": "Idle",
+        "nl": "Inactief",
+        "da": "Inaktiv",
+        "de": "Leerlauf",
+        "es": "Inactivo",
+        "fr": "Inactif",
+        "it": "Inattivo",
+        "no": "Inaktiv",
+        "sv": "Inaktiv",
+        "pl": "Bezczynny",
+        "ru": "Бездействующий",
+        "ko": "대기 중"
+      }
+    },
+    {
+      "id": "preWashing",
+      "title": {
+        "en": "Pre-washing",
+        "nl": "Voorwassen",
+        "da": "Forvask",
+        "de": "Vorwäsche",
+        "es": "Prelavado",
+        "fr": "Prélavage",
+        "it": "Prelavaggio",
+        "no": "Forvask",
+        "sv": "Förtvätt",
+        "pl": "Pranie wstępne",
+        "ru": "Предварительная стирка",
+        "ko": "예비 세척"
+      }
+    }
+  ]
+}

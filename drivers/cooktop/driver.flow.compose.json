@@ -1,0 +1,135 @@
+{
+  "triggers": [
+    {
+      "$filter": {
+        "capabilities": [
+          "onoff.hood_fan"
+        ]
+      },
+      "id": "samsung_cooktop_hood_fan_on",
+      "title": {
+        "en": "The hood fan turned on",
+        "nl": "De afzuigkapventilator is ingeschakeld",
+        "da": "Emhættens ventilator er tændt",
+        "de": "Der Dunstabzugventilator wurde eingeschaltet",
+        "es": "El ventilador de la campana se encendió",
+        "fr": "Le ventilateur de hotte s'est allumé",
+        "it": "La ventola della cappa è stata accesa",
+        "no": "Kjøkkenhettens vifte er slått på",
+        "sv": "Fläkten har slagits på",
+        "pl": "Wentylator okapu został włączony",
+        "ru": "Вентилятор вытяжки включен",
+        "ko": "후드 팬이 켜졌습니다"
+      }
+    },
+    {
+      "$filter": {
+        "capabilities": [
+          "onoff.hood_fan"
+        ]
+      },
+      "id": "samsung_cooktop_hood_fan_off",
+      "title": {
+        "en": "The hood fan turned off",
+        "nl": "De afzuigkapventilator is uitgeschakeld",
+        "da": "Emhættens ventilator er slukket",
+        "de": "Der Dunstabzugventilator wurde ausgeschaltet",
+        "es": "El ventilador de la campana se apagó",
+        "fr": "Le ventilateur de hotte s'est éteint",
+        "it": "La ventola della cappa si è spenta",
+        "no": "Kjøkkenhettens vifte er slått av",
+        "sv": "Fläkten har stängts av",
+        "pl": "Wentylator okapu został wyłączony",
+        "ru": "Вентилятор вытяжки выключен",
+        "ko": "후드 팬이 꺼졌습니다"
+      }
+    },
+    {
+      "$filter": {
+        "capabilities": [
+          "onoff.hood_fan"
+        ]
+      },
+      "id": "samsung_cooktop_hood_fan_speed_changed",
+      "title": {
+        "en": "The hood fan speed changed",
+        "nl": "De afzuigkapsnelheid is gewijzigd",
+        "da": "Emhættens hastighed er ændret",
+        "de": "Die Lüftergeschwindigkeit der Dunstabzugshaube wurde geändert",
+        "es": "La velocidad del ventilador de la campana cambió",
+        "fr": "La vitesse du ventilateur de hotte a changé",
+        "it": "La velocità della ventola della cappa è cambiata",
+        "no": "Viftehastigheten til kjøkkenhetten er endret",
+        "sv": "Fläkthastigheten har ändrats",
+        "pl": "Prędkość wentylatora okapu uległa zmianie",
+        "ru": "Скорость вентилятора вытяжки изменилась",
+        "ko": "후드 팬 속도가 변경되었습니다"
+      },
+      "tokens": [
+        {
+          "name": "hood_fan_speed",
+          "type": "number",
+          "title": {
+            "en": "Hood Fan Speed",
+            "nl": "Afzuigkapsnelheid",
+            "da": "Emhætte hastighed",
+            "de": "Lüftergeschwindigkeit",
+            "es": "Velocidad del ventilador de la campana",
+            "fr": "Vitesse du ventilateur de hotte",
+            "it": "Velocità ventola cappa",
+            "no": "Viftehastighet",
+            "sv": "Fläkthastighet",
+            "pl": "Prędkość wentylatora okapu",
+            "ru": "Скорость вентилятора вытяжки",
+            "ko": "후드 팬 속도"
+          },
+          "example": 1
+        }
+      ]
+    },
+    {
+      "$filter": {
+        "capabilities": [
+          "onoff.hood_light"
+        ]
+      },
+      "id": "samsung_cooktop_hood_light_on",
+      "title": {
+        "en": "The hood light turned on",
+        "nl": "Het afzuigkaplicht is ingeschakeld",
+        "da": "Emhætte lyset er tændt",
+        "de": "Das Licht der Dunstabzugshaube wurde eingeschaltet",
+        "es": "La luz de la campana se encendió",
+        "fr": "La lumière de la hotte s'est allumée",
+        "it": "La luce della cappa è stata accesa",
+        "no": "Kjøkkenhette-lyset er slått på",
+        "sv": "Fläktljuset har slagits på",
+        "pl": "Światło okapu zostało włączone",
+        "ru": "Подсветка вытяжки включена",
+        "ko": "후드 조명이 켜졌습니다"
+      }
+    },
+    {
+      "$filter": {
+        "capabilities": [
+          "onoff.hood_light"
+        ]
+      },
+      "id": "samsung_cooktop_hood_light_off",
+      "title": {
+        "en": "The hood light turned off",
+        "nl": "Het afzuigkaplicht is uitgeschakeld",
+        "da": "Emhætte lyset er slukket",
+        "de": "Das Licht der Dunstabzugshaube wurde ausgeschaltet",
+        "es": "La luz de la campana se apagó",
+        "fr": "La lumière de la hotte s'est éteinte",
+        "it": "La luce della cappa si è spenta",
+        "no": "Kjøkkenhette-lyset er slått av",
+        "sv": "Fläktljuset har stängts av",
+        "pl": "Światło okapu zostało wyłączone",
+        "ru": "Подсветка вытяжки выключена",
+        "ko": "후드 조명이 꺼졌습니다"
+      }
+    }
+  ]
+}
