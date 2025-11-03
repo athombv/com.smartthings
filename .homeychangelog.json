@@ -49,5 +49,8 @@
   },
   "3.1.5": {
     "en": "Fixed an issue where it was not possible to pair 2 dryer's."
+  },
+  "3.2.0": {
+    "en": "Added Cooktop & Dishwasher."
   }
 }
