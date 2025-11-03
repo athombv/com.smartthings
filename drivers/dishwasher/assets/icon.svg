@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="600px" viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>drivers/dishwasher/assets/icon</title>
+    <g id="/drivers/dishwasher/assets/icon" stroke="none" fill="none" fill-rule="evenodd" stroke-width="1">
+        <g id="Group" transform="translate(74, 21)">
+            <g stroke="#000000" stroke-linejoin="round">
+                <polygon id="Path" stroke-width="32.1648955" points="94.489601 0 443.687911 22.6233871 450 110.825171 450 540.167706 94.7881994 558 0 515.134121 0 49.6294526"></polygon>
+                <path d="M97.1287467,545.657196 L98.3225297,98.4542847 L97.1281361,12.4062948 M437.787387,111.261058 L98.3225297,98.4542847" id="Shape" stroke-width="16.0824478" stroke-linecap="round"></path>
+            </g>
+            <path d="M226.838914,98.7882205 L235.550782,80.4614333 C237.01984,77.3707956 240.191124,75.4540649 243.611107,75.5897557 L308.811808,78.1800474 C312.395242,78.3220739 315.509092,80.6850645 316.609561,84.0974874 L322.531458,102.462125 L226.838914,98.7882205 Z M342.389778,46.3236713 L344.703457,82.6842125 L414.827673,86.0052559 L412.857168,50.5482339 L342.389778,46.3236713 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+            <path d="M70.314122,12.4062948 L70.314122,543.037601 M70.314122,498.415964 L98.3225297,508.304004 L447.06592,492.642599" id="Shape" stroke="#000000" stroke-width="16.0824478" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>
