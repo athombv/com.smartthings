@@ -1,6 +1,166 @@
 {
   "triggers": [
     {
+      "id": "samsung_dishwasher_washing_course_changed",
+      "title": {
+        "en": "The washing course changed",
+        "nl": "De wasprogramma is gewijzigd",
+        "da": "Vaskeprogrammet er ændret",
+        "de": "Das Spülprogramm wurde geändert",
+        "es": "El programa de lavado cambió",
+        "fr": "Le programme de lavage a changé",
+        "it": "Il programma di lavaggio è cambiato",
+        "no": "Vaskeprogrammet er endret",
+        "sv": "Diskprogrammet har ändrats",
+        "pl": "Program zmywania uległ zmianie",
+        "ru": "Программа мойки изменилась",
+        "ko": "세척 코스가 변경되었습니다"
+      },
+      "tokens": [
+        {
+          "name": "washing_course",
+          "type": "string",
+          "title": {
+            "en": "Washing Course",
+            "nl": "Wasprogramma",
+            "da": "Vaskeprogram",
+            "de": "Spülprogramm",
+            "es": "Programa de lavado",
+            "fr": "Programme de lavage",
+            "it": "Programma di lavaggio",
+            "no": "Vaskeprogram",
+            "sv": "Diskprogram",
+            "pl": "Program zmywania",
+            "ru": "Программа мойки",
+            "ko": "세척 코스"
+          },
+          "example": {
+            "en": "auto"
+          }
+        }
+      ]
+    },
+    {
+      "id": "samsung_dishwasher_current_job_state_changed",
+      "title": {
+        "en": "The job state changed",
+        "nl": "De taakstatus is gewijzigd",
+        "da": "Jobstatus er ændret",
+        "de": "Der Auftragsstatus wurde geändert",
+        "es": "El estado del trabajo cambió",
+        "fr": "L'état de la tâche a changé",
+        "it": "Lo stato del ciclo è cambiato",
+        "no": "Jobbstatusen er endret",
+        "sv": "Jobbstatusen har ändrats",
+        "pl": "Stan programu uległ zmianie",
+        "ru": "Состояние цикла изменилось",
+        "ko": "작업 상태가 변경되었습니다"
+      },
+      "tokens": [
+        {
+          "name": "job_state",
+          "type": "string",
+          "title": {
+            "en": "Job State",
+            "nl": "Taakstatus",
+            "da": "Jobstatus",
+            "de": "Programmstatus",
+            "es": "Estado del trabajo",
+            "fr": "État du cycle",
+            "it": "Stato del ciclo",
+            "no": "Jobbstatus",
+            "sv": "Jobbstatus",
+            "pl": "Stan programu",
+            "ru": "Состояние цикла",
+            "ko": "작업 상태"
+          },
+          "example": {
+            "en": "washing"
+          }
+        }
+      ]
+    },
+    {
+      "id": "alarm_contact_dishwasher_door_changed",
+      "title": {
+        "en": "The dishwasher door changed",
+        "nl": "De vaatwasserdeur is gewijzigd",
+        "da": "Opvaskemaskinens dør er ændret",
+        "de": "Die Geschirrspülertür hat sich geändert",
+        "es": "La puerta del lavavajillas cambió",
+        "fr": "La porte du lave-vaisselle a changé",
+        "it": "La porta della lavastoviglie è cambiata",
+        "no": "Oppvaskmaskindøren er endret",
+        "sv": "Diskmaskinsdörren har ändrats",
+        "pl": "Drzwi zmywarki uległy zmianie",
+        "ru": "Дверца посудомоечной машины изменилась",
+        "ko": "식기세척기 문 상태가 변경되었습니다"
+      },
+      "tokens": [
+        {
+          "name": "door_open",
+          "type": "boolean",
+          "title": {
+            "en": "Door Open",
+            "nl": "Deur open",
+            "da": "Dør åben",
+            "de": "Tür offen",
+            "es": "Puerta abierta",
+            "fr": "Porte ouverte",
+            "it": "Porta aperta",
+            "no": "Dør åpen",
+            "sv": "Dörr öppen",
+            "pl": "Drzwi otwarte",
+            "ru": "Дверь открыта",
+            "ko": "문 열림"
+          },
+          "example": {
+            "en": "true"
+          }
+        }
+      ]
+    },
+    {
+      "id": "samsung_dishwasher_remote_controller_enabled_changed",
+      "title": {
+        "en": "Remote control availability changed",
+        "nl": "Beschikbaarheid afstandsbediening gewijzigd",
+        "da": "Fjernbetjenings-tilgængelighed ændret",
+        "de": "Verfügbarkeit der Fernsteuerung geändert",
+        "es": "La disponibilidad del control remoto cambió",
+        "fr": "La disponibilité du contrôle à distance a changé",
+        "it": "Disponibilità del controllo remoto cambiata",
+        "no": "Fjernkontrolltilgjengelighet endret",
+        "sv": "Tillgänglighet för fjärrkontroll har ändrats",
+        "pl": "Dostępność zdalnego sterowania uległa zmianie",
+        "ru": "Доступность дистанционного управления изменилась",
+        "ko": "원격 제어 가능 여부가 변경되었습니다"
+      },
+      "tokens": [
+        {
+          "name": "remote_control_enabled",
+          "type": "boolean",
+          "title": {
+            "en": "Remote Control Enabled",
+            "nl": "Afstandsbediening ingeschakeld",
+            "da": "Fjernbetjening aktiveret",
+            "de": "Fernsteuerung aktiviert",
+            "es": "Control remoto habilitado",
+            "fr": "Contrôle à distance activé",
+            "it": "Controllo remoto abilitato",
+            "no": "Fjernkontroll aktivert",
+            "sv": "Fjärrkontroll aktiverad",
+            "pl": "Zdalne sterowanie włączone",
+            "ru": "Удалённое управление включено",
+            "ko": "원격 제어 활성화"
+          },
+          "example": {
+            "en": "false"
+          }
+        }
+      ]
+    },
+    {
       "id": "samsung_dishwasher_job_finished",
       "title": {
         "en": "A job has finished",
