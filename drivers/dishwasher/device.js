@@ -54,38 +54,4 @@ module.exports = class SmartThingsDeviceDishwasher extends SmartThingsDevice {
     },
   ];
 
-  async setDishwasherDelayStartTime(value = '12:00:00') {
-    await this.executeCommand({
-      component: 'main',
-      capability: 'custom.dishwasherDelayStartTime',
-      command: 'setDishwasherDelayStartTime',
-      args: [value],
-    });
-  }
-
-  async pause() {
-    await this.executeCommand({
-      component: 'main',
-      capability: 'samsungce.dishwasherOperation',
-      command: 'pause',
-    });
-  }
-
-  async resume() {
-    await this.executeCommand({
-      component: 'main',
-      capability: 'samsungce.dishwasherOperation',
-      command: 'resume',
-    });
-  }
-
-  async cancel() {
-    await this.executeCommand({
-      component: 'main',
-      capability: 'samsungce.dishwasherOperation',
-      command: 'cancel',
-      args: [true], // Not sure what this argument does
-    });
-  }
-
 };

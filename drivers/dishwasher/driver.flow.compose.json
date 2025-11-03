@@ -17,5 +17,123 @@
         "ko": "작업이 완료되었습니다"
       }
     }
+  ],
+  "actions": [
+    {
+      "id": "samsung_dishwasher_set_delay_start_time",
+      "title": {
+        "en": "Set the delay start time",
+        "nl": "Stel de uitgestelde starttijd in",
+        "da": "Indstil den udskudte starttid",
+        "de": "Verzögerte Startzeit einstellen",
+        "es": "Configurar la hora de inicio diferida",
+        "fr": "Définir l'heure de démarrage différé",
+        "it": "Imposta l'orario di avvio ritardato",
+        "no": "Angi utsatt starttid",
+        "sv": "Ställ in den fördröjda starttiden",
+        "pl": "Ustaw opóźniony czas startu",
+        "ru": "Установить время отложенного запуска",
+        "ko": "지연 시작 시간을 설정하세요"
+      },
+      "titleFormatted": {
+        "en": "Set the delay start time to [[time]]",
+        "nl": "Stel de uitgestelde starttijd in op [[time]]",
+        "da": "Indstil den udskudte starttid til [[time]]",
+        "de": "Stelle die verzögerte Startzeit auf [[time]]",
+        "es": "Configura la hora de inicio diferida en [[time]]",
+        "fr": "Définir l'heure de démarrage différé sur [[time]]",
+        "it": "Imposta l'orario di avvio ritardato su [[time]]",
+        "no": "Angi utsatt starttid til [[time]]",
+        "sv": "Ställ in den fördröjda starttiden till [[time]]",
+        "pl": "Ustaw opóźniony czas startu na [[time]]",
+        "ru": "Установите время отложенного запуска на [[time]]",
+        "ko": "지연 시작 시간을 [[time]]으로 설정"
+      },
+      "args": [
+        {
+          "name": "time",
+          "type": "time",
+          "title": {
+            "en": "Delay start time",
+            "nl": "Uitgestelde starttijd",
+            "da": "Udskudt starttid",
+            "de": "Verzögerte Startzeit",
+            "es": "Hora de inicio diferida",
+            "fr": "Heure de démarrage différé",
+            "it": "Orario di avvio ritardato",
+            "no": "Utsatt starttid",
+            "sv": "Fördröjd starttid",
+            "pl": "Opóźniony czas startu",
+            "ru": "Время отложенного запуска",
+            "ko": "지연 시작 시간"
+          }
+        }
+      ]
+    },
+    {
+      "id": "samsung_dishwasher_pause",
+      "title": {
+        "en": "Pause the dishwasher",
+        "nl": "Pauzeer de vaatwasser",
+        "da": "Sæt opvaskemaskinen på pause",
+        "de": "Geschirrspüler pausieren",
+        "es": "Pausar el lavavajillas",
+        "fr": "Mettre le lave-vaisselle en pause",
+        "it": "Metti in pausa la lavastoviglie",
+        "no": "Sett oppvaskmaskinen på pause",
+        "sv": "Pausa diskmaskinen",
+        "pl": "Wstrzymaj zmywarkę",
+        "ru": "Поставить посудомоечную машину на паузу",
+        "ko": "식기세척기를 일시 중지"
+      }
+    },
+    {
+      "id": "samsung_dishwasher_resume",
+      "title": {
+        "en": "Resume the dishwasher",
+        "nl": "Hervat de vaatwasser",
+        "da": "Genoptag opvaskemaskinen",
+        "de": "Geschirrspüler fortsetzen",
+        "es": "Reanudar el lavavajillas",
+        "fr": "Reprendre le lave-vaisselle",
+        "it": "Riprendi la lavastoviglie",
+        "no": "Fortsett oppvaskmaskinen",
+        "sv": "Återuppta diskmaskinen",
+        "pl": "Wznów zmywarkę",
+        "ru": "Возобновить работу посудомоечной машины",
+        "ko": "식기세척기를 다시 시작"
+      }
+    },
+    {
+      "id": "samsung_dishwasher_cancel_cycle",
+      "title": {
+        "en": "Cancel the dishwasher cycle",
+        "nl": "Annuleer de vaatwascyclus",
+        "da": "Annuller opvaskemaskinens cyklus",
+        "de": "Spülgang abbrechen",
+        "es": "Cancelar el ciclo del lavavajillas",
+        "fr": "Annuler le cycle du lave-vaisselle",
+        "it": "Annulla il ciclo della lavastoviglie",
+        "no": "Avbryt oppvaskmaskinens syklus",
+        "sv": "Avbryt diskmaskinens cykel",
+        "pl": "Anuluj cykl zmywarki",
+        "ru": "Отменить цикл посудомоечной машины",
+        "ko": "식기세척기 사이클을 취소"
+      },
+      "hint": {
+        "en": "You may need to enable remote control",
+        "nl": "Mogelijk moet je afstandsbediening inschakelen",
+        "da": "Du skal muligvis aktivere fjernbetjening",
+        "de": "Eventuell müssen Sie die Fernsteuerung aktivieren",
+        "es": "Puede que necesites habilitar el control remoto",
+        "fr": "Vous devrez peut-être activer le contrôle à distance",
+        "it": "Potresti dover abilitare il controllo remoto",
+        "no": "Du må kanskje aktivere fjernkontroll",
+        "sv": "Du kan behöva aktivera fjärrkontroll",
+        "pl": "Możesz potrzebować włączyć zdalne sterowanie",
+        "ru": "Возможно, нужно включить дистанционное управление",
+        "ko": "원격 제어를 활성화해야 할 수 있습니다"
+      }
+    }
   ]
 }
