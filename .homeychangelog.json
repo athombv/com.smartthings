@@ -52,5 +52,8 @@
   },
   "3.2.0": {
     "en": "Added Cooktop & Dishwasher."
+  },
+  "3.2.1": {
+    "en": "Updated icons & fixed an issue where dishwasher When-cards would not work."
   }
 }
