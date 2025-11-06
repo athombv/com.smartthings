@@ -8,6 +8,18 @@ module.exports = class SmartThingsDriverDishwasher extends SmartThingsDriver {
     await super.onOAuth2Init();
 
     this.homey.flow
+      .getDeviceTriggerCard('samsung_dishwasher_washing_course_changed')
+      .registerRunListener(async (args, state) => {
+        return args.value === state.value;
+      });
+
+    this.homey.flow
+      .getDeviceTriggerCard('samsung_dishwasher_current_job_state_changed')
+      .registerRunListener(async (args, state) => {
+        return args.value === state.value;
+      });
+
+    this.homey.flow
       .getActionCard('samsung_dishwasher_set_delay_start_time')
       .registerRunListener(async ({ device, time }) => {
         await device.executeCommand({
