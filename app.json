@@ -1653,6 +1653,117 @@
         ]
       },
       {
+        "id": "samsung_freestyle_set_volume",
+        "title": {
+          "en": "Set the volume",
+          "nl": "Zet het volume",
+          "da": "Indstil lydstyrken",
+          "de": "Stellen Sie die Lautstärke ein",
+          "es": "Ajusta el volumen",
+          "fr": "Régler le volume",
+          "it": "Imposta il volume",
+          "no": "Sett volumet",
+          "sv": "Ställ in volymen",
+          "pl": "Ustaw głośność",
+          "ru": "Установите громкость",
+          "ko": "볼륨 설정"
+        },
+        "titleFormatted": {
+          "en": "Set the volume to [[volume]]",
+          "nl": "Zet het volume op [[volume]]",
+          "da": "Indstil lydstyrken til [[volume]]",
+          "de": "Stellen Sie die Lautstärke auf [[volume]] ein",
+          "es": "Ajusta el volumen a [[volume]]",
+          "fr": "Régler le volume à [[volume]]",
+          "it": "Imposta il volume su [[volume]]",
+          "no": "Sett volumet til [[volume]]",
+          "sv": "Ställ in volymen till [[volume]]",
+          "pl": "Ustaw głośność na [[volume]]",
+          "ru": "Установите громкость на [[volume]]",
+          "ko": "[[volume]]으로 볼륨 설정"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=freestyle"
+          },
+          {
+            "name": "volume",
+            "type": "range",
+            "title": {
+              "en": "Volume",
+              "nl": "Volume",
+              "da": "Lydstyrke",
+              "de": "Lautstärke",
+              "es": "Volumen",
+              "fr": "Volume",
+              "it": "Volume",
+              "no": "Volum",
+              "sv": "Volym",
+              "pl": "Głośność",
+              "ru": "Громкость",
+              "ko": "볼륨"
+            },
+            "min": 0,
+            "max": 1,
+            "step": 0.01,
+            "value": 0.5,
+            "label": "%",
+            "labelMultiplier": 100,
+            "labelDecimals": 0
+          }
+        ]
+      },
+      {
+        "id": "samsung_freestyle_set_volume_mute",
+        "title": {
+          "en": "Mute the volume",
+          "nl": "Zet het volume op stil",
+          "da": "Slå lyden fra",
+          "de": "Stummschalten",
+          "es": "Silenciar el volumen",
+          "fr": "Couper le son",
+          "it": "Disattiva l'audio",
+          "no": "Dempe volumet",
+          "sv": "Stäng av volymen",
+          "pl": "Wycisz głośność",
+          "ru": "Отключить звук",
+          "ko": "볼륨 음소거"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=freestyle"
+          }
+        ]
+      },
+      {
+        "id": "samsung_freestyle_set_volume_unmute",
+        "title": {
+          "en": "Unmute the volume",
+          "nl": "Zet het volume weer aan",
+          "da": "Slå lyden til",
+          "de": "Ton einschalten",
+          "es": "Reactivar el volumen",
+          "fr": "Rétablir le son",
+          "it": "Riattiva l'audio",
+          "no": "Skru på volumet",
+          "sv": "Slå på volymen",
+          "pl": "Włącz głośność",
+          "ru": "Включить звук",
+          "ko": "볼륨 음소거 해제"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=freestyle"
+          }
+        ]
+      },
+      {
         "id": "set_volume",
         "title": {
           "en": "Set the volume",
@@ -1708,7 +1819,7 @@
             "min": 0,
             "max": 1,
             "step": 0.01,
-            "value": 50,
+            "value": 0.5,
             "label": "%",
             "labelMultiplier": 100,
             "labelDecimals": 0
@@ -2074,6 +2185,72 @@
       "class": "dryer",
       "capabilities": [],
       "id": "dryer"
+    },
+    {
+      "images": {
+        "small": "/drivers/freestyle/assets/images/small.png",
+        "large": "/drivers/freestyle/assets/images/large.png",
+        "xlarge": "/drivers/freestyle/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "apikey"
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "apikey"
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "cloud",
+        "local"
+      ],
+      "name": {
+        "en": "Samsung The Freestyle",
+        "nl": "Samsung The Freestyle",
+        "da": "Samsung The Freestyle",
+        "de": "Samsung The Freestyle",
+        "es": "Samsung The Freestyle",
+        "fr": "Samsung The Freestyle",
+        "it": "Samsung The Freestyle",
+        "no": "Samsung The Freestyle",
+        "sv": "Samsung The Freestyle",
+        "pl": "Samsung The Freestyle",
+        "ru": "Samsung The Freestyle",
+        "ko": "Samsung The Freestyle"
+      },
+      "class": "tv",
+      "capabilities": [
+        "onoff",
+        "volume_up",
+        "volume_down",
+        "channel_up",
+        "channel_down"
+      ],
+      "id": "freestyle"
     },
     {
       "images": {

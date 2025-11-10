@@ -1,0 +1,25 @@
+{
+  "$extends": "apikey",
+  "name": {
+    "en": "Samsung The Freestyle",
+    "nl": "Samsung The Freestyle",
+    "da": "Samsung The Freestyle",
+    "de": "Samsung The Freestyle",
+    "es": "Samsung The Freestyle",
+    "fr": "Samsung The Freestyle",
+    "it": "Samsung The Freestyle",
+    "no": "Samsung The Freestyle",
+    "sv": "Samsung The Freestyle",
+    "pl": "Samsung The Freestyle",
+    "ru": "Samsung The Freestyle",
+    "ko": "Samsung The Freestyle"
+  },
+  "class": "tv",
+  "capabilities": [
+    "onoff",
+    "volume_up",
+    "volume_down",
+    "channel_up",
+    "channel_down"
+  ]
+}
