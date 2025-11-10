@@ -73,4 +73,13 @@ module.exports = class SmartThingsDeviceTheFreestyle extends SmartThingsDevice {
     },
   ];
 
+  async launchApp({ appId }) {
+    await this.executeCommand({
+      component: 'main',
+      capability: 'custom.launchapp',
+      command: 'launchApp',
+      args: [appId],
+    });
+  }
+
 };

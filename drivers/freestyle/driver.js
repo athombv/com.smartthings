@@ -37,35 +37,50 @@ module.exports = class SmartThingsDriverTheFreestyle extends SmartThingsDriver {
         });
       });
 
-    // We haven't found a TV that supports the `samsungTV` capability yet.
-    // this.homey.flow
-    //   .getActionCard('show_message')
-    //   .registerRunListener(async ({ device, message }) => {
-    //     return device.onFlowActionShowMessage({ message });
-    //   });
-    //
-    // driver.flow.compose.json:
-    // {
-    //   "id": "show_message",
-    //   "title": {
-    //     "en": "Show a message"
-    //   },
-    //   "titleFormatted": {
-    //     "en": "Show message [[message]] on TV"
-    //   },
-    //   "args": [
-    //     {
-    //       "name": "message",
-    //       "type": "text",
-    //       "title": {
-    //         "en": "Message"
-    //       },
-    //       "placeholder": {
-    //         "en": "Hello from Homey!"
-    //       }
-    //     }
-    //   ]
-    // },
+    this.homey.flow
+      .getActionCard('samsung_freestyle_launch_app')
+      .registerRunListener(async ({ device, app }) => {
+        return device.launchApp({
+          appId: app.id,
+        });
+      })
+      .getArgument('app')
+      .registerAutocompleteListener(async (query, args) => {
+        // TODO: We should get this list dynamically somehow.
+        const result = [
+          {
+            id: '111299001912',
+            title: 'YouTube',
+          },
+          {
+            id: '3201907018807',
+            title: 'Netflix',
+          },
+          {
+            id: '3201910019365',
+            title: 'Prime Video',
+          },
+          {
+            id: '3201807016597',
+            title: 'Apple TV',
+          },
+        ]
+          .filter(app => app.title.toLowerCase().includes(query.toLowerCase()))
+          .map(app => ({
+            id: app.id,
+            title: app.title,
+          }));
+
+        // Check if query is an app id
+        if (/^\d+(\.\d+)?$/.test(query) && !result.find(app => app.id === query)) {
+          result.unshift({
+            id: query,
+            title: `App ID: ${query}`,
+          });
+        }
+
+        return result;
+      });
   }
 
   onPairFilterDevice(device) {

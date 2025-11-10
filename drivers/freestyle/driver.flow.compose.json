@@ -91,6 +91,71 @@
         "ru": "Включить звук",
         "ko": "볼륨 음소거 해제"
       }
+    },
+    {
+      "id": "samsung_freestyle_launch_app",
+      "title": {
+        "en": "Launch an app",
+        "nl": "Start een app",
+        "da": "Start en app",
+        "de": "Starte eine App",
+        "es": "Iniciar una aplicación",
+        "fr": "Lancer une application",
+        "it": "Avvia un'app",
+        "no": "Start en app",
+        "sv": "Starta en app",
+        "pl": "Uruchom aplikację",
+        "ru": "Запустить приложение",
+        "ko": "앱 실행"
+      },
+      "titleFormatted": {
+        "en": "Launch [[app]]",
+        "nl": "Start [[app]]",
+        "da": "Start [[app]]",
+        "de": "Starte [[app]]",
+        "es": "Iniciar [[app]]",
+        "fr": "Lancer [[app]]",
+        "it": "Avvia [[app]]",
+        "no": "Start [[app]]",
+        "sv": "Starta [[app]]",
+        "pl": "Uruchom [[app]]",
+        "ru": "Запустить [[app]]",
+        "ko": "[[app]] 실행"
+      },
+      "hint": {
+        "en": "If the app is not in the list, you can provide a numeric App ID.",
+        "nl": "Als de app niet in de lijst staat, kunt u een numerieke App-ID opgeven.",
+        "da": "Hvis appen ikke er på listen, kan du angive et numerisk app-id.",
+        "de": "Wenn die App nicht in der Liste ist, können Sie eine numerische App-ID angeben.",
+        "es": "Si la aplicación no está en la lista, puede proporcionar un ID de aplicación numérico.",
+        "fr": "Si l'application ne figure pas dans la liste, vous pouvez fournir un identifiant d'application numérique.",
+        "it": "Se l'app non è nell'elenco, puoi fornire un ID app numerico.",
+        "no": "Hvis appen ikke er i listen, kan du oppgi et numerisk app-ID.",
+        "sv": "Om appen inte finns i listan kan du ange ett numeriskt app-ID.",
+        "pl": "Jeśli aplikacja nie znajduje się na liście, możesz podać numeryczny identyfikator aplikacji.",
+        "ru": "Если приложения нет в списке, вы можете указать числовой идентификатор приложения.",
+        "ko": "앱이 목록에 없으면 숫자형 앱 ID를 제공할 수 있습니다."
+      },
+      "args": [
+        {
+          "name": "app",
+          "type": "autocomplete",
+          "title": {
+            "en": "App",
+            "nl": "App",
+            "da": "App",
+            "de": "App",
+            "es": "Aplicación",
+            "fr": "Application",
+            "it": "App",
+            "no": "App",
+            "sv": "App",
+            "pl": "Aplikacja",
+            "ru": "Приложение",
+            "ko": "앱"
+          }
+        }
+      ]
     }
   ]
 }
