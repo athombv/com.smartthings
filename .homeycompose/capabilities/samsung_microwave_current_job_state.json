@@ -1,0 +1,91 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Job State",
+    "nl": "Taakstatus",
+    "da": "Jobstatus",
+    "de": "Auftragsstatus",
+    "es": "Estado de trabajo",
+    "fr": "État du travail",
+    "it": "Stato lavoro",
+    "no": "Jobbstatus",
+    "sv": "Jobbstatus",
+    "pl": "Stan zadania",
+    "ru": "Состояние задания",
+    "ko": "작업 상태"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/samsung_microwave_current_job_state.svg",
+  "values": [
+    {
+      "id": "ready",
+      "title": {
+        "en": "Ready",
+        "nl": "Klaar",
+        "da": "Klar",
+        "de": "Bereit",
+        "es": "Listo",
+        "fr": "Prêt",
+        "it": "Pronto",
+        "no": "Klar",
+        "sv": "Klar",
+        "pl": "Gotowy",
+        "ru": "Готов",
+        "ko": "준비 완료"
+      }
+    },
+    {
+      "id": "cooking",
+      "title": {
+        "en": "Cooking",
+        "nl": "Koken",
+        "da": "Madlavning",
+        "de": "Kochen",
+        "es": "Cocinando",
+        "fr": "Cuisson",
+        "it": "Cucinare",
+        "no": "Matlaging",
+        "sv": "Matlagning",
+        "pl": "Gotowanie",
+        "ru": "Готовка",
+        "ko": "요리"
+      }
+    },
+    {
+      "id": "finished",
+      "title": {
+        "en": "Finished",
+        "nl": "Klaar",
+        "da": "Færdig",
+        "de": "Fertig",
+        "es": "Terminado",
+        "fr": "Terminé",
+        "it": "Finito",
+        "no": "Ferdig",
+        "sv": "Klar",
+        "pl": "Zakończone",
+        "ru": "Завершено",
+        "ko": "완료"
+      }
+    },
+    {
+      "id": "preheat",
+      "title": {
+        "en": "Preheat",
+        "nl": "Voorverwarmen",
+        "da": "Forvarmning",
+        "de": "Vorheizen",
+        "es": "Precalentar",
+        "fr": "Préchauffer",
+        "it": "Preriscaldare",
+        "no": "Forvarme",
+        "sv": "Förvärmning",
+        "pl": "Nagrzewanie",
+        "ru": "Предварительный нагрев",
+        "ko": "예열"
+      }
+    }
+  ]
+}

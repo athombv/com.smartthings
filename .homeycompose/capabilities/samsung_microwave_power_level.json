@@ -1,0 +1,21 @@
+{
+  "type": "string",
+  "title": {
+    "en": "Power Level",
+    "nl": "Vermogensniveau",
+    "da": "Effektniveau",
+    "de": "Leistungsstufe",
+    "es": "Nivel de potencia",
+    "fr": "Niveau de puissance",
+    "it": "Livello di potenza",
+    "no": "Effektnivå",
+    "sv": "Effektnivå",
+    "pl": "Poziom mocy",
+    "ru": "Уровень мощности",
+    "ko": "전력 수준"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/samsung_microwave_power_level.svg"
+}

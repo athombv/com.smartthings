@@ -868,6 +868,30 @@
         ]
       },
       {
+        "id": "samsung_microwave_job_finished",
+        "title": {
+          "en": "A cooking job has finished",
+          "nl": "Een kookklus is voltooid",
+          "da": "En madlavningsopgave er afsluttet",
+          "de": "Ein Kochvorgang ist abgeschlossen",
+          "es": "Un trabajo de cocina ha terminado",
+          "fr": "Une tâche de cuisson est terminée",
+          "it": "Un lavoro di cucina è terminato",
+          "no": "En matlagingsoppgave er ferdig",
+          "sv": "Ett matlagningsjobb är avslutat",
+          "pl": "Gotowanie zostało zakończone",
+          "ru": "Готовка завершена",
+          "ko": "요리가 완료되었습니다"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=microwave"
+          }
+        ]
+      },
+      {
         "id": "samsung_oven_job_finished",
         "title": {
           "en": "A cooking job has finished",
@@ -2324,6 +2348,100 @@
     },
     {
       "images": {
+        "small": "/drivers/microwave/assets/images/small.png",
+        "large": "/drivers/microwave/assets/images/large.png",
+        "xlarge": "/drivers/microwave/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "apikey"
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "apikey"
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "cloud",
+        "local"
+      ],
+      "name": {
+        "en": "Samsung Microwave",
+        "nl": "Samsung Magnetron",
+        "da": "Samsung Mikrobølgeovn",
+        "de": "Samsung Mikrowelle",
+        "es": "Samsung Microondas",
+        "fr": "Samsung Micro-ondes",
+        "it": "Samsung Microonde",
+        "no": "Samsung Mikrobølgeovn",
+        "sv": "Samsung Mikrovågsugn",
+        "pl": "Samsung Mikrofalówka",
+        "ru": "Samsung Микроволновая печь",
+        "ko": "Samsung 전자레인지"
+      },
+      "class": "microwave",
+      "capabilities": [],
+      "capabilitiesOptions": {
+        "alarm_contact": {
+          "title": {
+            "en": "Door Open",
+            "nl": "Deur open",
+            "da": "Dør åben",
+            "de": "Tür offen",
+            "es": "Puerta abierta",
+            "fr": "Porte ouverte",
+            "it": "Porta aperta",
+            "no": "Dør åpen",
+            "sv": "Dörr öppen",
+            "pl": "Drzwi otwarte",
+            "ru": "Дверца открыта",
+            "ko": "문 열림"
+          }
+        },
+        "measure_temperature.target": {
+          "title": {
+            "en": "Oven Setpoint",
+            "nl": "Oventemperatuur",
+            "da": "Ovntemperatur",
+            "de": "Ofen-Sollwert",
+            "es": "Temperatura del horno",
+            "fr": "Consigne du four",
+            "it": "Setpoint forno",
+            "no": "Ovninnstilling",
+            "sv": "Ugnsinställning",
+            "pl": "Nastawa piekarnika",
+            "ru": "Установка температуры духовки",
+            "ko": "오븐 설정 온도"
+          }
+        }
+      },
+      "id": "microwave"
+    },
+    {
+      "images": {
         "small": "/drivers/oven/assets/images/small.png",
         "large": "/drivers/oven/assets/images/large.png",
         "xlarge": "/drivers/oven/assets/images/xlarge.png"
@@ -3543,6 +3661,486 @@
       "setable": false,
       "uiComponent": "sensor",
       "icon": "/assets/capabilities/samsung_dryer_progress_remaining_time.svg"
+    },
+    "samsung_microwave_current_job_state": {
+      "type": "enum",
+      "title": {
+        "en": "Job State",
+        "nl": "Taakstatus",
+        "da": "Jobstatus",
+        "de": "Auftragsstatus",
+        "es": "Estado de trabajo",
+        "fr": "État du travail",
+        "it": "Stato lavoro",
+        "no": "Jobbstatus",
+        "sv": "Jobbstatus",
+        "pl": "Stan zadania",
+        "ru": "Состояние задания",
+        "ko": "작업 상태"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/samsung_microwave_current_job_state.svg",
+      "values": [
+        {
+          "id": "ready",
+          "title": {
+            "en": "Ready",
+            "nl": "Klaar",
+            "da": "Klar",
+            "de": "Bereit",
+            "es": "Listo",
+            "fr": "Prêt",
+            "it": "Pronto",
+            "no": "Klar",
+            "sv": "Klar",
+            "pl": "Gotowy",
+            "ru": "Готов",
+            "ko": "준비 완료"
+          }
+        },
+        {
+          "id": "cooking",
+          "title": {
+            "en": "Cooking",
+            "nl": "Koken",
+            "da": "Madlavning",
+            "de": "Kochen",
+            "es": "Cocinando",
+            "fr": "Cuisson",
+            "it": "Cucinare",
+            "no": "Matlaging",
+            "sv": "Matlagning",
+            "pl": "Gotowanie",
+            "ru": "Готовка",
+            "ko": "요리"
+          }
+        },
+        {
+          "id": "finished",
+          "title": {
+            "en": "Finished",
+            "nl": "Klaar",
+            "da": "Færdig",
+            "de": "Fertig",
+            "es": "Terminado",
+            "fr": "Terminé",
+            "it": "Finito",
+            "no": "Ferdig",
+            "sv": "Klar",
+            "pl": "Zakończone",
+            "ru": "Завершено",
+            "ko": "완료"
+          }
+        },
+        {
+          "id": "preheat",
+          "title": {
+            "en": "Preheat",
+            "nl": "Voorverwarmen",
+            "da": "Forvarmning",
+            "de": "Vorheizen",
+            "es": "Precalentar",
+            "fr": "Préchauffer",
+            "it": "Preriscaldare",
+            "no": "Forvarme",
+            "sv": "Förvärmning",
+            "pl": "Nagrzewanie",
+            "ru": "Предварительный нагрев",
+            "ko": "예열"
+          }
+        }
+      ]
+    },
+    "samsung_microwave_mode": {
+      "type": "string",
+      "title": {
+        "en": "Mode",
+        "nl": "Modus",
+        "da": "Tilstand",
+        "de": "Modus",
+        "es": "Modo",
+        "fr": "Mode",
+        "it": "Modalità",
+        "no": "Modus",
+        "sv": "Modus",
+        "pl": "Modus",
+        "ru": "Режим",
+        "ko": "모드"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/samsung_microwave_mode.svg"
+    },
+    "samsung_microwave_power_level": {
+      "type": "string",
+      "title": {
+        "en": "Power Level",
+        "nl": "Vermogensniveau",
+        "da": "Effektniveau",
+        "de": "Leistungsstufe",
+        "es": "Nivel de potencia",
+        "fr": "Niveau de puissance",
+        "it": "Livello di potenza",
+        "no": "Effektnivå",
+        "sv": "Effektnivå",
+        "pl": "Poziom mocy",
+        "ru": "Уровень мощности",
+        "ko": "전력 수준"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/samsung_microwave_power_level.svg"
+    },
+    "samsung_microwave_progress_percentage": {
+      "type": "number",
+      "title": {
+        "en": "Progress",
+        "nl": "Voortgang",
+        "da": "Fremskridt",
+        "de": "Fortschritt",
+        "es": "Progreso",
+        "fr": "Progrès",
+        "it": "Progresso",
+        "no": "Fremgang",
+        "sv": "Framsteg",
+        "pl": "Postęp",
+        "ru": "Прогресс",
+        "ko": "진행"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "units": {
+        "en": "%",
+        "nl": "%",
+        "da": "%",
+        "de": "%",
+        "es": "%",
+        "fr": "%",
+        "it": "%",
+        "no": "%",
+        "sv": "%",
+        "pl": "%",
+        "ru": "%",
+        "ko": "%"
+      },
+      "icon": "/assets/capabilities/samsung_microwave_progress_percentage.svg"
+    },
+    "samsung_microwave_status_job": {
+      "type": "enum",
+      "title": {
+        "en": "Status",
+        "nl": "Status",
+        "da": "Status",
+        "de": "Status",
+        "es": "Estado",
+        "fr": "Statut",
+        "it": "Stato",
+        "no": "Status",
+        "sv": "Status",
+        "pl": "Status",
+        "ru": "Статус",
+        "ko": "상태"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/samsung_microwave_current_job_state.svg",
+      "values": [
+        {
+          "id": "cleaning",
+          "title": {
+            "en": "Cleaning",
+            "nl": "Schoonmaken",
+            "da": "Rengøring",
+            "de": "Reinigung",
+            "es": "Limpieza",
+            "fr": "Nettoyage",
+            "it": "Pulizia",
+            "no": "Rengjøring",
+            "sv": "Rengöring",
+            "pl": "Czyszczenie",
+            "ru": "Очистка",
+            "ko": "청소"
+          }
+        },
+        {
+          "id": "cooking",
+          "title": {
+            "en": "Cooking",
+            "nl": "Koken",
+            "da": "Madlavning",
+            "de": "Kochen",
+            "es": "Cocinando",
+            "fr": "Cuisson",
+            "it": "Cucinare",
+            "no": "Matlaging",
+            "sv": "Matlagning",
+            "pl": "Gotowanie",
+            "ru": "Готовка",
+            "ko": "요리"
+          }
+        },
+        {
+          "id": "cooling",
+          "title": {
+            "en": "Cooling",
+            "nl": "Koelen",
+            "da": "Nedkøling",
+            "de": "Abkühlung",
+            "es": "Enfriando",
+            "fr": "Refroidissement",
+            "it": "Raffreddamento",
+            "no": "Avkjøling",
+            "sv": "Nedkylning",
+            "pl": "Chłodzenie",
+            "ru": "Охлаждение",
+            "ko": "냉각"
+          }
+        },
+        {
+          "id": "draining",
+          "title": {
+            "en": "Draining",
+            "nl": "Aftappen",
+            "da": "Afløb",
+            "de": "Entleeren",
+            "es": "Drenaje",
+            "fr": "Vidange",
+            "it": "Scolatura",
+            "no": "Drenering",
+            "sv": "Tömning",
+            "pl": "Opróżnianie",
+            "ru": "Слив",
+            "ko": "배수"
+          }
+        },
+        {
+          "id": "preheat",
+          "title": {
+            "en": "Preheating",
+            "nl": "Voorverwarmen",
+            "da": "Forvarmning",
+            "de": "Vorheizen",
+            "es": "Calentamiento",
+            "fr": "Préchauffage",
+            "it": "Riscaldamento",
+            "no": "Forvarming",
+            "sv": "Förvärmning",
+            "pl": "Rozgrzewanie",
+            "ru": "Предварительный нагрев",
+            "ko": "예열"
+          }
+        },
+        {
+          "id": "ready",
+          "title": {
+            "en": "Ready",
+            "nl": "Klaar",
+            "da": "Klar",
+            "de": "Bereit",
+            "es": "Listo",
+            "fr": "Prêt",
+            "it": "Pronto",
+            "no": "Klar",
+            "sv": "Klar",
+            "pl": "Gotowy",
+            "ru": "Готово",
+            "ko": "준비됨"
+          }
+        },
+        {
+          "id": "rinsing",
+          "title": {
+            "en": "Rinsing",
+            "nl": "Spoelen",
+            "da": "Skylning",
+            "de": "Spülen",
+            "es": "Enjuagando",
+            "fr": "Rinçage",
+            "it": "Risciacquo",
+            "no": "Skylling",
+            "sv": "Sköljning",
+            "pl": "Płukanie",
+            "ru": "Полоскание",
+            "ko": "헹굼"
+          }
+        },
+        {
+          "id": "finished",
+          "title": {
+            "en": "Finished",
+            "nl": "Afgewerkt",
+            "da": "Færdig",
+            "de": "Fertig",
+            "es": "Terminado",
+            "fr": "Terminé",
+            "it": "Completato",
+            "no": "Ferdig",
+            "sv": "Klar",
+            "pl": "Ukończony",
+            "ru": "Завершено",
+            "ko": "완료"
+          }
+        },
+        {
+          "id": "scheduledStart",
+          "title": {
+            "en": "Scheduled Start",
+            "nl": "Geplande start",
+            "da": "Planlagt start",
+            "de": "Geplanter Start",
+            "es": "Inicio programado",
+            "fr": "Démarrage planifié",
+            "it": "Avvio programmato",
+            "no": "Planlagt start",
+            "sv": "Schemalagd start",
+            "pl": "Zaplanowany start",
+            "ru": "Запланированное начало",
+            "ko": "예약 시작"
+          }
+        },
+        {
+          "id": "warming",
+          "title": {
+            "en": "Warming",
+            "nl": "Verwarmen",
+            "da": "Opvarmning",
+            "de": "Erwärmung",
+            "es": "Calentamiento",
+            "fr": "Chauffage",
+            "it": "Riscaldamento",
+            "no": "Oppvarming",
+            "sv": "Uppvärmning",
+            "pl": "Podgrzewanie",
+            "ru": "Согревание",
+            "ko": "따뜻하게"
+          }
+        },
+        {
+          "id": "defrosting",
+          "title": {
+            "en": "Defrosting",
+            "nl": "Ontdooien",
+            "da": "Optøning",
+            "de": "Auftauen",
+            "es": "Descongelación",
+            "fr": "Décongélation",
+            "it": "Scongelamento",
+            "no": "Tining",
+            "sv": "Upptining",
+            "pl": "Rozmrażanie",
+            "ru": "Разморозка",
+            "ko": "해동"
+          }
+        },
+        {
+          "id": "sensing",
+          "title": {
+            "en": "Sensing",
+            "nl": "Detecteren",
+            "da": "Registrering",
+            "de": "Erkennen",
+            "es": "Detección",
+            "fr": "Détection",
+            "it": "Rilevamento",
+            "no": "Sensor",
+            "sv": "Registrerar",
+            "pl": "Wykrywanie",
+            "ru": "Распознавание",
+            "ko": "감지 중"
+          }
+        },
+        {
+          "id": "searing",
+          "title": {
+            "en": "Searing",
+            "nl": "Afdrogen",
+            "da": "Svidning",
+            "de": "Scharf anbraten",
+            "es": "Sellar",
+            "fr": "Saisir",
+            "it": "Scottare",
+            "no": "Brenning",
+            "sv": "Bryning",
+            "pl": "Smażenie",
+            "ru": "Пассеровка",
+            "ko": "굽다"
+          }
+        },
+        {
+          "id": "fastPrehat",
+          "title": {
+            "en": "Fast preheat",
+            "nl": "Snel voorverwarmen",
+            "da": "Hurtig forvarmning",
+            "de": "Schnelles Vorheizen",
+            "es": "Calentamiento rápido",
+            "fr": "Préchauffage rapide",
+            "it": "Riscaldamento veloce",
+            "no": "Hurtig forvarming",
+            "sv": "Snabb förvärmning",
+            "pl": "Szybkie nagrzewanie",
+            "ru": "Быстрый подогрев",
+            "ko": "빠른 예열"
+          }
+        },
+        {
+          "id": "scheduledEnd",
+          "title": {
+            "en": "Scheduled ending",
+            "nl": "Geplande beëindiging",
+            "da": "Planlagt afslutning",
+            "de": "Geplantes Ende",
+            "es": "Final programado",
+            "fr": "Fin programmée",
+            "it": "Fine programmata",
+            "no": "Planlagt avslutning",
+            "sv": "Schemalagt slut",
+            "pl": "Zaplanowany koniec",
+            "ru": "Запланированное завершение",
+            "ko": "예약 종료"
+          }
+        },
+        {
+          "id": "stoneHeating",
+          "title": {
+            "en": "Stone heating",
+            "nl": "Steenverwarming",
+            "da": "Stenopvarmning",
+            "de": "Steinheizung",
+            "es": "Calentamiento de piedras",
+            "fr": "Chauffage en pierre",
+            "it": "Riscaldamento della pietra",
+            "no": "Steinoppvarming",
+            "sv": "Stenvärmare",
+            "pl": "Podgrzewanie kamieni",
+            "ru": "Нагрев камня",
+            "ko": "돌 데우기"
+          }
+        },
+        {
+          "id": "timeHoldPreheat",
+          "title": {
+            "en": "Hold Preheat",
+            "nl": "Houd voorverwarmen",
+            "da": "Hold forvarmning",
+            "de": "Vorheizen behalten",
+            "es": "Mantener precalentado",
+            "fr": "Maintenir préchauffage",
+            "it": "Mantenere preriscaldamento",
+            "no": "Hold forvarming",
+            "sv": "Håll förvärmning",
+            "pl": "Trzymaj wstępne nagrzewanie",
+            "ru": "Держать разогретым",
+            "ko": "예열 유지"
+          }
+        }
+      ]
     },
     "samsung_oven_status_job": {
       "type": "enum",

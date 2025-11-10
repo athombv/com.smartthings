@@ -1,0 +1,53 @@
+{
+  "$extends": "apikey",
+  "name": {
+    "en": "Samsung Microwave",
+    "nl": "Samsung Magnetron",
+    "da": "Samsung Mikrobølgeovn",
+    "de": "Samsung Mikrowelle",
+    "es": "Samsung Microondas",
+    "fr": "Samsung Micro-ondes",
+    "it": "Samsung Microonde",
+    "no": "Samsung Mikrobølgeovn",
+    "sv": "Samsung Mikrovågsugn",
+    "pl": "Samsung Mikrofalówka",
+    "ru": "Samsung Микроволновая печь",
+    "ko": "Samsung 전자레인지"
+  },
+  "class": "microwave",
+  "capabilities": [],
+  "capabilitiesOptions": {
+    "alarm_contact": {
+      "title": {
+        "en": "Door Open",
+        "nl": "Deur open",
+        "da": "Dør åben",
+        "de": "Tür offen",
+        "es": "Puerta abierta",
+        "fr": "Porte ouverte",
+        "it": "Porta aperta",
+        "no": "Dør åpen",
+        "sv": "Dörr öppen",
+        "pl": "Drzwi otwarte",
+        "ru": "Дверца открыта",
+        "ko": "문 열림"
+      }
+    },
+    "measure_temperature.target": {
+      "title": {
+        "en": "Oven Setpoint",
+        "nl": "Oventemperatuur",
+        "da": "Ovntemperatur",
+        "de": "Ofen-Sollwert",
+        "es": "Temperatura del horno",
+        "fr": "Consigne du four",
+        "it": "Setpoint forno",
+        "no": "Ovninnstilling",
+        "sv": "Ugnsinställning",
+        "pl": "Nastawa piekarnika",
+        "ru": "Установка температуры духовки",
+        "ko": "오븐 설정 온도"
+      }
+    }
+  }
+}

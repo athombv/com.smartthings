@@ -1,0 +1,21 @@
+{
+  "type": "string",
+  "title": {
+    "en": "Mode",
+    "nl": "Modus",
+    "da": "Tilstand",
+    "de": "Modus",
+    "es": "Modo",
+    "fr": "Mode",
+    "it": "Modalità",
+    "no": "Modus",
+    "sv": "Modus",
+    "pl": "Modus",
+    "ru": "Режим",
+    "ko": "모드"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/samsung_microwave_mode.svg"
+}
