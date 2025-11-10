@@ -2385,6 +2385,71 @@
     },
     {
       "images": {
+        "small": "/drivers/soundbar/assets/images/small.png",
+        "large": "/drivers/soundbar/assets/images/large.png",
+        "xlarge": "/drivers/soundbar/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "apikey"
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "apikey"
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "cloud",
+        "local"
+      ],
+      "name": {
+        "en": "Samsung Soundbar",
+        "nl": "Samsung Soundbar",
+        "da": "Samsung Soundbar",
+        "de": "Samsung Soundbar",
+        "es": "Samsung Soundbar",
+        "fr": "Samsung Soundbar",
+        "it": "Samsung Soundbar",
+        "no": "Samsung Soundbar",
+        "sv": "Samsung Soundbar",
+        "pl": "Samsung Soundbar",
+        "ru": "Samsung Soundbar",
+        "ko": "Samsung Soundbar"
+      },
+      "class": "speaker",
+      "capabilities": [
+        "onoff",
+        "volume_up",
+        "volume_down",
+        "volume_set"
+      ],
+      "id": "soundbar"
+    },
+    {
+      "images": {
         "small": "/drivers/tv/assets/images/small.png",
         "large": "/drivers/tv/assets/images/large.png",
         "xlarge": "/drivers/tv/assets/images/xlarge.png"
