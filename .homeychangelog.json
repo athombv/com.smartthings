@@ -67,5 +67,8 @@
   },
   "3.5.0": {
     "en": "Added Samsung Microwave."
+  },
+  "3.6.0": {
+    "en": "Added Flow When-cards for the Microwave."
   }
 }
