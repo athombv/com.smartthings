@@ -2,6 +2,7 @@
   "triggers": [
     {
       "id": "samsung_microwave_job_finished",
+      "highlight": true,
       "title": {
         "en": "A cooking job has finished",
         "nl": "Een kookklus is voltooid",
@@ -16,6 +17,158 @@
         "ru": "Готовка завершена",
         "ko": "요리가 완료되었습니다"
       }
+    },
+    {
+      "id": "samsung_microwave_progress_percentage_changed",
+      "title": {
+        "en": "The progress percentage has changed",
+        "nl": "Het voortgangspercentage is gewijzigd",
+        "da": "Fremdriftsprocenten er ændret",
+        "de": "Der Fortschrittsprozentsatz hat sich geändert",
+        "es": "El porcentaje de progreso ha cambiado",
+        "fr": "Le pourcentage de progression a changé",
+        "it": "La percentuale di avanzamento è cambiata",
+        "no": "Fremdriftsprosenten har endret seg",
+        "sv": "Framstegsprocenten har ändrats",
+        "pl": "Procent postępu uległ zmianie",
+        "ru": "Процент выполнения изменился",
+        "ko": "진행률이 변경되었습니다"
+      },
+      "tokens": [
+        {
+          "name": "samsung_microwave_progress_percentage",
+          "type": "number",
+          "title": {
+            "en": "Progress",
+            "nl": "Voortgang",
+            "da": "Fremskridt",
+            "de": "Fortschritt",
+            "es": "Progreso",
+            "fr": "Progrès",
+            "it": "Progresso",
+            "no": "Fremgang",
+            "sv": "Framsteg",
+            "pl": "Postęp",
+            "ru": "Прогресс",
+            "ko": "진행"
+          },
+          "example": 0.5
+        }
+      ]
+    },
+    {
+      "id": "samsung_microwave_power_level_changed",
+      "title": {
+        "en": "The power level has changed",
+        "nl": "Het vermogensniveau is gewijzigd",
+        "da": "Effektniveauet er ændret",
+        "de": "Die Leistungsstufe hat sich geändert",
+        "es": "El nivel de potencia ha cambiado",
+        "fr": "Le niveau de puissance a changé",
+        "it": "Il livello di potenza è cambiato",
+        "no": "Effektnivået har endret seg",
+        "sv": "Effektnivån har ändrats",
+        "pl": "Poziom mocy uległ zmianie",
+        "ru": "Уровень мощности изменился",
+        "ko": "전력 수준이 변경되었습니다"
+      },
+      "tokens": [
+        {
+          "name": "samsung_microwave_power_level",
+          "type": "string",
+          "title": {
+            "en": "Power Level",
+            "nl": "Vermogensniveau",
+            "da": "Effektniveau",
+            "de": "Leistungsstufe",
+            "es": "Nivel de potencia",
+            "fr": "Niveau de puissance",
+            "it": "Livello di potenza",
+            "no": "Effektnivå",
+            "sv": "Effektnivå",
+            "pl": "Poziom mocy",
+            "ru": "Уровень мощности",
+            "ko": "전력 수준"
+          },
+          "example": "High"
+        }
+      ]
+    },
+    {
+      "id": "samsung_microwave_mode_changed",
+      "title": {
+        "en": "The mode has changed",
+        "nl": "De modus is gewijzigd",
+        "da": "Tilstanden er ændret",
+        "de": "Der Modus hat sich geändert",
+        "es": "El modo ha cambiado",
+        "fr": "Le mode a changé",
+        "it": "La modalità è cambiata",
+        "no": "Modusen har endret seg",
+        "sv": "Modus har ändrats",
+        "pl": "Modus uległ zmianie",
+        "ru": "Режим изменился",
+        "ko": "모드가 변경되었습니다"
+      },
+      "tokens": [
+        {
+          "name": "samsung_microwave_mode",
+          "type": "string",
+          "title": {
+            "en": "Mode",
+            "nl": "Modus",
+            "da": "Tilstand",
+            "de": "Modus",
+            "es": "Modo",
+            "fr": "Mode",
+            "it": "Modalità",
+            "no": "Modus",
+            "sv": "Modus",
+            "pl": "Modus",
+            "ru": "Режим",
+            "ko": "모드"
+          },
+          "example": "Microwave"
+        }
+      ]
+    },
+    {
+      "id": "samsung_microwave_status_job_changed",
+      "title": {
+        "en": "The status has changed",
+        "nl": "De status is gewijzigd",
+        "da": "Statussen er ændret",
+        "de": "Der Status hat sich geändert",
+        "es": "El estado ha cambiado",
+        "fr": "Le statut a changé",
+        "it": "Lo stato è cambiato",
+        "no": "Statusen har endret seg",
+        "sv": "Statusen har ändrats",
+        "pl": "Status uległ zmianie",
+        "ru": "Статус изменился",
+        "ko": "상태가 변경되었습니다"
+      },
+      "tokens": [
+        {
+          "name": "samsung_microwave_status_job",
+          "type": "string",
+          "title": {
+            "en": "Status",
+            "nl": "Status",
+            "da": "Status",
+            "de": "Status",
+            "es": "Estado",
+            "fr": "Statut",
+            "it": "Stato",
+            "no": "Status",
+            "sv": "Status",
+            "pl": "Status",
+            "ru": "Статус",
+            "ko": "상태"
+          },
+          "example": "cooking"
+        }
+      ]
     }
   ]
 }
