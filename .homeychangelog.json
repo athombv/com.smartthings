@@ -70,5 +70,8 @@
   },
   "3.6.0": {
     "en": "Added Flow When-cards for the Microwave."
+  },
+  "3.6.1": {
+    "en": "Fixed an issue where 'The Microwave status has changed' Flow card would not start."
   }
 }
