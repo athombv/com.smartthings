@@ -133,7 +133,7 @@
       ]
     },
     {
-      "id": "samsung_microwave_status_job_changed",
+      "id": "samsung_microwave_current_job_state_changed",
       "title": {
         "en": "The status has changed",
         "nl": "De status is gewijzigd",
@@ -150,7 +150,7 @@
       },
       "tokens": [
         {
-          "name": "samsung_microwave_status_job",
+          "name": "samsung_microwave_current_job_state",
           "type": "string",
           "title": {
             "en": "Status",
