@@ -1,0 +1,21 @@
+{
+  "$extends": "apikey",
+  "name": {
+    "en": "Samsung Robot Vacuum",
+    "nl": "Samsung Robot Vacuum",
+    "da": "Samsung Robot Vacuum",
+    "de": "Samsung Robot Vacuum",
+    "es": "Samsung Robot Vacuum",
+    "fr": "Samsung Robot Vacuum",
+    "it": "Samsung Robot Vacuum",
+    "no": "Samsung Robot Vacuum",
+    "sv": "Samsung Robot Vacuum",
+    "pl": "Samsung Robot Vacuum",
+    "ru": "Samsung Robot Vacuum",
+    "ko": "Samsung Robot Vacuum"
+  },
+  "class": "vacuumcleaner",
+  "capabilities": [
+    "measure_battery"
+  ]
+}

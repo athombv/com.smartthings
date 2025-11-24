@@ -2754,6 +2754,68 @@
     },
     {
       "images": {
+        "small": "/drivers/robotvacuum/assets/images/small.png",
+        "large": "/drivers/robotvacuum/assets/images/large.png",
+        "xlarge": "/drivers/robotvacuum/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "apikey"
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "apikey"
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "cloud",
+        "local"
+      ],
+      "name": {
+        "en": "Samsung Robot Vacuum",
+        "nl": "Samsung Robot Vacuum",
+        "da": "Samsung Robot Vacuum",
+        "de": "Samsung Robot Vacuum",
+        "es": "Samsung Robot Vacuum",
+        "fr": "Samsung Robot Vacuum",
+        "it": "Samsung Robot Vacuum",
+        "no": "Samsung Robot Vacuum",
+        "sv": "Samsung Robot Vacuum",
+        "pl": "Samsung Robot Vacuum",
+        "ru": "Samsung Robot Vacuum",
+        "ko": "Samsung Robot Vacuum"
+      },
+      "class": "vacuumcleaner",
+      "capabilities": [
+        "measure_battery"
+      ],
+      "id": "robotvacuum"
+    },
+    {
+      "images": {
         "small": "/drivers/soundbar/assets/images/small.png",
         "large": "/drivers/soundbar/assets/images/large.png",
         "xlarge": "/drivers/soundbar/assets/images/xlarge.png"
