@@ -11,9 +11,9 @@ module.exports = class SmartThingsDeviceRobotVacuum extends SmartThingsDevice {
       smartThingsCapabilityId: 'battery',
       smartThingsAttributeId: 'battery',
       async onReport({ value }) {
-        return value; // TODO
+        return value;
       },
-    }
+    },
   ];
 
 };
