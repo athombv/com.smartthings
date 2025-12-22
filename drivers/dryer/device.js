@@ -62,5 +62,6 @@ module.exports = class SmartThingsDeviceDryer extends SmartThingsDevice {
         return value;
       },
     },
-  ];  
+  ];
+
 };

@@ -2039,6 +2039,58 @@
         ]
       },
       {
+        "id": "samsung_robotvacuum_start",
+        "title": {
+          "en": "Start Cleaning"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=robotvacuum"
+          }
+        ]
+      },
+      {
+        "id": "samsung_robotvacuum_pause",
+        "title": {
+          "en": "Pause Cleaning"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=robotvacuum"
+          }
+        ]
+      },
+      {
+        "id": "samsung_robotvacuum_resume",
+        "title": {
+          "en": "Resume Cleaning"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=robotvacuum"
+          }
+        ]
+      },
+      {
+        "id": "samsung_robotvacuum_return_to_home",
+        "title": {
+          "en": "Return to Home"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=robotvacuum"
+          }
+        ]
+      },
+      {
         "id": "set_volume",
         "title": {
           "en": "Set the volume",

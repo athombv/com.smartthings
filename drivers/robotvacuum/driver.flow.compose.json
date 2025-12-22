@@ -1,0 +1,28 @@
+{
+  "actions": [
+    {
+      "id": "samsung_robotvacuum_start",
+      "title": {
+        "en": "Start Cleaning"
+      }
+    },
+    {
+      "id": "samsung_robotvacuum_pause",
+      "title": {
+        "en": "Pause Cleaning"
+      }
+    },
+    {
+      "id": "samsung_robotvacuum_resume",
+      "title": {
+        "en": "Resume Cleaning"
+      }
+    },
+    {
+      "id": "samsung_robotvacuum_return_to_home",
+      "title": {
+        "en": "Return to Home"
+      }
+    }
+  ]
+}
