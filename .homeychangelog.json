@@ -73,5 +73,8 @@
   },
   "3.6.1": {
     "en": "Fixed an issue where 'The Microwave status has changed' Flow card would not start."
+  },
+  "3.6.2": {
+    "en": "Make registering for notifications optional."
   }
 }
