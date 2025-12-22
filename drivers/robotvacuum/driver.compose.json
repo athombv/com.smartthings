@@ -17,5 +17,10 @@
   "class": "vacuumcleaner",
   "capabilities": [
     "measure_battery"
-  ]
+  ],
+  "energy": {
+    "batteries": [
+      "INTERNAL"
+    ]
+  }
 }

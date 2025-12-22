@@ -2864,6 +2864,11 @@
       "capabilities": [
         "measure_battery"
       ],
+      "energy": {
+        "batteries": [
+          "INTERNAL"
+        ]
+      },
       "id": "robotvacuum"
     },
     {
