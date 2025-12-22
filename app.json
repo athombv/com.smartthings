@@ -4437,6 +4437,185 @@
         }
       ]
     },
+    "samsung_robotvacuum_operating_state": {
+      "type": "enum",
+      "title": {
+        "en": "Status",
+        "nl": "Status",
+        "da": "Status",
+        "de": "Status",
+        "es": "Estado",
+        "fr": "Statut",
+        "it": "Stato",
+        "no": "Status",
+        "sv": "Status",
+        "pl": "Status",
+        "ru": "Статус",
+        "ko": "상태"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/samsung_robotvacuum_operating_state.svg",
+      "values": [
+        {
+          "id": "homing",
+          "title": {
+            "en": "Homing"
+          }
+        },
+        {
+          "id": "charging",
+          "title": {
+            "en": "Charging"
+          }
+        },
+        {
+          "id": "charged",
+          "title": {
+            "en": "Charged"
+          }
+        },
+        {
+          "id": "chargingForRemainingJob",
+          "title": {
+            "en": "Charging For Remaining Job"
+          }
+        },
+        {
+          "id": "moving",
+          "title": {
+            "en": "Moving"
+          }
+        },
+        {
+          "id": "cleaning",
+          "title": {
+            "en": "Cleaning"
+          }
+        },
+        {
+          "id": "paused",
+          "title": {
+            "en": "Paused"
+          }
+        },
+        {
+          "id": "idle",
+          "title": {
+            "en": "Idle"
+          }
+        },
+        {
+          "id": "error",
+          "title": {
+            "en": "Error"
+          }
+        },
+        {
+          "id": "powerSaving",
+          "title": {
+            "en": "Power Saving"
+          }
+        },
+        {
+          "id": "factoryReset",
+          "title": {
+            "en": "Factory Reset"
+          }
+        },
+        {
+          "id": "relocal",
+          "title": {
+            "en": "Relocal"
+          }
+        },
+        {
+          "id": "exploring",
+          "title": {
+            "en": "Exploring"
+          }
+        },
+        {
+          "id": "processing",
+          "title": {
+            "en": "Processing"
+          }
+        },
+        {
+          "id": "emitDust",
+          "title": {
+            "en": "Emit Dust"
+          }
+        },
+        {
+          "id": "washingMop",
+          "title": {
+            "en": "Washing Mop"
+          }
+        },
+        {
+          "id": "sterilizingMop",
+          "title": {
+            "en": "Sterilizing Mop"
+          }
+        },
+        {
+          "id": "dryingMop",
+          "title": {
+            "en": "Drying Mop"
+          }
+        },
+        {
+          "id": "supplyingWater",
+          "title": {
+            "en": "Supplying Water"
+          }
+        },
+        {
+          "id": "preparingWater",
+          "title": {
+            "en": "Preparing Water"
+          }
+        },
+        {
+          "id": "spinDrying",
+          "title": {
+            "en": "Spin Drying"
+          }
+        },
+        {
+          "id": "flexCharged",
+          "title": {
+            "en": "Flex Charged"
+          }
+        },
+        {
+          "id": "mopWashingPaused",
+          "title": {
+            "en": "Mop Washing Paused"
+          }
+        },
+        {
+          "id": "descaling",
+          "title": {
+            "en": "Descaling"
+          }
+        },
+        {
+          "id": "drainingWater",
+          "title": {
+            "en": "Draining Water"
+          }
+        },
+        {
+          "id": "waitingForDescaling",
+          "title": {
+            "en": "Waiting For Descaling"
+          }
+        }
+      ]
+    },
     "samsung_washer_current_job_state": {
       "type": "enum",
       "title": {

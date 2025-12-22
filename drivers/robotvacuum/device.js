@@ -14,6 +14,15 @@ module.exports = class SmartThingsDeviceRobotVacuum extends SmartThingsDevice {
         return value;
       },
     },
+    {
+      homeyCapabilityId: 'samsung_robotvacuum_operating_state',
+      smartThingsComponentId: 'main',
+      smartThingsCapabilityId: 'samsungce.robotCleanerOperatingState',
+      smartThingsAttributeId: 'operatingState',
+      async onReport({ value }) {
+        return value;
+      },
+    },
   ];
 
 };
