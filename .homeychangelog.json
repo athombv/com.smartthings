@@ -82,5 +82,8 @@
   },
   "4.0.0": {
     "en": "Switched from Server-Sent Events to Webhooks."
+  },
+  "4.0.1": {
+    "en": "Switched from Server-Sent Events to Webhooks."
   }
 }
