@@ -11,7 +11,6 @@
     "eslint-config-athom": "^3.0.1"
   },
   "dependencies": {
-    "eventsource": "^1.1.0",
     "homey-oauth2app": "^3.5.4"
   },
   "engines": {
