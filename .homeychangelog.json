@@ -79,5 +79,8 @@
   },
   "3.7.0": {
     "en": "Added Robot Vacuum. Added polling when Server-Sent Events did not work."
+  },
+  "4.0.0": {
+    "en": "Switched from Server-Sent Events to Webhooks."
   }
 }
