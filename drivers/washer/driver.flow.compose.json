@@ -125,5 +125,13 @@
         "capabilities": "alarm_samsung_washer_addwash_door_open"
       }
     }
+  ],
+  "conditions": [
+    {
+      "id": "samsung_washer_job_running",
+      "title": {
+        "en": "Samsung Washer !{{is|isn't}} running"
+      }
+    }
   ]
 }
