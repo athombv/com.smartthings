@@ -1,6 +1,7 @@
 {
   "errors": {
-    "offline": "Device Offline"
+    "offline": "Device Offline",
+    "remote_control_disabled": "Remote Start is disabled. Press Smart Control on the machine first."
   },
   "samsung_washer_current_job_state": {
     "airWash": "Air Wash",
@@ -21,5 +22,19 @@
     "spin": "Spinning",
     "idle": "Idle",
     "off": "Off"
+  },
+  "samsung_dryer_current_job_state": {
+    "cooling": "Cooling",
+    "drying": "Drying",
+    "finished": "Finished",
+    "none": "None",
+    "wrinklePrevent": "Wrinkle prevention",
+    "rinse": "Rinsing",
+    "spin": "Spinning",
+    "idle": "Idle",
+    "off": "Off",
+    "delayWash": "Delay washing",
+    "weightSensing": "Weight sensing",
+    "freezeProtection": "Freeze protection"
   }
 }

@@ -15,5 +15,15 @@
     "ko": "삼성 건조기"
   },
   "class": "dryer",
-  "capabilities": []
+  "capabilities": [
+    "samsung_dryer_remote_control_enabled",
+    "onoff",
+    "samsung_dryer_start",
+    "samsung_dryer_current_job_state",
+    "samsung_dryer_cycle",
+    "samsung_dryer_progress_percentage",
+    "samsung_dryer_progress_remaining_time",
+    "measure_power",
+    "meter_power"
+  ]
 }

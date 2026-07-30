@@ -1,6 +1,7 @@
 {
   "errors": {
-    "offline": "Dispositivo fuera de línea"
+    "offline": "Dispositivo fuera de línea",
+    "remote_control_disabled": "El inicio remoto está desactivado. Pulse primero Smart Control en la máquina."
   },
   "samsung_washer_current_job_state": {
     "airWash": "Lavado por aire",
@@ -17,6 +18,20 @@
     "wrinklePrevent": "Antiarrugas",
     "freezeProtection": "Protección anticongelante",
     "wash": "Lavado",
+    "rinse": "Enjuague",
+    "spin": "Centrifugado",
+    "idle": "Inactivo",
+    "off": "Apagado"
+  },
+  "samsung_dryer_current_job_state": {
+    "cooling": "Enfriamiento",
+    "drying": "Secado",
+    "finished": "Finalizado",
+    "none": "Ninguno",
+    "wrinklePrevent": "Antiarrugas",
+    "delayWash": "Lavado retardado",
+    "weightSensing": "Detección de peso",
+    "freezeProtection": "Protección anticongelante",
     "rinse": "Enjuague",
     "spin": "Centrifugado",
     "idle": "Inactivo",

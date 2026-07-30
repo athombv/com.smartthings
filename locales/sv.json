@@ -1,6 +1,7 @@
 {
   "errors": {
-    "offline": "Enheten är offline"
+    "offline": "Enheten är offline",
+    "remote_control_disabled": "Fjärrstart är inaktiverad. Tryck först på Smart Control på maskinen."
   },
   "samsung_washer_current_job_state": {
     "airWash": "Lufttvätt",
@@ -17,6 +18,20 @@
     "wrinklePrevent": "Skrynkelfri",
     "freezeProtection": "Frostskydd",
     "wash": "Tvätt",
+    "rinse": "Sköljning",
+    "spin": "Centrifugering",
+    "idle": "Inaktiv",
+    "off": "Av"
+  },
+  "samsung_dryer_current_job_state": {
+    "cooling": "Kylning",
+    "drying": "Torkning",
+    "finished": "Klar",
+    "none": "Ingen",
+    "wrinklePrevent": "Skrynkelfri",
+    "delayWash": "Fördröjd tvättning",
+    "weightSensing": "Viktsensor",
+    "freezeProtection": "Frostskydd",
     "rinse": "Sköljning",
     "spin": "Centrifugering",
     "idle": "Inaktiv",

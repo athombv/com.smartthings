@@ -1,6 +1,7 @@
 {
   "errors": {
-    "offline": "Apparaat Offline"
+    "offline": "Apparaat Offline",
+    "remote_control_disabled": "Afstandsbediening staat uit. Druk eerst op Smart Control op het apparaat."
   },
   "samsung_washer_current_job_state": {
     "airWash": "Luchtwassen",
@@ -17,6 +18,20 @@
     "wrinklePrevent": "Kreukherstellend",
     "freezeProtection": "Vorstbeveiliging",
     "wash": "Wassen",
+    "rinse": "Spoelen",
+    "spin": "Zwieren",
+    "idle": "Inactief",
+    "off": "Uit"
+  },
+  "samsung_dryer_current_job_state": {
+    "cooling": "Koelen",
+    "drying": "Drogen",
+    "finished": "Klaar",
+    "none": "Geen",
+    "wrinklePrevent": "Kreukherstellend",
+    "delayWash": "Wassen Uitstellen",
+    "weightSensing": "Gewicht sensing",
+    "freezeProtection": "Vorstbeveiliging",
     "rinse": "Spoelen",
     "spin": "Zwieren",
     "idle": "Inactief",

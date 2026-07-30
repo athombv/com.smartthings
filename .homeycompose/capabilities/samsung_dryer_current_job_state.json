@@ -105,6 +105,91 @@
       }
     },
     {
+      "id": "cooling",
+      "title": {
+        "en": "Cooling",
+        "nl": "Koelen",
+        "da": "Afkøling",
+        "de": "Abkühlen",
+        "es": "Enfriamiento",
+        "fr": "Refroidissement",
+        "it": "Raffreddamento",
+        "no": "Nedkjøling",
+        "sv": "Kylning",
+        "pl": "Chłodzenie",
+        "ru": "Охлаждение",
+        "ko": "냉각"
+      }
+    },
+    {
+      "id": "wrinklePrevent",
+      "title": {
+        "en": "Wrinkle prevention",
+        "nl": "Kreukherstellend",
+        "da": "Krølfri",
+        "de": "Faltenprävention",
+        "es": "Prevención de arrugas",
+        "fr": "Prévention des plis",
+        "it": "Prevenzione delle pieghe",
+        "no": "Rynkeforebygging",
+        "sv": "Skrynkelfri",
+        "pl": "Zapobieganie zagnieceniom",
+        "ru": "Предотвращение складок",
+        "ko": "주름 방지"
+      }
+    },
+    {
+      "id": "delayWash",
+      "title": {
+        "en": "Delayed start",
+        "nl": "Uitgestelde start",
+        "da": "Forsinket start",
+        "de": "Verzögerter Start",
+        "es": "Inicio retrasado",
+        "fr": "Départ différé",
+        "it": "Avvio ritardato",
+        "no": "Utsatt start",
+        "sv": "Fördröjd start",
+        "pl": "Opóźniony start",
+        "ru": "Отложенный запуск",
+        "ko": "지연 시작"
+      }
+    },
+    {
+      "id": "weightSensing",
+      "title": {
+        "en": "Weight sensing",
+        "nl": "Gewichtsdetectie",
+        "da": "Vægtregistrering",
+        "de": "Gewichtserkennung",
+        "es": "Detección de peso",
+        "fr": "Détection de poids",
+        "it": "Rilevamento del peso",
+        "no": "Vektdeteksjon",
+        "sv": "Viktdetektering",
+        "pl": "Wykrywanie wagi",
+        "ru": "Определение веса",
+        "ko": "중량 감지"
+      }
+    },
+    {
+      "id": "freezeProtection",
+      "title": {
+        "en": "Freeze protection",
+        "nl": "Vorstbeveiliging",
+        "da": "Frostbeskyttelse",
+        "de": "Frostschutz",
+        "es": "Protección contra heladas",
+        "fr": "Protection contre le gel",
+        "it": "Protezione dal gelo",
+        "no": "Frostbeskyttelse",
+        "sv": "Frostskydd",
+        "pl": "Ochrona przed zamarzaniem",
+        "ru": "Защита от замерзания",
+        "ko": "동결 방지"
+      }
+    },
+    {
       "id": "finished",
       "title": {
         "en": "Finished",

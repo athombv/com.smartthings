@@ -1,0 +1,20 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "Start Cycle",
+    "nl": "Start cyclus",
+    "de": "Zyklus starten",
+    "fr": "Démarrer le cycle",
+    "es": "Iniciar ciclo",
+    "it": "Avvia ciclo",
+    "no": "Start syklus",
+    "sv": "Starta cykel",
+    "da": "Start cyklus",
+    "pl": "Uruchom cykl",
+    "ru": "Запустить цикл",
+    "ko": "사이클 시작"
+  },
+  "getable": false,
+  "setable": true,
+  "uiComponent": "button"
+}

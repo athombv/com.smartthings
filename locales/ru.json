@@ -1,6 +1,7 @@
 {
   "errors": {
-    "offline": "Устройство не в сети"
+    "offline": "Устройство не в сети",
+    "remote_control_disabled": "Дистанционный запуск отключён. Сначала нажмите Smart Control на машине."
   },
   "samsung_washer_current_job_state": {
     "airWash": "Воздушная стирка",
@@ -17,6 +18,20 @@
     "wrinklePrevent": "Защита от складок",
     "freezeProtection": "Защита от замерзания",
     "wash": "Стирка",
+    "rinse": "Полоскание",
+    "spin": "Отжим",
+    "idle": "Ожидание",
+    "off": "Выключено"
+  },
+  "samsung_dryer_current_job_state": {
+    "cooling": "Охлаждение",
+    "drying": "Сушка",
+    "finished": "Завершено",
+    "none": "Нет",
+    "wrinklePrevent": "Защита от складок",
+    "delayWash": "Отложенная стирка",
+    "weightSensing": "Определение веса",
+    "freezeProtection": "Защита от замерзания",
     "rinse": "Полоскание",
     "spin": "Отжим",
     "idle": "Ожидание",

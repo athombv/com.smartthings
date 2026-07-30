@@ -1,0 +1,22 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "Remote Start",
+    "nl": "Afstandsbediening",
+    "de": "Fernstart",
+    "fr": "Démarrage à distance",
+    "es": "Inicio remoto",
+    "it": "Avvio remoto",
+    "no": "Fjernstyring",
+    "sv": "Fjärrstyrning",
+    "da": "Fjernstyring",
+    "pl": "Zdalne uruchomienie",
+    "ru": "Дистанционный запуск",
+    "ko": "원격 제어"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "toggle",
+  "icon": "/assets/capabilities/samsung_dryer_remote_control_enabled.svg",
+  "insights": true
+}

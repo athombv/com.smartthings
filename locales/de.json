@@ -1,6 +1,7 @@
 {
   "errors": {
-    "offline": "Gerät offline"
+    "offline": "Gerät offline",
+    "remote_control_disabled": "Fernstart ist deaktiviert. Drücken Sie zuerst Smart Control am Gerät."
   },
   "samsung_washer_current_job_state": {
     "airWash": "Luftwäsche",
@@ -17,6 +18,20 @@
     "wrinklePrevent": "Faltenprävention",
     "freezeProtection": "Frostschutz",
     "wash": "Waschen",
+    "rinse": "Spülen",
+    "spin": "Schleudern",
+    "idle": "Leerlauf",
+    "off": "Aus"
+  },
+  "samsung_dryer_current_job_state": {
+    "cooling": "Abkühlen",
+    "drying": "Trocknen",
+    "finished": "Fertig",
+    "none": "Keine",
+    "wrinklePrevent": "Faltenprävention",
+    "delayWash": "Waschverzögerung",
+    "weightSensing": "Gewichtserkennung",
+    "freezeProtection": "Frostschutz",
     "rinse": "Spülen",
     "spin": "Schleudern",
     "idle": "Leerlauf",

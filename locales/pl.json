@@ -1,6 +1,7 @@
 {
   "errors": {
-    "offline": "Urządzenie offline"
+    "offline": "Urządzenie offline",
+    "remote_control_disabled": "Zdalne uruchamianie jest wyłączone. Najpierw naciśnij Smart Control na urządzeniu."
   },
   "samsung_washer_current_job_state": {
     "airWash": "Pranie powietrzem",
@@ -17,6 +18,20 @@
     "wrinklePrevent": "Zapobieganie zagnieceniom",
     "freezeProtection": "Ochrona przed zamarzaniem",
     "wash": "Pranie",
+    "rinse": "Płukanie",
+    "spin": "Wirowanie",
+    "idle": "Bezczynny",
+    "off": "Wyłączony"
+  },
+  "samsung_dryer_current_job_state": {
+    "cooling": "Chłodzenie",
+    "drying": "Suszenie",
+    "finished": "Zakończone",
+    "none": "Brak",
+    "wrinklePrevent": "Zapobieganie zagnieceniom",
+    "delayWash": "Pranie opóźnione",
+    "weightSensing": "Wykrywanie wagi",
+    "freezeProtection": "Ochrona przed zamarzaniem",
     "rinse": "Płukanie",
     "spin": "Wirowanie",
     "idle": "Bezczynny",

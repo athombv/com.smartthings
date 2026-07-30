@@ -1,6 +1,7 @@
 {
   "errors": {
-    "offline": "Appareil hors ligne"
+    "offline": "Appareil hors ligne",
+    "remote_control_disabled": "Le démarrage à distance est désactivé. Appuyez d'abord sur Smart Control sur la machine."
   },
   "samsung_washer_current_job_state": {
     "airWash": "Lavage à l'air",
@@ -17,6 +18,20 @@
     "wrinklePrevent": "Prévention des rides",
     "freezeProtection": "Protection contre le gel",
     "wash": "Lavage",
+    "rinse": "Rinçage",
+    "spin": "Essorage",
+    "idle": "Inactif",
+    "off": "Éteint"
+  },
+  "samsung_dryer_current_job_state": {
+    "cooling": "Refroidissement",
+    "drying": "Séchage",
+    "finished": "Terminé",
+    "none": "Aucun",
+    "wrinklePrevent": "Prévention des rides",
+    "delayWash": "Lavage différé",
+    "weightSensing": "Détection de poids",
+    "freezeProtection": "Protection contre le gel",
     "rinse": "Rinçage",
     "spin": "Essorage",
     "idle": "Inactif",

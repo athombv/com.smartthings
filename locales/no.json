@@ -1,6 +1,7 @@
 {
   "errors": {
-    "offline": "Enheten er frakoblet"
+    "offline": "Enheten er frakoblet",
+    "remote_control_disabled": "Fjernstart er deaktivert. Trykk først på Smart Control på maskinen."
   },
   "samsung_washer_current_job_state": {
     "airWash": "Luftvask",
@@ -17,6 +18,20 @@
     "wrinklePrevent": "Rynkeforebygging",
     "freezeProtection": "Frostbeskyttelse",
     "wash": "Vasking",
+    "rinse": "Skylling",
+    "spin": "Sentrifugering",
+    "idle": "Inaktiv",
+    "off": "Av"
+  },
+  "samsung_dryer_current_job_state": {
+    "cooling": "Nedkjøling",
+    "drying": "Tørking",
+    "finished": "Ferdig",
+    "none": "Ingen",
+    "wrinklePrevent": "Rynkeforebygging",
+    "delayWash": "Utsatt vasking",
+    "weightSensing": "Vektregistrering",
+    "freezeProtection": "Frostbeskyttelse",
     "rinse": "Skylling",
     "spin": "Sentrifugering",
     "idle": "Inaktiv",

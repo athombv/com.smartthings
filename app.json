@@ -868,6 +868,54 @@
         ]
       },
       {
+        "id": "samsung_dryer_remote_control_enabled_true",
+        "title": {
+          "en": "Remote Start enabled",
+          "nl": "Afstandsbediening ingeschakeld",
+          "de": "Fernstart aktiviert",
+          "fr": "Démarrage à distance activé",
+          "es": "Inicio remoto activado",
+          "it": "Avvio remoto abilitato",
+          "no": "Fjernstyring aktivert",
+          "sv": "Fjärrstyrning aktiverad",
+          "da": "Fjernstyring aktiveret",
+          "pl": "Zdalne uruchomienie włączone",
+          "ru": "Дистанционный запуск включён",
+          "ko": "원격 제어 활성화됨"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dryer&capabilities=samsung_dryer_remote_control_enabled"
+          }
+        ]
+      },
+      {
+        "id": "samsung_dryer_remote_control_enabled_false",
+        "title": {
+          "en": "Remote Start disabled",
+          "nl": "Afstandsbediening uitgeschakeld",
+          "de": "Fernstart deaktiviert",
+          "fr": "Démarrage à distance désactivé",
+          "es": "Inicio remoto desactivado",
+          "it": "Avvio remoto disabilitato",
+          "no": "Fjernstyring deaktivert",
+          "sv": "Fjärrstyrning inaktiverad",
+          "da": "Fjernstyring deaktiveret",
+          "pl": "Zdalne uruchomienie wyłączone",
+          "ru": "Дистанционный запуск выключен",
+          "ko": "원격 제어 비활성화됨"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dryer&capabilities=samsung_dryer_remote_control_enabled"
+          }
+        ]
+      },
+      {
         "id": "samsung_microwave_job_finished",
         "highlight": true,
         "title": {
@@ -1815,7 +1863,7 @@
           "nl": "Zet droger status naar [[state]]"
         },
         "hint": {
-          "en": "You need to enable Samsung Smart Control on your dryer for this flowcard to work."
+          "en": "Samsung Smart Control (Remote Start) must be enabled on your dryer for this flow card to work."
         },
         "args": [
           {
@@ -1838,19 +1886,211 @@
               {
                 "id": "run",
                 "title": {
-                  "en": "run"
+                  "en": "Run"
                 }
               },
               {
                 "id": "pause",
                 "title": {
-                  "en": "pause"
+                  "en": "Pause"
                 }
               },
               {
                 "id": "stop",
                 "title": {
-                  "en": "stop"
+                  "en": "Stop"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "set_dryer_cycle",
+        "title": {
+          "en": "Set drying program to...",
+          "nl": "Stel droogprogramma in op...",
+          "de": "Trockenprogramm einstellen auf...",
+          "fr": "Définir le programme de séchage sur...",
+          "es": "Establecer programa de secado en...",
+          "it": "Imposta programma di asciugatura su...",
+          "no": "Angi tørkeprogram til...",
+          "sv": "Ange torkprogram till...",
+          "da": "Indstil tørreprogram til...",
+          "pl": "Ustaw program suszenia na...",
+          "ru": "Установить программу сушки...",
+          "ko": "건조 프로그램 설정..."
+        },
+        "titleFormatted": {
+          "en": "Set drying program to [[cycle]]",
+          "nl": "Stel droogprogramma in op [[cycle]]"
+        },
+        "hint": {
+          "en": "Samsung Smart Control (Remote Start) must be enabled and the dryer must be idle before selecting a program."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dryer"
+          },
+          {
+            "name": "cycle",
+            "type": "dropdown",
+            "title": {
+              "en": "Program",
+              "nl": "Programma"
+            },
+            "placeholder": {
+              "en": "Choose program",
+              "nl": "Kies programma"
+            },
+            "values": [
+              {
+                "id": "51",
+                "title": {
+                  "en": "Auto Dry (Cotton)",
+                  "nl": "Auto droog (katoen)"
+                }
+              },
+              {
+                "id": "53",
+                "title": {
+                  "en": "Auto Dry (Synthetic)",
+                  "nl": "Auto droog (synthetisch)"
+                }
+              },
+              {
+                "id": "18",
+                "title": {
+                  "en": "Cotton",
+                  "nl": "Katoen"
+                }
+              },
+              {
+                "id": "20",
+                "title": {
+                  "en": "Cotton (Damp)",
+                  "nl": "Katoen (licht vochtig)"
+                }
+              },
+              {
+                "id": "17",
+                "title": {
+                  "en": "Synthetic",
+                  "nl": "Synthetisch"
+                }
+              },
+              {
+                "id": "22",
+                "title": {
+                  "en": "Bulky Items",
+                  "nl": "Groot goed"
+                }
+              },
+              {
+                "id": "4C",
+                "title": {
+                  "en": "Mixed",
+                  "nl": "Mix"
+                }
+              },
+              {
+                "id": "21",
+                "title": {
+                  "en": "Air Fluff",
+                  "nl": "Luchtdrogen"
+                }
+              },
+              {
+                "id": "1B",
+                "title": {
+                  "en": "Sports",
+                  "nl": "Sport"
+                }
+              },
+              {
+                "id": "1A",
+                "title": {
+                  "en": "Delicates",
+                  "nl": "Fijne was"
+                }
+              },
+              {
+                "id": "1D",
+                "title": {
+                  "en": "Allergy Care",
+                  "nl": "Allergie"
+                }
+              },
+              {
+                "id": "19",
+                "title": {
+                  "en": "Towels",
+                  "nl": "Handdoeken"
+                }
+              },
+              {
+                "id": "1E",
+                "title": {
+                  "en": "Wool / Delicates",
+                  "nl": "Wol / Fijn"
+                }
+              },
+              {
+                "id": "1C",
+                "title": {
+                  "en": "Jeans",
+                  "nl": "Jeans"
+                }
+              },
+              {
+                "id": "27",
+                "title": {
+                  "en": "Timed - High Heat",
+                  "nl": "Tijdprogramma - hoog"
+                }
+              },
+              {
+                "id": "24",
+                "title": {
+                  "en": "Timed - Low Heat",
+                  "nl": "Tijdprogramma - laag"
+                }
+              },
+              {
+                "id": "25",
+                "title": {
+                  "en": "Timed - Extra Low Heat",
+                  "nl": "Tijdprogramma - extra laag"
+                }
+              },
+              {
+                "id": "4E",
+                "title": {
+                  "en": "Drum Sanitize",
+                  "nl": "Trommelreiniging"
+                }
+              },
+              {
+                "id": "23",
+                "title": {
+                  "en": "Drum Care",
+                  "nl": "Trommel onderhoud"
+                }
+              },
+              {
+                "id": "F1",
+                "title": {
+                  "en": "My Cycle 1",
+                  "nl": "Mijn programma 1"
+                }
+              },
+              {
+                "id": "F2",
+                "title": {
+                  "en": "My Cycle 2",
+                  "nl": "Mijn programma 2"
                 }
               }
             ]
@@ -2201,6 +2441,32 @@
           }
         ]
       }
+    ],
+    "conditions": [
+      {
+        "id": "samsung_dryer_remote_control_is_enabled",
+        "title": {
+          "en": "Remote Start !{{is|is not}} enabled",
+          "nl": "Afstandsbediening !{{is|is niet}} ingeschakeld",
+          "de": "Fernstart !{{ist|ist nicht}} aktiviert",
+          "fr": "Démarrage à distance !{{est|n'est pas}} activé",
+          "es": "Inicio remoto !{{está|no está}} activado",
+          "it": "Avvio remoto !{{è|non è}} abilitato",
+          "no": "Fjernstyring !{{er|er ikke}} aktivert",
+          "sv": "Fjärrstyrning !{{är|är inte}} aktiverad",
+          "da": "Fjernstyring !{{er|er ikke}} aktiveret",
+          "pl": "Zdalne uruchomienie !{{jest|nie jest}} włączone",
+          "ru": "Дистанционный запуск !{{включён|выключен}}",
+          "ko": "원격 제어 !{{활성화됨|비활성화됨}}"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dryer&capabilities=samsung_dryer_remote_control_enabled"
+          }
+        ]
+      }
     ]
   },
   "drivers": [
@@ -2510,7 +2776,17 @@
         "ko": "삼성 건조기"
       },
       "class": "dryer",
-      "capabilities": [],
+      "capabilities": [
+        "samsung_dryer_remote_control_enabled",
+        "onoff",
+        "samsung_dryer_start",
+        "samsung_dryer_current_job_state",
+        "samsung_dryer_cycle",
+        "samsung_dryer_progress_percentage",
+        "samsung_dryer_progress_remaining_time",
+        "measure_power",
+        "meter_power"
+      ],
       "id": "dryer"
     },
     {
@@ -3888,6 +4164,91 @@
           }
         },
         {
+          "id": "cooling",
+          "title": {
+            "en": "Cooling",
+            "nl": "Koelen",
+            "da": "Afkøling",
+            "de": "Abkühlen",
+            "es": "Enfriamiento",
+            "fr": "Refroidissement",
+            "it": "Raffreddamento",
+            "no": "Nedkjøling",
+            "sv": "Kylning",
+            "pl": "Chłodzenie",
+            "ru": "Охлаждение",
+            "ko": "냉각"
+          }
+        },
+        {
+          "id": "wrinklePrevent",
+          "title": {
+            "en": "Wrinkle prevention",
+            "nl": "Kreukherstellend",
+            "da": "Krølfri",
+            "de": "Faltenprävention",
+            "es": "Prevención de arrugas",
+            "fr": "Prévention des plis",
+            "it": "Prevenzione delle pieghe",
+            "no": "Rynkeforebygging",
+            "sv": "Skrynkelfri",
+            "pl": "Zapobieganie zagnieceniom",
+            "ru": "Предотвращение складок",
+            "ko": "주름 방지"
+          }
+        },
+        {
+          "id": "delayWash",
+          "title": {
+            "en": "Delayed start",
+            "nl": "Uitgestelde start",
+            "da": "Forsinket start",
+            "de": "Verzögerter Start",
+            "es": "Inicio retrasado",
+            "fr": "Départ différé",
+            "it": "Avvio ritardato",
+            "no": "Utsatt start",
+            "sv": "Fördröjd start",
+            "pl": "Opóźniony start",
+            "ru": "Отложенный запуск",
+            "ko": "지연 시작"
+          }
+        },
+        {
+          "id": "weightSensing",
+          "title": {
+            "en": "Weight sensing",
+            "nl": "Gewichtsdetectie",
+            "da": "Vægtregistrering",
+            "de": "Gewichtserkennung",
+            "es": "Detección de peso",
+            "fr": "Détection de poids",
+            "it": "Rilevamento del peso",
+            "no": "Vektdeteksjon",
+            "sv": "Viktdetektering",
+            "pl": "Wykrywanie wagi",
+            "ru": "Определение веса",
+            "ko": "중량 감지"
+          }
+        },
+        {
+          "id": "freezeProtection",
+          "title": {
+            "en": "Freeze protection",
+            "nl": "Vorstbeveiliging",
+            "da": "Frostbeskyttelse",
+            "de": "Frostschutz",
+            "es": "Protección contra heladas",
+            "fr": "Protection contre le gel",
+            "it": "Protezione dal gelo",
+            "no": "Frostbeskyttelse",
+            "sv": "Frostskydd",
+            "pl": "Ochrona przed zamarzaniem",
+            "ru": "Защита от замерзания",
+            "ko": "동결 방지"
+          }
+        },
+        {
           "id": "finished",
           "title": {
             "en": "Finished",
@@ -3902,6 +4263,176 @@
             "pl": "Gotowe",
             "ru": "Завершено",
             "ko": "끝남"
+          }
+        }
+      ]
+    },
+    "samsung_dryer_cycle": {
+      "type": "enum",
+      "title": {
+        "en": "Drying Program",
+        "nl": "Droogprogramma",
+        "de": "Trockenprogramm",
+        "fr": "Programme de séchage",
+        "es": "Programa de secado",
+        "it": "Programma di asciugatura",
+        "no": "Tørkeprogram",
+        "sv": "Torkprogram",
+        "da": "Tørreprogram",
+        "pl": "Program suszenia",
+        "ru": "Программа сушки",
+        "ko": "건조 프로그램"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "picker",
+      "icon": "/assets/capabilities/samsung_dryer_cycle.svg",
+      "values": [
+        {
+          "id": "51",
+          "title": {
+            "en": "Auto Dry (Cotton)",
+            "nl": "Auto droog (katoen)"
+          }
+        },
+        {
+          "id": "53",
+          "title": {
+            "en": "Auto Dry (Synthetic)",
+            "nl": "Auto droog (synthetisch)"
+          }
+        },
+        {
+          "id": "18",
+          "title": {
+            "en": "Cotton",
+            "nl": "Katoen"
+          }
+        },
+        {
+          "id": "20",
+          "title": {
+            "en": "Cotton (Damp)",
+            "nl": "Katoen (licht vochtig)"
+          }
+        },
+        {
+          "id": "17",
+          "title": {
+            "en": "Synthetic",
+            "nl": "Synthetisch"
+          }
+        },
+        {
+          "id": "22",
+          "title": {
+            "en": "Bulky Items",
+            "nl": "Groot goed"
+          }
+        },
+        {
+          "id": "4C",
+          "title": {
+            "en": "Mixed",
+            "nl": "Mix"
+          }
+        },
+        {
+          "id": "21",
+          "title": {
+            "en": "Air Fluff",
+            "nl": "Luchtdrogen"
+          }
+        },
+        {
+          "id": "1B",
+          "title": {
+            "en": "Sports",
+            "nl": "Sport"
+          }
+        },
+        {
+          "id": "1A",
+          "title": {
+            "en": "Delicates",
+            "nl": "Fijne was"
+          }
+        },
+        {
+          "id": "1D",
+          "title": {
+            "en": "Allergy Care",
+            "nl": "Allergie"
+          }
+        },
+        {
+          "id": "19",
+          "title": {
+            "en": "Towels",
+            "nl": "Handdoeken"
+          }
+        },
+        {
+          "id": "1E",
+          "title": {
+            "en": "Wool / Delicates",
+            "nl": "Wol / Fijn"
+          }
+        },
+        {
+          "id": "1C",
+          "title": {
+            "en": "Jeans",
+            "nl": "Jeans"
+          }
+        },
+        {
+          "id": "27",
+          "title": {
+            "en": "Timed - High Heat",
+            "nl": "Tijdprogramma - hoog"
+          }
+        },
+        {
+          "id": "24",
+          "title": {
+            "en": "Timed - Low Heat",
+            "nl": "Tijdprogramma - laag"
+          }
+        },
+        {
+          "id": "25",
+          "title": {
+            "en": "Timed - Extra Low Heat",
+            "nl": "Tijdprogramma - extra laag"
+          }
+        },
+        {
+          "id": "4E",
+          "title": {
+            "en": "Drum Sanitize",
+            "nl": "Trommelreiniging"
+          }
+        },
+        {
+          "id": "23",
+          "title": {
+            "en": "Drum Care",
+            "nl": "Trommel onderhoud"
+          }
+        },
+        {
+          "id": "F1",
+          "title": {
+            "en": "My Cycle 1",
+            "nl": "Mijn programma 1"
+          }
+        },
+        {
+          "id": "F2",
+          "title": {
+            "en": "My Cycle 2",
+            "nl": "Mijn programma 2"
           }
         }
       ]
@@ -3961,6 +4492,48 @@
       "setable": false,
       "uiComponent": "sensor",
       "icon": "/assets/capabilities/samsung_dryer_progress_remaining_time.svg"
+    },
+    "samsung_dryer_remote_control_enabled": {
+      "type": "boolean",
+      "title": {
+        "en": "Remote Start",
+        "nl": "Afstandsbediening",
+        "de": "Fernstart",
+        "fr": "Démarrage à distance",
+        "es": "Inicio remoto",
+        "it": "Avvio remoto",
+        "no": "Fjernstyring",
+        "sv": "Fjärrstyrning",
+        "da": "Fjernstyring",
+        "pl": "Zdalne uruchomienie",
+        "ru": "Дистанционный запуск",
+        "ko": "원격 제어"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "toggle",
+      "icon": "/assets/capabilities/samsung_dryer_remote_control_enabled.svg",
+      "insights": true
+    },
+    "samsung_dryer_start": {
+      "type": "boolean",
+      "title": {
+        "en": "Start Cycle",
+        "nl": "Start cyclus",
+        "de": "Zyklus starten",
+        "fr": "Démarrer le cycle",
+        "es": "Iniciar ciclo",
+        "it": "Avvia ciclo",
+        "no": "Start syklus",
+        "sv": "Starta cykel",
+        "da": "Start cyklus",
+        "pl": "Uruchom cykl",
+        "ru": "Запустить цикл",
+        "ko": "사이클 시작"
+      },
+      "getable": false,
+      "setable": true,
+      "uiComponent": "button"
     },
     "samsung_microwave_current_job_state": {
       "type": "enum",
