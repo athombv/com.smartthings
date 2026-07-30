@@ -15,16 +15,50 @@
     "ko": "삼성 냉장고"
   },
   "class": "fridge",
-  "capabilities": [],
+  "capabilities": [
+    "measure_power",
+    "meter_power",
+    "measure_temperature.cooler",
+    "target_temperature.cooler",
+    "measure_temperature.freezer",
+    "target_temperature.freezer",
+    "alarm_contact",
+    "alarm_contact.freezer",
+    "onoff.icemaker"
+  ],
   "capabilitiesOptions": {
+    "measure_power": {
+      "title": "Power"
+    },
+    "meter_power": {
+      "title": "Energy"
+    },
     "measure_temperature.cooler": {
       "title": "Cooler Temperature"
+    },
+    "target_temperature.cooler": {
+      "title": "Cooler Setpoint",
+      "min": 1,
+      "max": 7,
+      "step": 1
     },
     "measure_temperature.freezer": {
       "title": "Freezer Temperature"
     },
+    "target_temperature.freezer": {
+      "title": "Freezer Setpoint",
+      "min": -23,
+      "max": -15,
+      "step": 1
+    },
     "alarm_contact": {
-      "title": "Door Open"
+      "title": "Cooler Door Open"
+    },
+    "alarm_contact.freezer": {
+      "title": "Freezer Door Open"
+    },
+    "onoff.icemaker": {
+      "title": "Ice Maker"
     }
   }
 }
