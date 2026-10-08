@@ -1,6 +1,7 @@
 {
   "errors": {
-    "offline": "Enheten er frakoblet"
+    "offline": "Enheten er frakoblet",
+    "remote_control_disabled": "Fjernkontroll er deaktivert. Trykk først på Smart Control på maskinen."
   },
   "samsung_washer_current_job_state": {
     "airWash": "Luftvask",

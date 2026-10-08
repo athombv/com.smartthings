@@ -1,6 +1,7 @@
 {
   "errors": {
-    "offline": "장치가 오프라인 상태입니다."
+    "offline": "장치가 오프라인 상태입니다.",
+    "remote_control_disabled": "원격 제어가 비활성화되어 있습니다. 먼저 기기에서 Smart Control을 누르세요."
   },
   "samsung_washer_current_job_state": {
     "airWash": "에어 워시",

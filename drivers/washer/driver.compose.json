@@ -15,5 +15,18 @@
     "ko": "삼성 세탁기"
   },
   "class": "washer",
-  "capabilities": []
+  "capabilities": [
+    "samsung_washer_remote_control_enabled",
+    "onoff",
+    "samsung_washer_start",
+    "samsung_washer_current_job_state",
+    "samsung_washer_cycle",
+    "samsung_washer_progress_percentage",
+    "samsung_washer_progress_remaining_time",
+    "measure_power",
+    "meter_power",
+    "meter_water",
+    "samsung_washer_auto_detergent_status",
+    "samsung_washer_auto_softener_status"
+  ]
 }

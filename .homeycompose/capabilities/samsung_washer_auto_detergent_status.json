@@ -1,0 +1,27 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Detergent Level",
+    "nl": "Wasmiddelniveau",
+    "de": "Waschmittelstand",
+    "fr": "Niveau de détergent",
+    "es": "Nivel de detergente",
+    "it": "Livello detersivo",
+    "no": "Vaskemiddelnivå",
+    "sv": "Tvättmedelnivå",
+    "da": "Vaskemiddelniveau",
+    "pl": "Poziom detergentu",
+    "ru": "Уровень моющего средства",
+    "ko": "세제 수준"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/samsung_washer_auto_detergent_status.svg",
+  "values": [
+    { "id": "normal", "title": { "en": "Normal", "nl": "Normaal", "de": "Normal", "fr": "Normal", "es": "Normal", "it": "Normale", "no": "Normal", "sv": "Normal", "da": "Normal", "pl": "Normalny", "ru": "Нормально", "ko": "정상" } },
+    { "id": "low", "title": { "en": "Low", "nl": "Laag", "de": "Niedrig", "fr": "Bas", "es": "Bajo", "it": "Basso", "no": "Lav", "sv": "Låg", "da": "Lav", "pl": "Niski", "ru": "Мало", "ko": "부족" } },
+    { "id": "empty", "title": { "en": "Empty", "nl": "Leeg", "de": "Leer", "fr": "Vide", "es": "Vacío", "it": "Vuoto", "no": "Tom", "sv": "Tom", "da": "Tom", "pl": "Pusty", "ru": "Пусто", "ko": "비어있음" } },
+    { "id": "error", "title": { "en": "Error", "nl": "Fout", "de": "Fehler", "fr": "Erreur", "es": "Error", "it": "Errore", "no": "Feil", "sv": "Fel", "da": "Fejl", "pl": "Błąd", "ru": "Ошибка", "ko": "오류" } }
+  ]
+}

@@ -1,6 +1,7 @@
 {
   "errors": {
-    "offline": "Appareil hors ligne"
+    "offline": "Appareil hors ligne",
+    "remote_control_disabled": "La télécommande est désactivée. Appuyez d’abord sur Smart Control sur la machine."
   },
   "samsung_washer_current_job_state": {
     "airWash": "Lavage à l'air",

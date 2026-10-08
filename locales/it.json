@@ -1,6 +1,7 @@
 {
   "errors": {
-    "offline": "Dispositivo Offline"
+    "offline": "Dispositivo Offline",
+    "remote_control_disabled": "Il controllo remoto è disabilitato. Premere prima Smart Control sulla macchina."
   },
   "samsung_washer_current_job_state": {
     "airWash": "Lavaggio ad aria",

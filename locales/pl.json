@@ -1,6 +1,7 @@
 {
   "errors": {
-    "offline": "Urządzenie offline"
+    "offline": "Urządzenie offline",
+    "remote_control_disabled": "Zdalne sterowanie jest wyłączone. Najpierw naciśnij Smart Control na urządzeniu."
   },
   "samsung_washer_current_job_state": {
     "airWash": "Pranie powietrzem",

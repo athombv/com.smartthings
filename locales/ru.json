@@ -1,6 +1,7 @@
 {
   "errors": {
-    "offline": "Устройство не в сети"
+    "offline": "Устройство не в сети",
+    "remote_control_disabled": "Удалённое управление отключено. Сначала нажмите Smart Control на машине."
   },
   "samsung_washer_current_job_state": {
     "airWash": "Воздушная стирка",

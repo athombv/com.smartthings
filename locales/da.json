@@ -1,6 +1,7 @@
 {
   "errors": {
-    "offline": "Enhed Offline"
+    "offline": "Enhed Offline",
+    "remote_control_disabled": "Fjernbetjening er deaktiveret. Tryk først på Smart Control på maskinen."
   },
   "samsung_washer_current_job_state": {
     "airWash": "Luftvask",

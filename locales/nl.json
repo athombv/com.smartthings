@@ -1,6 +1,7 @@
 {
   "errors": {
-    "offline": "Apparaat Offline"
+    "offline": "Apparaat Offline",
+    "remote_control_disabled": "Afstandsbediening staat uit. Druk eerst op Smart Control op het apparaat."
   },
   "samsung_washer_current_job_state": {
     "airWash": "Luchtwassen",

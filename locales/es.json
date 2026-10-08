@@ -1,6 +1,7 @@
 {
   "errors": {
-    "offline": "Dispositivo fuera de línea"
+    "offline": "Dispositivo fuera de línea",
+    "remote_control_disabled": "El control remoto está desactivado. Pulse primero Smart Control en la máquina."
   },
   "samsung_washer_current_job_state": {
     "airWash": "Lavado por aire",

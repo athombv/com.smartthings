@@ -1,6 +1,7 @@
 {
   "errors": {
-    "offline": "Gerät offline"
+    "offline": "Gerät offline",
+    "remote_control_disabled": "Fernbedienung ist deaktiviert. Drücken Sie zuerst Smart Control am Gerät."
   },
   "samsung_washer_current_job_state": {
     "airWash": "Luftwäsche",

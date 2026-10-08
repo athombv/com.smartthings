@@ -1,6 +1,7 @@
 {
   "errors": {
-    "offline": "Enheten är offline"
+    "offline": "Enheten är offline",
+    "remote_control_disabled": "Fjärrkontroll är inaktiverad. Tryck först på Smart Control på maskinen."
   },
   "samsung_washer_current_job_state": {
     "airWash": "Lufttvätt",

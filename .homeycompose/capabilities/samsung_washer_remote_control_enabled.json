@@ -1,0 +1,22 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "Remote Control",
+    "nl": "Afstandsbediening",
+    "de": "Fernbedienung",
+    "fr": "Télécommande",
+    "es": "Control remoto",
+    "it": "Controllo remoto",
+    "no": "Fjernkontroll",
+    "sv": "Fjärrkontroll",
+    "da": "Fjernbetjening",
+    "pl": "Zdalne sterowanie",
+    "ru": "Удалённое управление",
+    "ko": "원격 제어"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "toggle",
+  "icon": "/assets/capabilities/samsung_washer_remote_control_enabled.svg",
+  "insights": true
+}
